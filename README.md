@@ -11,43 +11,30 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-15 08:45:56 UTC
-**API Requests Made**: 60
-**Total Unique Findings**: 16
+**Last Updated**: 2026-04-15 08:55:38 UTC
+**API Requests Made**: 15
+**Total Unique Findings**: 2
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 1 |
-| **Affected Repositories** | 16 |
+| **Key Types Detected** | 2 |
+| **Affected Repositories** | 2 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
-| `sk-proj-env-sk-proj` | 16 |
+| `sk-proj-py-env-var` | 1 |
+| `sk-proj-py-sk-proj` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
-| `voks645/ia-autosite` | `key.env` | `sk-proj-env-sk-proj` | `sk-proj-x3FR***` | 2026-04-15 |
-| `MechanizedIT/inkspark` | `.env.tpl` | `sk-proj-env-sk-proj` | `sk-proj-zxUV***` | 2026-04-15 |
-| `macho715/cursor-mcp` | `.env.txt` | `sk-proj-env-sk-proj` | `sk-proj-BaHy***` | 2026-04-15 |
-| `Nizar541/nizargpt4` | `.env.txt` | `sk-proj-env-sk-proj` | `sk-proj-6BL0***` | 2026-04-15 |
-| `youask-oman/uaskstudents` | `.env,example.txt` | `sk-proj-env-sk-proj` | `sk-proj-GZ5t***` | 2026-04-15 |
-| `aijuridica/ia-juridica-saas-pr...` | `frontend/.env.exemplo` | `sk-proj-env-sk-proj` | `sk-proj-_k_G***` | 2026-04-15 |
-| `bell24xcom/forBell24x` | `.env.local.txt` | `sk-proj-env-sk-proj` | `sk-proj-xcBt***` | 2026-04-15 |
-| `mwa-codes/coalqpdf` | `backend/.env.bak` | `sk-proj-env-sk-proj` | `sk-proj-_OYy***` | 2026-04-15 |
-| `BilikSergey/Diploma` | `process.env.txt` | `sk-proj-env-sk-proj` | `sk-proj-CfpE***` | 2026-04-15 |
-| `Wisekin/sikry-25` | `.env.local.txt` | `sk-proj-env-sk-proj` | `sk-proj-n6AI***` | 2026-04-15 |
-| `spam108/telegram-warmup-bot` | `.env.backup.local` | `sk-proj-env-sk-proj` | `sk-proj--XEG***` | 2026-04-15 |
-| `Thampson29/Rightly-App` | `rightly-app/backend/backend.env.txt` | `sk-proj-env-sk-proj` | `sk-proj-Zvsy***` | 2026-04-15 |
-| `kemcell/chat-mysql` | `openapikey.env.txt` | `sk-proj-env-sk-proj` | `sk-proj-YpTR***` | 2026-04-15 |
-| `eudespankilhas/social-genius-i...` | `.env.local.txt` | `sk-proj-env-sk-proj` | `sk-proj-MI_7***` | 2026-04-15 |
-| `mkyoung23/RealRefiLoanAutomati...` | `.env.txt` | `sk-proj-env-sk-proj` | `sk-proj-TgG0***` | 2026-04-15 |
-| `faysal-MMII/Tafseer` | `.env.save` | `sk-proj-env-sk-proj` | `sk-proj--ddn***` | 2026-04-15 |
+| `NemroNeno/LinkedIn_messaging_a...` | `op.py` | `sk-proj-py-sk-proj` | `sk-proj-PDH5***` | 2026-04-15 |
+| `tenebris-io/peanuts-hackio-202...` | `setup/SETUP-new.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-15 |
 
 
 ---
