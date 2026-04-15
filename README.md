@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-15 11:39:44 UTC
+**Last Updated**: 2026-04-15 12:03:55 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 31
+**Total Unique Findings**: 33
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 11 |
-| **Affected Repositories** | 24 |
+| **Key Types Detected** | 12 |
+| **Affected Repositories** | 25 |
 
 ### By Key Type
 
@@ -30,6 +30,7 @@
 | `sk-proj-ts-anthropic-env` | 4 |
 | `sk-proj-py-sk-proj` | 2 |
 | `sk-proj-js-sk-proj` | 2 |
+| `sk-proj-env-env-var` | 2 |
 | `sk-proj-js-env-var` | 1 |
 | `sk-proj-json-env-var` | 1 |
 | `sk-proj-json-sk-proj` | 1 |
@@ -42,6 +43,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `badrshs/scribe-ai` | `tests/Feature/OpenAiIntegrationTest...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-15 |
+| `badrshs/scribe-ai` | `tests/Feature/InstallCommandTest.ph...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-15 |
 | `affaan-m/agentshield` | `tests/rules/secrets.test.ts` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-15 |
 | `affaan-m/agentshield` | `src/corpus/vulnerable-configs.ts` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-15 |
 | `affaan-m/agentshield` | `examples/vulnerable/CLAUDE.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-15 |
