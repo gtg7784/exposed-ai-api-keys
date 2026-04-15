@@ -11,22 +11,23 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-15 11:12:49 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 27
+**Last Updated**: 2026-04-15 11:39:44 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 31
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 10 |
-| **Affected Repositories** | 23 |
+| **Key Types Detected** | 11 |
+| **Affected Repositories** | 24 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
 | `sk-proj-env-sk-proj` | 16 |
+| `sk-proj-ts-anthropic-env` | 4 |
 | `sk-proj-py-sk-proj` | 2 |
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-js-env-var` | 1 |
@@ -41,6 +42,10 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `affaan-m/agentshield` | `tests/rules/secrets.test.ts` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-15 |
+| `affaan-m/agentshield` | `src/corpus/vulnerable-configs.ts` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-15 |
+| `affaan-m/agentshield` | `examples/vulnerable/CLAUDE.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-15 |
+| `affaan-m/agentshield` | `dist/index.js` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-15 |
 | `ankitrajmehta/desktop-automati...` | `README.md` | `sk-proj-py-google-env` | `GOOGLE_API_K***` | 2026-04-15 |
 | `NemroNeno/LinkedIn_messaging_a...` | `op.py` | `sk-proj-py-sk-proj` | `sk-proj-PDH5***` | 2026-04-15 |
 | `tenebris-io/peanuts-hackio-202...` | `setup/SETUP-new.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-15 |
