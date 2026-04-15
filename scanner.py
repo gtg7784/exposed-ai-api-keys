@@ -261,6 +261,78 @@ class GitHubScanner:
         except Exception:
             return None
 
+    def analyze_repo(self, repo_full_name: str, query_label: str) -> List[ExposedKeyFinding]:
+        """Download repo tarball and grep for keys locally (1 API request per repo)."""
+        if not self._check_budget():
+            return []
+
+        findings = []
+        tarball_url = f'https://api.github.com/repos/{repo_full_name}/tarball'
+
+        try:
+            response = self.session.get(tarball_url, timeout=30, stream=True)
+            self.requests_made += 1
+
+            if response.status_code in [403, 404, 429]:
+                return []
+
+            if response.status_code != 200:
+                return []
+
+            # Save tarball to temp file
+            import tempfile
+            import tarfile
+            import io
+
+            with tempfile.NamedTemporaryFile(suffix='.tar.gz', delete=False) as tmp:
+                for chunk in response.iter_content(chunk_size=8192):
+                    tmp.write(chunk)
+                tmp_path = tmp.name
+
+            try:
+                # Extract and grep
+                with tarfile.open(tmp_path, 'r:gz') as tar:
+                    for member in tar.getmembers():
+                        if not member.isfile():
+                            continue
+                        if member.size > 1_000_000:  # Skip files > 1MB
+                            continue
+
+                        try:
+                            f = tar.extractfile(member)
+                            if f is None:
+                                continue
+                            content = f.read().decode('utf-8', errors='ignore')
+                            f.close()
+
+                            for pattern, pattern_label in self.KEY_PATTERNS:
+                                matches = list(re.finditer(pattern, content))
+                                for match in matches:
+                                    full_key = match.group(1)
+                                    finding = ExposedKeyFinding(
+                                        repository=repo_full_name,
+                                        file_path=member.name.split('/', 1)[-1] if '/' in member.name else member.name,
+                                        file_url=f'https://github.com/{repo_full_name}/blob/main/{member.name.split("/", 1)[-1]}' if '/' in member.name else f'https://github.com/{repo_full_name}',
+                                        commit_sha=None,
+                                        discovered_at=datetime.now(timezone.utc).isoformat(),
+                                        key_type=f'{query_label}-{pattern_label}',
+                                        key_preview=full_key[:12] + '***' if len(full_key) > 12 else full_key[:8] + '***'
+                                    )
+                                    findings.append(finding)
+                        except Exception:
+                            continue
+            finally:
+                import os
+                try:
+                    os.unlink(tmp_path)
+                except Exception:
+                    pass
+
+        except Exception:
+            pass
+
+        return findings
+
     def _get_queries_for_this_hour(self) -> List[tuple]:
         """Get high-yield queries prioritized for max key discovery.
 
@@ -278,18 +350,18 @@ class GitHubScanner:
         ]
 
     def scan_for_keys(self) -> List[ExposedKeyFinding]:
-        """Scan GitHub for exposed Codex API keys with strict budgeting."""
+        """Scan GitHub for exposed Codex API keys with repo-level analysis."""
         queries_to_run = self._get_queries_for_this_hour()
 
         print(f"Budget: {self.MAX_REQUESTS_PER_SCAN} requests max")
         print(f"Rate limit: ~{self.RATE_LIMIT_DELAY}s between requests")
-        print(f"Running {len(queries_to_run)} high-yield queries (.env, .py, .js)\n")
+        print(f"Running {len(queries_to_run)} queries, analyzing by repo (not file)\n")
 
         all_findings = []
+        scanned_repos: Set[str] = set()
 
         for query, query_label in queries_to_run:
             if not self._check_budget():
-                print("  ⏹️ Stopping: request budget exhausted")
                 break
 
             print(f"[{query_label}] Searching: {query[:40]}...")
@@ -300,22 +372,28 @@ class GitHubScanner:
             if not results:
                 continue
 
-            files_to_analyze = results[:self.MAX_FILES_PER_QUERY]
-            print(f"  Analyzing top {len(files_to_analyze)} files...")
+            # Extract unique repos from search results
+            repos_to_scan = {}
+            for item in results:
+                repo_full_name = item.get('repository', {}).get('full_name')
+                if repo_full_name and repo_full_name not in scanned_repos:
+                    repos_to_scan[repo_full_name] = item.get('repository', {})
 
-            for item in files_to_analyze:
+            print(f"  Unique repos: {len(repos_to_scan)} (will scan top {min(len(repos_to_scan), 5)})")
+
+            # Analyze first 5 unique repos by downloading tarball
+            for repo_full_name in list(repos_to_scan.keys())[:5]:
                 if not self._check_budget():
-                    print("  ⏹️ Stopping: request budget exhausted")
                     break
 
-                for pattern, pattern_label in self.KEY_PATTERNS:
-                    finding = self.analyze_file(item, f"{query_label}-{pattern_label}", pattern)
-                    if finding:
-                        all_findings.append(finding)
-                        print(f"    ⚠️  {finding.repository}")
-                        break
+                if repo_full_name in scanned_repos:
+                    continue
+                scanned_repos.add(repo_full_name)
 
-                time.sleep(0.5)
+                findings = self.analyze_repo(repo_full_name, query_label)
+                if findings:
+                    all_findings.extend(findings)
+                    print(f"    ⚠️  {repo_full_name}: {len(findings)} keys found")
 
             self._wait_if_needed()
 
