@@ -90,10 +90,10 @@ class GitHubScanner:
     RATE_LIMIT_DELAY = 3  # Reduced delay for more throughput
     JITTER_RANGE = (0, 1)
 
-    # Request budgeting - optimized for finding MORE keys
-    MAX_REQUESTS_PER_SCAN = 60  # Increased to allow more file analysis
-    MAX_PAGES = 1  # Only 1 page per query to stay under limits
-    MAX_FILES_PER_QUERY = 15  # Analyze more files per query to find more keys
+    # Request budgeting - optimized for finding MORE keys (matching v1 performance)
+    MAX_REQUESTS_PER_SCAN = 60  # GitHub Search API: 10 req/min, allow 6 min window
+    MAX_PAGES = 3  # Pagination: 3 pages × 30 results = 90 files per query (like v1)
+    MAX_FILES_PER_QUERY = 90  # Match v1: analyze 90 files per query for max discovery
 
     def __init__(self, token: str):
         self.token = token
@@ -259,37 +259,20 @@ class GitHubScanner:
             return None
 
     def _get_queries_for_this_hour(self) -> List[tuple]:
-        """Get subset of queries to run based on current hour (rotating schedule)."""
-        current_hour = datetime.now(timezone.utc).hour
+        """Get high-yield queries prioritized for max key discovery.
 
-        # Core queries always run
-        core_queries = [
-            ('sk-proj-', 'sk-proj-generic'),
-            ('sk-proj- filename:.env', 'sk-proj-env'),
-            ('sk-proj- extension:py', 'sk-proj-py'),
-            ('sk-proj- extension:js', 'sk-proj-js'),
+        Strategy: Focus on 3 highest-yield queries to stay within budget:
+        - 3 search requests (1 per query × 3 queries)
+        - Up to 90 file analysis requests per query (with pagination)
+        - Total: ~93 requests worst case, fits in 60 budget with early termination
+        """
+        # High-yield queries prioritized by historical performance
+        # .env files alone found 28 keys in v1 with 90 file analysis
+        return [
+            ('sk-proj- filename:.env', 'sk-proj-env'),      # Highest yield: .env files
+            ('sk-proj- extension:py', 'sk-proj-py'),        # Python files
+            ('sk-proj- extension:js', 'sk-proj-js'),        # JavaScript files
         ]
-
-        # Rotating query sets - each hour gets a different set
-        rotating_sets = [
-            [('sk-proj- extension:ts', 'sk-proj-ts'), ('sk-proj- extension:json', 'sk-proj-json')],
-            [('sk-proj- extension:yml', 'sk-proj-yml'), ('sk-proj- extension:yaml', 'sk-proj-yaml')],
-            [('sk-proj- extension:sh', 'sk-proj-sh'), ('sk-proj- extension:bash', 'sk-proj-bash')],
-            [('sk-proj- extension:md', 'sk-proj-md'), ('sk-proj- extension:txt', 'sk-proj-txt')],
-            [('sk-proj- extension:toml', 'sk-proj-toml'), ('sk-proj- extension:ini', 'sk-proj-ini')],
-            [('sk-proj- extension:xml', 'sk-proj-xml'), ('sk-proj- extension:sql', 'sk-proj-sql')],
-            [('sk-proj- extension:ps1', 'sk-proj-ps1'), ('sk-proj- extension:bat', 'sk-proj-bat')],
-            [('sk-proj- filename:.env.local', 'sk-proj-env-local'), ('sk-proj- filename:.env.production', 'sk-proj-env-prod')],
-            [('sk-proj- filename:config.json', 'sk-proj-config-json'), ('sk-proj- filename:package.json', 'sk-proj-package-json')],
-            [('sk-proj- filename:.bashrc', 'sk-proj-bashrc'), ('sk-proj- filename:.zshrc', 'sk-proj-zshrc')],
-            [('sk-proj- filename:Dockerfile', 'sk-proj-dockerfile'), ('sk-proj- filename:docker-compose', 'sk-proj-docker-compose')],
-            [('sk-proj- filename:.github/workflows', 'sk-proj-github-workflow'), ('sk-proj- filename:Jenkinsfile', 'sk-proj-jenkinsfile')],
-        ]
-
-        rotating_index = current_hour % len(rotating_sets)
-        rotating_queries = rotating_sets[rotating_index]
-
-        return core_queries + rotating_queries
 
     def scan_for_keys(self) -> List[ExposedKeyFinding]:
         """Scan GitHub for exposed Codex API keys with strict budgeting."""
@@ -297,7 +280,7 @@ class GitHubScanner:
 
         print(f"Budget: {self.MAX_REQUESTS_PER_SCAN} requests max")
         print(f"Rate limit: ~{self.RATE_LIMIT_DELAY}s between requests")
-        print(f"Running {len(queries_to_run)} queries this hour (4 core + 2 rotating)\n")
+        print(f"Running {len(queries_to_run)} high-yield queries (.env, .py, .js)\n")
 
         all_findings = []
 
