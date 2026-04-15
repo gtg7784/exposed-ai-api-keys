@@ -90,10 +90,10 @@ class GitHubScanner:
     RATE_LIMIT_DELAY = 3  # Reduced delay for more throughput
     JITTER_RANGE = (0, 1)
 
-    # Request budgeting - optimized for finding MORE keys (matching v1 performance)
-    MAX_REQUESTS_PER_SCAN = 60  # GitHub Search API: 10 req/min, allow 6 min window
-    MAX_PAGES = 3  # Pagination: 3 pages × 30 results = 90 files per query (like v1)
-    MAX_FILES_PER_QUERY = 90  # Match v1: analyze 90 files per query for max discovery
+    # Request budgeting - 10-minute slot strategy
+    MAX_REQUESTS_PER_SCAN = 10  # 10 req per 10-min slot (1 search + 9 repos)
+    MAX_PAGES = 1  # Single page for speed
+    MAX_FILES_PER_QUERY = 30
 
     def __init__(self, token: str):
         self.token = token
@@ -333,72 +333,57 @@ class GitHubScanner:
 
         return findings
 
-    def _get_queries_for_this_hour(self) -> List[tuple]:
-        """Get high-yield queries prioritized for max key discovery.
+    def _get_query_for_this_slot(self) -> tuple:
+        """Get single query for 10-minute slot (6 slots per hour).
 
-        Strategy: Focus on 3 highest-yield queries to stay within budget:
-        - 3 search requests (1 per query × 3 queries)
-        - Up to 90 file analysis requests per query (with pagination)
-        - Total: ~93 requests worst case, fits in 60 budget with early termination
+        10 minutes = 10 requests = 1 search + 9 repos
+        6 slots/hour × 9 repos = 54 repos scanned per hour
         """
-        # High-yield queries prioritized by historical performance
-        # .env files alone found 28 keys in v1 with 90 file analysis
-        return [
-            ('sk-proj- filename:.env', 'sk-proj-env'),      # Highest yield: .env files
-            ('sk-proj- extension:py', 'sk-proj-py'),        # Python files
-            ('sk-proj- extension:js', 'sk-proj-js'),        # JavaScript files
+        slots = [
+            ('sk-proj- filename:.env', 'sk-proj-env'),
+            ('sk-proj- extension:py', 'sk-proj-py'),
+            ('sk-proj- extension:js', 'sk-proj-js'),
+            ('sk-proj- extension:ts', 'sk-proj-ts'),
+            ('sk-proj- extension:json', 'sk-proj-json'),
+            ('sk-proj- extension:yml', 'sk-proj-yml'),
         ]
+        current_10min_slot = (datetime.now(timezone.utc).hour * 6 + datetime.now(timezone.utc).minute // 10) % len(slots)
+        return slots[current_10min_slot]
 
     def scan_for_keys(self) -> List[ExposedKeyFinding]:
-        """Scan GitHub for exposed Codex API keys with repo-level analysis."""
-        queries_to_run = self._get_queries_for_this_hour()
+        """Scan GitHub for exposed Codex API keys with 10-minute slot strategy."""
+        query, query_label = self._get_query_for_this_slot()
 
-        print(f"Budget: {self.MAX_REQUESTS_PER_SCAN} requests max")
-        print(f"Rate limit: ~{self.RATE_LIMIT_DELAY}s between requests")
-        print(f"Running {len(queries_to_run)} queries, analyzing by repo (not file)\n")
+        print(f"Budget: 10 requests (10-minute slot)")
+        print(f"Query: [{query_label}] {query[:40]}...")
 
         all_findings = []
-        scanned_repos: Set[str] = set()
 
-        for query, query_label in queries_to_run:
-            if not self._check_budget():
+        results = self.search_code(query, per_page=30)
+        print(f"  Found {len(results)} files")
+
+        if not results:
+            return all_findings
+
+        # Extract unique repos (max 9 for 10 request budget: 1 search + 9 repos)
+        repos_to_scan = {}
+        for item in results:
+            repo_full_name = item.get('repository', {}).get('full_name')
+            if repo_full_name:
+                repos_to_scan[repo_full_name] = item.get('repository', {})
+
+        repos_list = list(repos_to_scan.keys())[:9]  # 9 repos = 9 requests
+        print(f"  Unique repos: {len(repos_to_scan)} (scanning top {len(repos_list)})")
+
+        # Analyze repos
+        for repo_full_name in repos_list:
+            if self.requests_made >= 10:
                 break
 
-            print(f"[{query_label}] Searching: {query[:40]}...")
-
-            results = self.search_code(query)
-            print(f"  Found {len(results)} files")
-
-            if not results:
-                continue
-
-            # Extract unique repos from search results
-            repos_to_scan = {}
-            for item in results:
-                repo_full_name = item.get('repository', {}).get('full_name')
-                if repo_full_name and repo_full_name not in scanned_repos:
-                    repos_to_scan[repo_full_name] = item.get('repository', {})
-
-            # Calculate repos to scan based on remaining budget
-            remaining_budget = self.MAX_REQUESTS_PER_SCAN - self.requests_made
-            repos_per_query = min(20, remaining_budget // 3, len(repos_to_scan))
-            print(f"  Unique repos: {len(repos_to_scan)} (will scan top {repos_per_query}, budget: {remaining_budget})")
-
-            # Analyze repos by downloading tarball
-            for repo_full_name in list(repos_to_scan.keys())[:repos_per_query]:
-                if not self._check_budget():
-                    break
-
-                if repo_full_name in scanned_repos:
-                    continue
-                scanned_repos.add(repo_full_name)
-
-                findings = self.analyze_repo(repo_full_name, query_label)
-                if findings:
-                    all_findings.extend(findings)
-                    print(f"    ⚠️  {repo_full_name}: {len(findings)} keys found")
-
-            self._wait_if_needed()
+            findings = self.analyze_repo(repo_full_name, query_label)
+            if findings:
+                all_findings.extend(findings)
+                print(f"    ⚠️  {repo_full_name}: {len(findings)} keys found")
 
         # Scan public gists
         gist_findings = self.scan_gists()

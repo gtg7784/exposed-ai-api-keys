@@ -2,7 +2,7 @@ name: Scan Exposed Codex API Keys
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Run every hour
+    - cron: '*/10 * * * *'  # Run every 10 minutes (6x per hour for rate limit efficiency)
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
