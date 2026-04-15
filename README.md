@@ -11,34 +11,39 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-15 09:44:34 UTC
+**Last Updated**: 2026-04-15 10:16:28 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 24
+**Total Unique Findings**: 27
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 8 |
-| **Affected Repositories** | 21 |
+| **Key Types Detected** | 10 |
+| **Affected Repositories** | 23 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
 | `sk-proj-env-sk-proj` | 16 |
+| `sk-proj-py-sk-proj` | 2 |
 | `sk-proj-js-sk-proj` | 2 |
-| `sk-proj-py-sk-proj` | 1 |
 | `sk-proj-js-env-var` | 1 |
 | `sk-proj-json-env-var` | 1 |
 | `sk-proj-json-sk-proj` | 1 |
 | `sk-proj-json-sk-generic` | 1 |
 | `sk-proj-json-gemini-env` | 1 |
+| `sk-proj-py-env-var` | 1 |
+| `sk-proj-py-google-env` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `ankitrajmehta/desktop-automati...` | `README.md` | `sk-proj-py-google-env` | `GOOGLE_API_K***` | 2026-04-15 |
+| `NemroNeno/LinkedIn_messaging_a...` | `op.py` | `sk-proj-py-sk-proj` | `sk-proj-PDH5***` | 2026-04-15 |
+| `tenebris-io/peanuts-hackio-202...` | `setup/SETUP-new.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-15 |
 | `tylerprogramming/ai` | `crewai_flow_single_llm/README.md` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-15 |
 | `tylerprogramming/ai` | `autogen_agentbuilder/OAI_CONFIG_LIS...` | `sk-proj-json-sk-generic` | `sk-7sWCWPvca***` | 2026-04-15 |
 | `whyashthakker/ai-agents` | `research_results_20250212_110656.js...` | `sk-proj-json-sk-proj` | `sk-proj-l4Fa***` | 2026-04-15 |
