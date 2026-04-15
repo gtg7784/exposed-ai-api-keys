@@ -47,55 +47,6 @@ class ExposedKeyFinding:
 class GitHubScanner:
     """Scanner for finding exposed API keys on GitHub."""
 
-    # Curated search queries optimized for 30 request budget
-    # Each query: 1 search request + up to 5 file analysis requests = ~6 requests
-    # 4 queries + gist scan = fits within 30 request limit
-    SEARCH_QUERIES = [
-        ('sk-proj-', 'sk-proj-generic'),  # Broad search across all files
-        ('sk-proj- filename:.env', 'sk-proj-env'),  # Environment files (high-value targets)
-        ('sk-proj- extension:py', 'sk-proj-py'),  # Python files (very common)
-        ('sk-proj- extension:js', 'sk-proj-js'),  # JavaScript files (very common)
-        ('sk-proj- extension:ts', 'sk-proj-ts'),  # TypeScript files (growing)
-        ('sk-proj- extension:json', 'sk-proj-json'),  # Config files
-        ('sk-proj- extension:yml', 'sk-proj-yml'),  # YAML configs (CI/CD, docker)
-        ('sk-proj- extension:sh', 'sk-proj-sh'),  # Shell scripts
-        ('sk-proj- filename:web.config', 'sk-proj-web-config'),
-        ('sk-proj- filename:application.yml', 'sk-proj-application-yml'),
-        ('sk-proj- filename:application.properties', 'sk-proj-application-props'),
-        ('sk-proj- filename:bootstrap.yml', 'sk-proj-bootstrap-yml'),
-        ('sk-proj- filename:bootstrap.properties', 'sk-proj-bootstrap-props'),
-        ('sk-proj- filename:logback.xml', 'sk-proj-logback'),
-        ('sk-proj- filename:log4j.xml', 'sk-proj-log4j'),
-        ('sk-proj- filename:log4j.properties', 'sk-proj-log4j-props'),
-        ('sk-proj- filename:logging.properties', 'sk-proj-logging'),
-        ('sk-proj- filename:hibernate.cfg.xml', 'sk-proj-hibernate'),
-        ('sk-proj- filename:persistence.xml', 'sk-proj-persistence'),
-        ('sk-proj- filename:orm.xml', 'sk-proj-orm'),
-        ('sk-proj- filename:jboss-web.xml', 'sk-proj-jboss-web'),
-        ('sk-proj- filename:web.xml', 'sk-proj-web-xml'),
-        ('sk-proj- filename:context.xml', 'sk-proj-context-xml'),
-        ('sk-proj- filename:server.xml', 'sk-proj-server-xml'),
-        ('sk-proj- filename:tomcat-users.xml', 'sk-proj-tomcat-users'),
-        ('sk-proj- filename:catalina.properties', 'sk-proj-catalina'),
-        ('sk-proj- filename:setenv.sh', 'sk-proj-setenv'),
-        ('sk-proj- filename:setenv.bat', 'sk-proj-setenv-bat'),
-        ('sk-proj- filename:gradlew', 'sk-proj-gradlew'),
-        ('sk-proj- filename:gradlew.bat', 'sk-proj-gradlew-bat'),
-        ('sk-proj- filename:gradle.properties', 'sk-proj-gradle-props'),
-        ('sk-proj- filename:build.gradle', 'sk-proj-build-gradle'),
-        ('sk-proj- filename:settings.gradle', 'sk-proj-settings-gradle'),
-        ('sk-proj- filename:pom.xml', 'sk-proj-pom'),
-        ('sk-proj- filename:build.xml', 'sk-proj-build-xml'),
-        ('sk-proj- filename:ivy.xml', 'sk-proj-ivy'),
-        ('sk-proj- filename:ivysettings.xml', 'sk-proj-ivysettings'),
-        ('sk-proj- filename:project.clj', 'sk-proj-clojure'),
-        ('sk-proj- filename:build.boot', 'sk-proj-boot'),
-        ('sk-proj- filename:deps.edn', 'sk-proj-deps'),
-        ('sk-proj- filename:shadow-cljs.edn', 'sk-proj-shadow'),
-        ('sk-proj- filename:package.cljs', 'sk-proj-cljs'),
-        ('sk-proj- filename:shadow-cljs.edn', 'sk-proj-shadow-cljs'),
-    ]
-
     # Multiple patterns to catch different key formats
     KEY_PATTERNS = [
         (r'[=:\s\'"`](sk-proj-[a-zA-Z0-9_-]{100,})', 'sk-proj'),
@@ -136,13 +87,13 @@ class GitHubScanner:
     ]
 
     # Strict rate limiting: GitHub Search API = 10 requests/minute
-    RATE_LIMIT_DELAY = 6  # 6 seconds = 10 requests/minute (at the limit)
-    JITTER_RANGE = (0, 2)
+    RATE_LIMIT_DELAY = 3  # Reduced delay for more throughput
+    JITTER_RANGE = (0, 1)
 
-    # Request budgeting
-    MAX_REQUESTS_PER_SCAN = 30  # Slightly increased for multiple queries
+    # Request budgeting - optimized for finding MORE keys
+    MAX_REQUESTS_PER_SCAN = 60  # Increased to allow more file analysis
     MAX_PAGES = 1  # Only 1 page per query to stay under limits
-    MAX_FILES_PER_QUERY = 5  # Analyze fewer files per query
+    MAX_FILES_PER_QUERY = 15  # Analyze more files per query to find more keys
 
     def __init__(self, token: str):
         self.token = token
@@ -307,14 +258,50 @@ class GitHubScanner:
         except Exception:
             return None
 
+    def _get_queries_for_this_hour(self) -> List[tuple]:
+        """Get subset of queries to run based on current hour (rotating schedule)."""
+        current_hour = datetime.now(timezone.utc).hour
+
+        # Core queries always run
+        core_queries = [
+            ('sk-proj-', 'sk-proj-generic'),
+            ('sk-proj- filename:.env', 'sk-proj-env'),
+            ('sk-proj- extension:py', 'sk-proj-py'),
+            ('sk-proj- extension:js', 'sk-proj-js'),
+        ]
+
+        # Rotating query sets - each hour gets a different set
+        rotating_sets = [
+            [('sk-proj- extension:ts', 'sk-proj-ts'), ('sk-proj- extension:json', 'sk-proj-json')],
+            [('sk-proj- extension:yml', 'sk-proj-yml'), ('sk-proj- extension:yaml', 'sk-proj-yaml')],
+            [('sk-proj- extension:sh', 'sk-proj-sh'), ('sk-proj- extension:bash', 'sk-proj-bash')],
+            [('sk-proj- extension:md', 'sk-proj-md'), ('sk-proj- extension:txt', 'sk-proj-txt')],
+            [('sk-proj- extension:toml', 'sk-proj-toml'), ('sk-proj- extension:ini', 'sk-proj-ini')],
+            [('sk-proj- extension:xml', 'sk-proj-xml'), ('sk-proj- extension:sql', 'sk-proj-sql')],
+            [('sk-proj- extension:ps1', 'sk-proj-ps1'), ('sk-proj- extension:bat', 'sk-proj-bat')],
+            [('sk-proj- filename:.env.local', 'sk-proj-env-local'), ('sk-proj- filename:.env.production', 'sk-proj-env-prod')],
+            [('sk-proj- filename:config.json', 'sk-proj-config-json'), ('sk-proj- filename:package.json', 'sk-proj-package-json')],
+            [('sk-proj- filename:.bashrc', 'sk-proj-bashrc'), ('sk-proj- filename:.zshrc', 'sk-proj-zshrc')],
+            [('sk-proj- filename:Dockerfile', 'sk-proj-dockerfile'), ('sk-proj- filename:docker-compose', 'sk-proj-docker-compose')],
+            [('sk-proj- filename:.github/workflows', 'sk-proj-github-workflow'), ('sk-proj- filename:Jenkinsfile', 'sk-proj-jenkinsfile')],
+        ]
+
+        rotating_index = current_hour % len(rotating_sets)
+        rotating_queries = rotating_sets[rotating_index]
+
+        return core_queries + rotating_queries
+
     def scan_for_keys(self) -> List[ExposedKeyFinding]:
         """Scan GitHub for exposed Codex API keys with strict budgeting."""
+        queries_to_run = self._get_queries_for_this_hour()
+
         print(f"Budget: {self.MAX_REQUESTS_PER_SCAN} requests max")
-        print(f"Rate limit: ~{self.RATE_LIMIT_DELAY}s between requests\n")
+        print(f"Rate limit: ~{self.RATE_LIMIT_DELAY}s between requests")
+        print(f"Running {len(queries_to_run)} queries this hour (4 core + 2 rotating)\n")
 
         all_findings = []
 
-        for query, query_label in self.SEARCH_QUERIES:
+        for query, query_label in queries_to_run:
             if not self._check_budget():
                 print("  ⏹️ Stopping: request budget exhausted")
                 break
@@ -342,11 +329,9 @@ class GitHubScanner:
                         print(f"    ⚠️  {finding.repository}")
                         break
 
-                time.sleep(1)
+                time.sleep(0.5)
 
-            is_last_query = (query, query_label) == self.SEARCH_QUERIES[-1]
-            if not is_last_query:
-                self._wait_if_needed()
+            self._wait_if_needed()
 
         # Scan public gists
         gist_findings = self.scan_gists()
