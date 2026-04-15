@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-15 09:20:49 UTC
+**Last Updated**: 2026-04-15 09:44:34 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 20
+**Total Unique Findings**: 24
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 4 |
-| **Affected Repositories** | 19 |
+| **Key Types Detected** | 8 |
+| **Affected Repositories** | 21 |
 
 ### By Key Type
 
@@ -30,11 +30,19 @@
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-py-sk-proj` | 1 |
 | `sk-proj-js-env-var` | 1 |
+| `sk-proj-json-env-var` | 1 |
+| `sk-proj-json-sk-proj` | 1 |
+| `sk-proj-json-sk-generic` | 1 |
+| `sk-proj-json-gemini-env` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `tylerprogramming/ai` | `crewai_flow_single_llm/README.md` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-15 |
+| `tylerprogramming/ai` | `autogen_agentbuilder/OAI_CONFIG_LIS...` | `sk-proj-json-sk-generic` | `sk-7sWCWPvca***` | 2026-04-15 |
+| `whyashthakker/ai-agents` | `research_results_20250212_110656.js...` | `sk-proj-json-sk-proj` | `sk-proj-l4Fa***` | 2026-04-15 |
+| `whyashthakker/ai-agents` | `agents/environment/aqi/main.py` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-15 |
 | `Shrujal00/Cognivo` | `api/DEPLOYMENT_GUIDE.md` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-15 |
 | `rangashivuputty-droid/Thinkspy...` | `script.js` | `sk-proj-js-sk-proj` | `sk-proj-_kdd***` | 2026-04-15 |
 | `MechanizedIT/inkspark` | `.env.tpl` | `sk-proj-env-sk-proj` | `sk-proj-zxUV***` | 2026-04-15 |
