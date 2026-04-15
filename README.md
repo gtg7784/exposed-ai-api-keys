@@ -11,23 +11,26 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-15 15:27:54 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 33
+**Last Updated**: 2026-04-15 15:55:37 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 45
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 12 |
-| **Affected Repositories** | 25 |
+| **Key Types Detected** | 16 |
+| **Affected Repositories** | 30 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
 | `sk-proj-env-sk-proj` | 16 |
+| `sk-proj-yml-env-var` | 5 |
 | `sk-proj-ts-anthropic-env` | 4 |
+| `sk-proj-yml-sk-generic` | 3 |
+| `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-py-sk-proj` | 2 |
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-env-env-var` | 2 |
@@ -38,11 +41,24 @@
 | `sk-proj-json-gemini-env` | 1 |
 | `sk-proj-py-env-var` | 1 |
 | `sk-proj-py-google-env` | 1 |
+| `sk-proj-yml-google-env` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `jrmreis/cloudmart-kube-infra` | `group_vars/all.yml` | `sk-proj-yml-sk-proj` | `sk-proj--oC2***` | 2026-04-15 |
+| `Meng-V/subject_heading` | `docs/QUICK_START.md` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-04-15 |
+| `Meng-V/subject_heading` | `docs/DEVELOPER_SETUP.md` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-04-15 |
+| `Meng-V/subject_heading` | `docs/DATA_INGESTION.md` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-04-15 |
+| `Meng-V/subject_heading` | `docs/AWS_DEPLOYMENT.md` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-04-15 |
+| `Meng-V/subject_heading` | `backend/.env.example` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-04-15 |
+| `ansh200516/AI-Fortress-Sentine...` | `docker-compose.yml` | `sk-proj-yml-sk-proj` | `sk-proj--0bJ***` | 2026-04-15 |
+| `dromara/forest` | `forest-examples/example-chatgpt/tar...` | `sk-proj-yml-sk-proj` | `sk-proj-ioDY***` | 2026-04-15 |
+| `praetorian-inc/titus` | `testdata/secrets/mixed-secrets.txt` | `sk-proj-yml-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-15 |
+| `praetorian-inc/titus` | `pkg/rule/rules/stabilityai.yml` | `sk-proj-yml-sk-generic` | `sk-AnmgropvA***` | 2026-04-15 |
+| `praetorian-inc/titus` | `pkg/rule/rules/openai.yml` | `sk-proj-yml-sk-generic` | `sk-mxIt5s1ty***` | 2026-04-15 |
+| `praetorian-inc/titus` | `pkg/rule/rules/google.yml` | `sk-proj-yml-google-env` | `GOOGLE_API_K***` | 2026-04-15 |
 | `badrshs/scribe-ai` | `tests/Feature/OpenAiIntegrationTest...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-15 |
 | `badrshs/scribe-ai` | `tests/Feature/InstallCommandTest.ph...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-15 |
 | `affaan-m/agentshield` | `tests/rules/secrets.test.ts` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-15 |
