@@ -11,29 +11,32 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-15 08:37:38 UTC
-**API Requests Made**: 30
-**Total Unique Findings**: 2
+**Last Updated**: 2026-04-15 08:41:19 UTC
+**API Requests Made**: 60
+**Total Unique Findings**: 5
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 2 |
-| **Affected Repositories** | 2 |
+| **Affected Repositories** | 5 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
-| `sk-proj-py-sk-proj` | 1 |
-| `sk-proj-js-sk-proj` | 1 |
+| `sk-proj-py-sk-proj` | 3 |
+| `sk-proj-js-sk-proj` | 2 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `anamika222/collaboration` | `community.js` | `sk-proj-js-sk-proj` | `sk-proj--M5s***` | 2026-04-15 |
 | `rangashivuputty-droid/Thinkspy...` | `script.js` | `sk-proj-js-sk-proj` | `sk-proj-_kdd***` | 2026-04-15 |
+| `rlaxogns77/streamlit` | `app.py` | `sk-proj-py-sk-proj` | `sk-proj-_Uq0***` | 2026-04-15 |
+| `MoetazAbdalla/Med-pol-report` | `tryy.py` | `sk-proj-py-sk-proj` | `sk-proj-_PEN***` | 2026-04-15 |
 | `NemroNeno/LinkedIn_messaging_a...` | `op.py` | `sk-proj-py-sk-proj` | `sk-proj-PDH5***` | 2026-04-15 |
 
 
