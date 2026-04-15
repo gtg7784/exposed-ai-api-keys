@@ -11,27 +11,29 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-15 08:21:36 UTC
-**API Requests Made**: 12
-**Total Unique Findings**: 1
+**Last Updated**: 2026-04-15 08:25:32 UTC
+**API Requests Made**: 30
+**Total Unique Findings**: 2
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 1 |
-| **Affected Repositories** | 1 |
+| **Key Types Detected** | 2 |
+| **Affected Repositories** | 2 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
 | `sk-proj-py-sk-proj` | 1 |
+| `sk-proj-js-sk-proj` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `rangashivuputty-droid/Thinkspy...` | `script.js` | `sk-proj-js-sk-proj` | `sk-proj-_kdd***` | 2026-04-15 |
 | `NemroNeno/LinkedIn_messaging_a...` | `op.py` | `sk-proj-py-sk-proj` | `sk-proj-PDH5***` | 2026-04-15 |
 
 
