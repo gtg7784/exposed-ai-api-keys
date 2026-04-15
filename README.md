@@ -11,26 +11,28 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-15 08:17:00 UTC
+**Last Updated**: 2026-04-15 08:21:36 UTC
 **API Requests Made**: 12
-**Total Unique Findings**: 0
+**Total Unique Findings**: 1
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 0 |
-| **Affected Repositories** | 0 |
+| **Key Types Detected** | 1 |
+| **Affected Repositories** | 1 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
+| `sk-proj-py-sk-proj` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `NemroNeno/LinkedIn_messaging_a...` | `op.py` | `sk-proj-py-sk-proj` | `sk-proj-PDH5***` | 2026-04-15 |
 
 
 ---
