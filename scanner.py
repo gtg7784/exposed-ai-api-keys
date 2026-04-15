@@ -100,7 +100,8 @@ class GitHubScanner:
         self.session = self._create_session()
         self.findings: List[ExposedKeyFinding] = []
         self.requests_made = 0
-        self.analyzed_files: Set[str] = set()  # Cache to avoid re-analysis
+        self.analyzed_files: Set[str] = set()
+        self._budget_warning_shown = False
 
     def _create_session(self) -> requests.Session:
         """Create a requests session with retries and auth."""
@@ -132,7 +133,9 @@ class GitHubScanner:
     def _check_budget(self) -> bool:
         """Check if we've exceeded request budget."""
         if self.requests_made >= self.MAX_REQUESTS_PER_SCAN:
-            print(f"  ⚠️ Request budget exhausted ({self.MAX_REQUESTS_PER_SCAN})")
+            if not self._budget_warning_shown:
+                print(f"  ⚠️ Request budget exhausted ({self.MAX_REQUESTS_PER_SCAN})")
+                self._budget_warning_shown = True
             return False
         return True
 
