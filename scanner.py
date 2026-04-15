@@ -379,10 +379,13 @@ class GitHubScanner:
                 if repo_full_name and repo_full_name not in scanned_repos:
                     repos_to_scan[repo_full_name] = item.get('repository', {})
 
-            print(f"  Unique repos: {len(repos_to_scan)} (will scan top {min(len(repos_to_scan), 5)})")
+            # Calculate repos to scan based on remaining budget
+            remaining_budget = self.MAX_REQUESTS_PER_SCAN - self.requests_made
+            repos_per_query = min(20, remaining_budget // 3, len(repos_to_scan))
+            print(f"  Unique repos: {len(repos_to_scan)} (will scan top {repos_per_query}, budget: {remaining_budget})")
 
-            # Analyze first 5 unique repos by downloading tarball
-            for repo_full_name in list(repos_to_scan.keys())[:5]:
+            # Analyze repos by downloading tarball
+            for repo_full_name in list(repos_to_scan.keys())[:repos_per_query]:
                 if not self._check_budget():
                     break
 
