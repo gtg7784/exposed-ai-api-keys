@@ -1,0 +1,169 @@
+{
+  "scan_timestamp": "2026-04-15T08:51:52.479095+00:00",
+  "total_findings": 18,
+  "requests_made": 60,
+  "findings": [
+    {
+      "repository": "NemroNeno/LinkedIn_messaging_agent",
+      "file_path": "op.py",
+      "file_url": "https://github.com/NemroNeno/LinkedIn_messaging_agent/blob/f079fa7a11b1f862d931729cfd09ada267f04cfc/op.py",
+      "commit_sha": "6cad03380c73bbfdf93a17bdaba308824d719cfb",
+      "discovered_at": "2026-04-15T08:24:53.858267+00:00",
+      "key_type": "sk-proj-py-sk-proj",
+      "key_preview": "sk-proj-PDH5***"
+    },
+    {
+      "repository": "rangashivuputty-droid/Thinkspy-",
+      "file_path": "script.js",
+      "file_url": "https://github.com/rangashivuputty-droid/Thinkspy-/blob/0b8ccca9a454e00acff4df6d77e00f73a48d30d3/script.js",
+      "commit_sha": "d20dc19488ffcb4edcf0ba7a8cb1fb4283d3319c",
+      "discovered_at": "2026-04-15T08:25:09.862082+00:00",
+      "key_type": "sk-proj-js-sk-proj",
+      "key_preview": "sk-proj-_kdd***"
+    },
+    {
+      "repository": "faysal-MMII/Tafseer",
+      "file_path": ".env.save",
+      "file_url": "https://github.com/faysal-MMII/Tafseer/blob/35eab2aade5fc9ff802e784e91ba742e1acce867/.env.save",
+      "commit_sha": "538bcef90c446ce0be006c97bb358a6756f9323f",
+      "discovered_at": "2026-04-15T08:51:16.174749+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj--ddn***"
+    },
+    {
+      "repository": "mkyoung23/RealRefiLoanAutomation",
+      "file_path": ".env.txt",
+      "file_url": "https://github.com/mkyoung23/RealRefiLoanAutomation/blob/390f5cd15bbd796cde3f93d6191bd04c0696f762/.env.txt",
+      "commit_sha": "fc71f72a6e95494877f4fa44fa7f08d2b321ee40",
+      "discovered_at": "2026-04-15T08:51:16.993640+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-TgG0***"
+    },
+    {
+      "repository": "eudespankilhas/social-genius-ia1",
+      "file_path": ".env.local.txt",
+      "file_url": "https://github.com/eudespankilhas/social-genius-ia1/blob/a3bd38df6c184b4fe339130a7499486ce08ddd33/.env.local.txt",
+      "commit_sha": "74b11c83816041b0a0c5e4d8862e8657c8ac5ef8",
+      "discovered_at": "2026-04-15T08:51:19.619018+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-MI_7***"
+    },
+    {
+      "repository": "kemcell/chat-mysql",
+      "file_path": "openapikey.env.txt",
+      "file_url": "https://github.com/kemcell/chat-mysql/blob/beb3f36dbc97a526e2d7bee1ab1c0c366efaeb82/openapikey.env.txt",
+      "commit_sha": "0195d560a8a2cfb80f872d104fcee00418829367",
+      "discovered_at": "2026-04-15T08:51:21.952256+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-YpTR***"
+    },
+    {
+      "repository": "Thampson29/Rightly-App",
+      "file_path": "rightly-app/backend/backend.env.txt",
+      "file_url": "https://github.com/Thampson29/Rightly-App/blob/3d9523b7347e0d9a5ec06c42f476f54341ba6cec/rightly-app/backend/backend.env.txt",
+      "commit_sha": "99d0d0cd6d9057b1988c0f81bad7962e7de87ba4",
+      "discovered_at": "2026-04-15T08:51:24.286673+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-Zvsy***"
+    },
+    {
+      "repository": "spam108/telegram-warmup-bot",
+      "file_path": ".env.backup.local",
+      "file_url": "https://github.com/spam108/telegram-warmup-bot/blob/6107cbde5e5a46299ee4ea92f74ad5de42c49e04/.env.backup.local",
+      "commit_sha": "d7905df5f930a84b9d33d16a3b56fc248e9c29b2",
+      "discovered_at": "2026-04-15T08:51:29.058164+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj--XEG***"
+    },
+    {
+      "repository": "Wisekin/sikry-25",
+      "file_path": ".env.local.txt",
+      "file_url": "https://github.com/Wisekin/sikry-25/blob/65f9f017ba8f4fee90e2e9781508bcb673d99c0a/.env.local.txt",
+      "commit_sha": "41abc669210b827358b091370f3cc1b4a07c61a5",
+      "discovered_at": "2026-04-15T08:51:31.389607+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-n6AI***"
+    },
+    {
+      "repository": "eudespankilhas/2025agenteia",
+      "file_path": ".env.local.txt",
+      "file_url": "https://github.com/eudespankilhas/2025agenteia/blob/c2d9ab12a7039af75084cdccaf89ca6c1bfe03dd/.env.local.txt",
+      "commit_sha": "282429c9517070174f47a341046d6f03ee29d480",
+      "discovered_at": "2026-04-15T08:51:32.196655+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-bRBw***"
+    },
+    {
+      "repository": "VivekDagur/AquaMind-Water-Management",
+      "file_path": "backend/.env.env",
+      "file_url": "https://github.com/VivekDagur/AquaMind-Water-Management/blob/1f1ab4bc49fccf848da17e27fdd94421b78485c9/backend/.env.env",
+      "commit_sha": "400b9a3bacab69011de926c031952b1b2146a72f",
+      "discovered_at": "2026-04-15T08:51:34.177182+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-DLr0***"
+    },
+    {
+      "repository": "mwa-codes/coalqpdf",
+      "file_path": "backend/.env.bak",
+      "file_url": "https://github.com/mwa-codes/coalqpdf/blob/73a005f66c56f349552484cff772dc3e4181ad4a/backend/.env.bak",
+      "commit_sha": "4f6b86f361388ea27f9dde8208500da940f9ef39",
+      "discovered_at": "2026-04-15T08:51:36.493650+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-_OYy***"
+    },
+    {
+      "repository": "Harishethi/ai-resume-analyzing",
+      "file_path": ".env.py",
+      "file_url": "https://github.com/Harishethi/ai-resume-analyzing/blob/244e0a6f46b44edc03e4e5888692b18e22aba79a/.env.py",
+      "commit_sha": "e21792a3082f0db25f9cbb1f39ee16bce703fcd0",
+      "discovered_at": "2026-04-15T08:51:42.716178+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-QZCu***"
+    },
+    {
+      "repository": "youask-oman/uaskstudents",
+      "file_path": ".env,example.txt",
+      "file_url": "https://github.com/youask-oman/uaskstudents/blob/221347c0df40279ce27fd3ac4eba49ce569cdfea/.env,example.txt",
+      "commit_sha": "c47e28048a2fe12b5b3f1cd1458c3fe0cc282765",
+      "discovered_at": "2026-04-15T08:51:43.502967+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-GZ5t***"
+    },
+    {
+      "repository": "Nizar541/nizargpt4",
+      "file_path": ".env.txt",
+      "file_url": "https://github.com/Nizar541/nizargpt4/blob/11f0d2e02d856456b0095f0228c203e5b04634b8/.env.txt",
+      "commit_sha": "f0dcdaaf649deddf145033b35caa71c3c7dea6fc",
+      "discovered_at": "2026-04-15T08:51:45.023943+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-6BL0***"
+    },
+    {
+      "repository": "macho715/cursor-mcp",
+      "file_path": ".env.txt",
+      "file_url": "https://github.com/macho715/cursor-mcp/blob/babd48dea1b8f572985520edd8c9d33a068074e5/.env.txt",
+      "commit_sha": "a1e3ace243672559571e4fc3636dcf3ce51e2c50",
+      "discovered_at": "2026-04-15T08:51:45.810738+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-BaHy***"
+    },
+    {
+      "repository": "eudespankilhas/audiopankprodutora",
+      "file_path": ".env.rtf",
+      "file_url": "https://github.com/eudespankilhas/audiopankprodutora/blob/02d3bd876eeb649fa898d3951426540f5777080e/.env.rtf",
+      "commit_sha": "79983bf25ddb44bc4e9079b5e8fa2ec5770076e4",
+      "discovered_at": "2026-04-15T08:51:46.782673+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-bRBw***"
+    },
+    {
+      "repository": "MechanizedIT/inkspark",
+      "file_path": ".env.tpl",
+      "file_url": "https://github.com/MechanizedIT/inkspark/blob/2efe3e82ba10b8294fd6c9c8a6feb5d8f3d463f4/.env.tpl",
+      "commit_sha": "269bb3ceab310571e5adec84ada39f2f3bc2687a",
+      "discovered_at": "2026-04-15T08:51:47.983756+00:00",
+      "key_type": "sk-proj-env-sk-proj",
+      "key_preview": "sk-proj-zxUV***"
+    }
+  ]
+}

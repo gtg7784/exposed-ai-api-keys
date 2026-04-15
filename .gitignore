@@ -12,7 +12,7 @@ dist/
 *.egg-info/
 
 # Data files (keep structure but ignore contents in dev)
-data/
+data/*
 !data/*.json
 !data/.gitkeep
 

@@ -1,0 +1,25 @@
+{
+  "scan_timestamp": "2026-04-15T08:25:32.314366+00:00",
+  "total_findings": 2,
+  "requests_made": 30,
+  "findings": [
+    {
+      "repository": "NemroNeno/LinkedIn_messaging_agent",
+      "file_path": "op.py",
+      "file_url": "https://github.com/NemroNeno/LinkedIn_messaging_agent/blob/f079fa7a11b1f862d931729cfd09ada267f04cfc/op.py",
+      "commit_sha": "6cad03380c73bbfdf93a17bdaba308824d719cfb",
+      "discovered_at": "2026-04-15T08:24:53.858267+00:00",
+      "key_type": "sk-proj-py-sk-proj",
+      "key_preview": "sk-proj-PDH5***"
+    },
+    {
+      "repository": "rangashivuputty-droid/Thinkspy-",
+      "file_path": "script.js",
+      "file_url": "https://github.com/rangashivuputty-droid/Thinkspy-/blob/0b8ccca9a454e00acff4df6d77e00f73a48d30d3/script.js",
+      "commit_sha": "d20dc19488ffcb4edcf0ba7a8cb1fb4283d3319c",
+      "discovered_at": "2026-04-15T08:25:09.862082+00:00",
+      "key_type": "sk-proj-js-sk-proj",
+      "key_preview": "sk-proj-_kdd***"
+    }
+  ]
+}
