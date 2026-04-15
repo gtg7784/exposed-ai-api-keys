@@ -11,30 +11,50 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-15 08:55:38 UTC
-**API Requests Made**: 15
-**Total Unique Findings**: 2
+**Last Updated**: 2026-04-15 09:20:49 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 20
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 2 |
-| **Affected Repositories** | 2 |
+| **Key Types Detected** | 4 |
+| **Affected Repositories** | 19 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
-| `sk-proj-py-env-var` | 1 |
+| `sk-proj-env-sk-proj` | 16 |
+| `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-py-sk-proj` | 1 |
+| `sk-proj-js-env-var` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `Shrujal00/Cognivo` | `api/DEPLOYMENT_GUIDE.md` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-15 |
+| `rangashivuputty-droid/Thinkspy...` | `script.js` | `sk-proj-js-sk-proj` | `sk-proj-_kdd***` | 2026-04-15 |
+| `MechanizedIT/inkspark` | `.env.tpl` | `sk-proj-env-sk-proj` | `sk-proj-zxUV***` | 2026-04-15 |
+| `eudespankilhas/audiopankprodut...` | `.env.rtf` | `sk-proj-env-sk-proj` | `sk-proj-bRBw***` | 2026-04-15 |
+| `macho715/cursor-mcp` | `.env.txt` | `sk-proj-env-sk-proj` | `sk-proj-BaHy***` | 2026-04-15 |
+| `Nizar541/nizargpt4` | `.env.txt` | `sk-proj-env-sk-proj` | `sk-proj-6BL0***` | 2026-04-15 |
+| `youask-oman/uaskstudents` | `.env,example.txt` | `sk-proj-env-sk-proj` | `sk-proj-GZ5t***` | 2026-04-15 |
+| `Harishethi/ai-resume-analyzing` | `.env.py` | `sk-proj-env-sk-proj` | `sk-proj-QZCu***` | 2026-04-15 |
+| `mwa-codes/coalqpdf` | `backend/.env.bak` | `sk-proj-env-sk-proj` | `sk-proj-_OYy***` | 2026-04-15 |
+| `VivekDagur/AquaMind-Water-Mana...` | `backend/.env.env` | `sk-proj-env-sk-proj` | `sk-proj-DLr0***` | 2026-04-15 |
+| `eudespankilhas/2025agenteia` | `.env.local.txt` | `sk-proj-env-sk-proj` | `sk-proj-bRBw***` | 2026-04-15 |
+| `Wisekin/sikry-25` | `.env.local.txt` | `sk-proj-env-sk-proj` | `sk-proj-n6AI***` | 2026-04-15 |
+| `spam108/telegram-warmup-bot` | `.env.backup.local` | `sk-proj-env-sk-proj` | `sk-proj--XEG***` | 2026-04-15 |
+| `Thampson29/Rightly-App` | `rightly-app/backend/backend.env.txt` | `sk-proj-env-sk-proj` | `sk-proj-Zvsy***` | 2026-04-15 |
+| `kemcell/chat-mysql` | `openapikey.env.txt` | `sk-proj-env-sk-proj` | `sk-proj-YpTR***` | 2026-04-15 |
+| `eudespankilhas/social-genius-i...` | `.env.local.txt` | `sk-proj-env-sk-proj` | `sk-proj-MI_7***` | 2026-04-15 |
+| `mkyoung23/RealRefiLoanAutomati...` | `.env.txt` | `sk-proj-env-sk-proj` | `sk-proj-TgG0***` | 2026-04-15 |
+| `faysal-MMII/Tafseer` | `.env.save` | `sk-proj-env-sk-proj` | `sk-proj--ddn***` | 2026-04-15 |
+| `rangashivuputty-droid/Thinkspy...` | `script.js` | `sk-proj-js-sk-proj` | `sk-proj-_kdd***` | 2026-04-15 |
 | `NemroNeno/LinkedIn_messaging_a...` | `op.py` | `sk-proj-py-sk-proj` | `sk-proj-PDH5***` | 2026-04-15 |
-| `tenebris-io/peanuts-hackio-202...` | `setup/SETUP-new.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-15 |
 
 
 ---
