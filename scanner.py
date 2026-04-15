@@ -47,20 +47,32 @@ class ExposedKeyFinding:
 class GitHubScanner:
     """Scanner for finding exposed API keys on GitHub."""
 
-    # Single focused search query to minimize API usage
-    # Using the most specific pattern with highest signal-to-noise ratio
-    SEARCH_QUERY = 'sk-proj- filename:.env'
-    KEY_PATTERN = r'[=:\s\'"](sk-proj-[a-zA-Z0-9_-]{100,})'
+    # Multiple search queries to find exposed keys across file types
+    # Prioritized by likelihood of containing valid API keys
+    SEARCH_QUERIES = [
+        ('sk-proj-', 'sk-proj-generic'),  # Generic search (no filename filter)
+        ('sk-proj- filename:.env', 'sk-proj-env'),
+        ('sk-proj- extension:py', 'sk-proj-py'),
+        ('sk-proj- extension:js', 'sk-proj-js'),
+        ('sk-proj- extension:json', 'sk-proj-json'),
+        ('sk-proj- extension:md', 'sk-proj-md'),
+    ]
+
+    # Multiple patterns to catch different key formats
+    KEY_PATTERNS = [
+        (r'[=:\s\'"`](sk-proj-[a-zA-Z0-9_-]{100,})', 'sk-proj'),
+        (r'[=:\s\'"`](sk-[a-zA-Z0-9]{48,})', 'sk-generic'),
+        (r'[=:\s\'"`](OPENAI_API_KEY[=:\s\'"`][a-zA-Z0-9_-]{20,})', 'env-var'),
+    ]
 
     # Strict rate limiting: GitHub Search API = 10 requests/minute
-    # Using 12 seconds between requests = 5 requests/minute (very conservative)
-    RATE_LIMIT_DELAY = 12
-    JITTER_RANGE = (0, 3)  # Add random 0-3 seconds
+    RATE_LIMIT_DELAY = 6  # 6 seconds = 10 requests/minute (at the limit)
+    JITTER_RANGE = (0, 2)
 
-    # Request budgeting: Max 20 requests per scan to stay well under limits
-    MAX_REQUESTS_PER_SCAN = 20
-    MAX_PAGES = 2  # Only 2 pages per scan (60 results max)
-    MAX_FILES_TO_ANALYZE = 10  # Only analyze top 10 files
+    # Request budgeting
+    MAX_REQUESTS_PER_SCAN = 30  # Slightly increased for multiple queries
+    MAX_PAGES = 1  # Only 1 page per query to stay under limits
+    MAX_FILES_PER_QUERY = 5  # Analyze fewer files per query
 
     def __init__(self, token: str):
         self.token = token
@@ -230,30 +242,44 @@ class GitHubScanner:
         print(f"Budget: {self.MAX_REQUESTS_PER_SCAN} requests max")
         print(f"Rate limit: ~{self.RATE_LIMIT_DELAY}s between requests\n")
 
-        print(f"[sk-proj-env] Scanning...")
+        all_findings = []
 
-        results = self.search_code(self.SEARCH_QUERY)
-        print(f"  Found {len(results)} files, analyzing top {self.MAX_FILES_TO_ANALYZE}")
-
-        findings = []
-        files_to_analyze = results[:self.MAX_FILES_TO_ANALYZE]
-
-        for item in files_to_analyze:
+        for query, query_label in self.SEARCH_QUERIES:
             if not self._check_budget():
                 print("  ⏹️ Stopping: request budget exhausted")
                 break
 
-            finding = self.analyze_file(item, 'sk-proj-env', self.KEY_PATTERN)
-            if finding:
-                findings.append(finding)
-                print(f"    ⚠️  {finding.repository}")
+            print(f"[{query_label}] Searching: {query[:40]}...")
 
-            # Brief pause between file analyses
-            time.sleep(2)
+            results = self.search_code(query)
+            print(f"  Found {len(results)} files")
 
-        print(f"  Analyzed: {len(files_to_analyze)}, Findings: {len(findings)}\n")
+            if not results:
+                continue
 
-        return findings
+            files_to_analyze = results[:self.MAX_FILES_PER_QUERY]
+            print(f"  Analyzing top {len(files_to_analyze)} files...")
+
+            for item in files_to_analyze:
+                if not self._check_budget():
+                    print("  ⏹️ Stopping: request budget exhausted")
+                    break
+
+                for pattern, pattern_label in self.KEY_PATTERNS:
+                    finding = self.analyze_file(item, f"{query_label}-{pattern_label}", pattern)
+                    if finding:
+                        all_findings.append(finding)
+                        print(f"    ⚠️  {finding.repository}")
+                        break
+
+                time.sleep(1)
+
+            is_last_query = (query, query_label) == self.SEARCH_QUERIES[-1]
+            if not is_last_query:
+                self._wait_if_needed()
+
+        print(f"\nTotal findings: {len(all_findings)}\n")
+        return all_findings
 
     def save_findings(self, findings: List[ExposedKeyFinding], output_dir: Path):
         """Save findings to JSON file."""
