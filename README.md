@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-16 12:11:27 UTC
+**Last Updated**: 2026-04-16 12:46:21 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 45
+**Total Unique Findings**: 46
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 16 |
-| **Affected Repositories** | 30 |
+| **Affected Repositories** | 31 |
 
 ### By Key Type
 
@@ -33,10 +33,10 @@
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-py-sk-proj` | 2 |
 | `sk-proj-js-sk-proj` | 2 |
+| `sk-proj-json-sk-proj` | 2 |
 | `sk-proj-env-env-var` | 2 |
 | `sk-proj-js-env-var` | 1 |
 | `sk-proj-json-env-var` | 1 |
-| `sk-proj-json-sk-proj` | 1 |
 | `sk-proj-json-sk-generic` | 1 |
 | `sk-proj-json-gemini-env` | 1 |
 | `sk-proj-py-env-var` | 1 |
@@ -47,6 +47,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `NicksonCheng/AIcup2024_RAG` | `config.json` | `sk-proj-json-sk-proj` | `sk-proj--q3V***` | 2026-04-16 |
 | `jrmreis/cloudmart-kube-infra` | `group_vars/all.yml` | `sk-proj-yml-sk-proj` | `sk-proj--oC2***` | 2026-04-15 |
 | `Meng-V/subject_heading` | `docs/QUICK_START.md` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-04-15 |
 | `Meng-V/subject_heading` | `docs/DEVELOPER_SETUP.md` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-04-15 |
