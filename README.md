@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-17 15:43:05 UTC
+**Last Updated**: 2026-04-17 16:11:15 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 188
+**Total Unique Findings**: 199
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 24 |
-| **Affected Repositories** | 35 |
+| **Key Types Detected** | 26 |
+| **Affected Repositories** | 38 |
 
 ### By Key Type
 
@@ -32,20 +32,22 @@
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-json-gemini-env` | 12 |
 | `sk-proj-json-google-env` | 7 |
+| `sk-proj-py-sk-generic` | 7 |
 | `sk-proj-json-claude-env` | 6 |
 | `sk-proj-json-sk-proj` | 5 |
 | `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
 | `sk-proj-ts-anthropic-env` | 4 |
+| `sk-proj-py-env-var` | 3 |
 | `sk-proj-yml-sk-generic` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
 | `sk-proj-py-sk-proj` | 2 |
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-env-env-var` | 2 |
+| `sk-proj-py-anthropic-env` | 2 |
 | `sk-proj-js-env-var` | 1 |
-| `sk-proj-py-env-var` | 1 |
 | `sk-proj-py-google-env` | 1 |
 | `sk-proj-yml-google-env` | 1 |
 | `sk-proj-json-llm-env` | 1 |
@@ -55,6 +57,17 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `jaschadub/VectorSmuggle` | `docs/guides/vector_payload_dissocia...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-17 |
+| `jaschadub/VectorSmuggle` | `docs/guides/quick_start.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-17 |
+| `jaschadub/VectorSmuggle` | `.env.example` | `sk-proj-py-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-17 |
+| `Coff0xc/Github-API-scan` | `test_ai_detector.py` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-17 |
+| `Coff0xc/Github-API-scan` | `ai_detector.py` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-17 |
+| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251017_0...` | `sk-proj-py-sk-generic` | `sk-ayYLsHAhr***` | 2026-04-17 |
+| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251017_0...` | `sk-proj-py-sk-generic` | `sk-ayYLsHAhr***` | 2026-04-17 |
+| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251016_0...` | `sk-proj-py-sk-generic` | `sk-KKaB5nstn***` | 2026-04-17 |
+| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251016_0...` | `sk-proj-py-sk-generic` | `sk-w5QJTwntn***` | 2026-04-17 |
+| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251016_0...` | `sk-proj-py-sk-generic` | `sk-JQmEuwsfq***` | 2026-04-17 |
+| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251010_0...` | `sk-proj-py-sk-generic` | `sk-iVZ3N2WBX***` | 2026-04-17 |
 | `ArgentAIOS/argentos-core` | `src/utils/redact.adversarial.test.t...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
 | `johnson7788/MultiUserClaw` | `openclaw/src/infra/dotenv.test.ts` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
 | `openclaw/skills` | `skills/zhuangclaw/qst-memory/data/q...` | `sk-proj-json-sk-generic` | `sk-0FuMzdToH***` | 2026-04-16 |
@@ -144,19 +157,8 @@
 | `openclaw/skills` | `skills/hexiaochun/pricing-test/scri...` | `sk-proj-json-sk-generic` | `sk-df83fa572***` | 2026-04-16 |
 | `openclaw/skills` | `skills/gandli-2025/claw-compactor/t...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
 | `openclaw/skills` | `skills/g4dr/tiktok-trend-radar/SKIL...` | `sk-proj-json-claude-env` | `CLAUDE_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/g4dr/social-listening-monito...` | `sk-proj-json-claude-env` | `CLAUDE_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/g4dr/business-opportunity-de...` | `sk-proj-json-claude-env` | `CLAUDE_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/g4dr/auto-content-generator/...` | `sk-proj-json-claude-env` | `CLAUDE_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/evan-y25/twitter-dance/USAGE...` | `sk-proj-json-sk-generic` | `sk-JM5Ji1efm***` | 2026-04-16 |
-| `openclaw/skills` | `skills/evan-y25/twitter-dance/READM...` | `sk-proj-json-sk-generic` | `sk-JM5Ji1efm***` | 2026-04-16 |
-| `openclaw/skills` | `skills/evan-y25/twitter-dance/QUICK...` | `sk-proj-json-sk-generic` | `sk-JM5Ji1efm***` | 2026-04-16 |
-| `openclaw/skills` | `skills/ernestyu/clawsqlite-knowledg...` | `sk-proj-json-embedding-env` | `EMBEDDING_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/eladrave/composiocli/rules/s...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/edwardirby/teams-anthropic-i...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/durtydhiana/pai/DEPLOYMENT.m...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/dream458268696/openclaw-fall...` | `sk-proj-json-sk-generic` | `sk-6cbc43a72***` | 2026-04-16 |
 
-*... and 88 more unique findings (see `data/` directory)*
+*... and 99 more unique findings (see `data/` directory)*
 
 
 ---
