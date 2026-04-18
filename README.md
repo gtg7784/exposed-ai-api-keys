@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-18 02:32:20 UTC
+**Last Updated**: 2026-04-18 03:46:12 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 199
+**Total Unique Findings**: 219
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 26 |
-| **Affected Repositories** | 38 |
+| **Key Types Detected** | 29 |
+| **Affected Repositories** | 40 |
 
 ### By Key Type
 
@@ -31,6 +31,8 @@
 | `sk-proj-json-anthropic-env` | 18 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-json-gemini-env` | 12 |
+| `sk-proj-ts-anthropic-env` | 12 |
+| `sk-proj-ts-env-var` | 10 |
 | `sk-proj-json-google-env` | 7 |
 | `sk-proj-py-sk-generic` | 7 |
 | `sk-proj-json-claude-env` | 6 |
@@ -38,7 +40,6 @@
 | `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
-| `sk-proj-ts-anthropic-env` | 4 |
 | `sk-proj-py-env-var` | 3 |
 | `sk-proj-yml-sk-generic` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
@@ -52,11 +53,33 @@
 | `sk-proj-yml-google-env` | 1 |
 | `sk-proj-json-llm-env` | 1 |
 | `sk-proj-json-ai-env` | 1 |
+| `sk-proj-ts-google-env` | 1 |
+| `sk-proj-ts-llm-env` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `elizaOS/eliza` | `packages/examples/trader/README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
+| `elizaOS/eliza` | `packages/examples/supabase/env.exam...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
+| `elizaOS/eliza` | `packages/examples/moltbook/env.exam...` | `sk-proj-ts-llm-env` | `LLM_API_KEY=***` | 2026-04-18 |
+| `elizaOS/eliza` | `packages/examples/gcp/env.example` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
+| `elizaOS/eliza` | `packages/examples/discord/env.examp...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
+| `elizaOS/eliza` | `packages/examples/bluesky/env.examp...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
+| `elizaOS/eliza` | `packages/docs/quickstart.mdx` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
+| `elizaOS/eliza` | `packages/docs/guides/create-a-plugi...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
+| `elizaOS/eliza` | `packages/benchmarks/OSWorld/mm_agen...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
+| `promptfoo/promptfoo` | `site/docs/usage/self-hosting.md` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-04-18 |
+| `promptfoo/promptfoo` | `site/docs/red-team/foundation-model...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
+| `promptfoo/promptfoo` | `site/docs/guides/evaluate-langgraph...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
+| `promptfoo/promptfoo` | `site/blog/red-team-claude.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
+| `promptfoo/promptfoo` | `examples/redteam-mcp/README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
+| `promptfoo/promptfoo` | `examples/redteam-mcp-agent/README.m...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
+| `promptfoo/promptfoo` | `examples/redteam-foundation-model/R...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
+| `promptfoo/promptfoo` | `examples/integration-pydantic-ai/RE...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
+| `promptfoo/promptfoo` | `examples/integration-helicone/READM...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
+| `promptfoo/promptfoo` | `examples/config-node-package/README...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
+| `promptfoo/promptfoo` | `examples/config-node-package-typesc...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
 | `jaschadub/VectorSmuggle` | `docs/guides/vector_payload_dissocia...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-17 |
 | `jaschadub/VectorSmuggle` | `docs/guides/quick_start.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-17 |
 | `jaschadub/VectorSmuggle` | `.env.example` | `sk-proj-py-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-17 |
@@ -137,28 +160,8 @@
 | `openclaw/skills` | `skills/leohuang8688/google-baidu-se...` | `sk-proj-json-google-env` | `GOOGLE_API_K***` | 2026-04-16 |
 | `openclaw/skills` | `skills/leejoe411-creator/apex/scrip...` | `sk-proj-json-sk-proj` | `sk-proj-1Jau***` | 2026-04-16 |
 | `openclaw/skills` | `skills/leefj0606/sensitive-info-pro...` | `sk-proj-json-sk-generic` | `sk-123456789***` | 2026-04-16 |
-| `openclaw/skills` | `skills/leefj0606/sensitive-info-pro...` | `sk-proj-json-sk-generic` | `sk-123456789***` | 2026-04-16 |
-| `openclaw/skills` | `skills/kulotzkih/lex/scripts/init-a...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/kryptopaid/build-warden-agen...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/kern1x/ai-news-pusher/SKILL....` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/kaudata/diagramgenerator/REA...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/kaigegao1110/archive-project...` | `sk-proj-json-sk-generic` | `sk-123456789***` | 2026-04-16 |
-| `openclaw/skills` | `skills/jeffli2002/jeffli-content-fa...` | `sk-proj-json-sk-generic` | `sk-abc123def***` | 2026-04-16 |
-| `openclaw/skills` | `skills/jazzqi/memory-core-ng/test-r...` | `sk-proj-json-sk-generic` | `sk-BrwHc1Zia***` | 2026-04-16 |
-| `openclaw/skills` | `skills/jazzqi/memory-core-ng/config...` | `sk-proj-json-sk-generic` | `sk-BrwHc1Zia***` | 2026-04-16 |
-| `openclaw/skills` | `skills/jame-mei-ltp/sre-agent/docs/...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/jame-mei-ltp/aiops-agent/doc...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/itrocker/nanobanana-ppt-skil...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/itrocker/nanobanana-ppt-skil...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/itrocker/nanobanana-ppt-skil...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/hirofumiko/resume-ats/SKILL....` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/hirofumiko/code-review-autom...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/hhhh124hhhh/ai-video-gen-too...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/hexiaochun/pricing-test/scri...` | `sk-proj-json-sk-generic` | `sk-df83fa572***` | 2026-04-16 |
-| `openclaw/skills` | `skills/gandli-2025/claw-compactor/t...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/g4dr/tiktok-trend-radar/SKIL...` | `sk-proj-json-claude-env` | `CLAUDE_API_K***` | 2026-04-16 |
 
-*... and 99 more unique findings (see `data/` directory)*
+*... and 119 more unique findings (see `data/` directory)*
 
 
 ---
