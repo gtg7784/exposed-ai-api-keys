@@ -11,26 +11,26 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-19 20:20:23 UTC
+**Last Updated**: 2026-04-19 21:02:03 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 220
+**Total Unique Findings**: 222
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 30 |
-| **Affected Repositories** | 41 |
+| **Affected Repositories** | 42 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
 | `sk-proj-json-sk-generic` | 47 |
-| `sk-proj-json-env-var` | 37 |
+| `sk-proj-json-env-var` | 38 |
 | `sk-proj-json-anthropic-env` | 18 |
 | `sk-proj-env-sk-proj` | 16 |
-| `sk-proj-json-gemini-env` | 12 |
+| `sk-proj-json-gemini-env` | 13 |
 | `sk-proj-ts-anthropic-env` | 12 |
 | `sk-proj-ts-env-var` | 10 |
 | `sk-proj-json-google-env` | 7 |
@@ -61,6 +61,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `NanoFlow-io/Clawdboss` | `.env.example` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-19 |
+| `openclaw/skills` | `skills/wangyan/wangyan-gemini-image...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-19 |
 | `pdrago97/chat-w-ontology` | `.env.example` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-19 |
 | `elizaOS/eliza` | `packages/examples/trader/README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
 | `elizaOS/eliza` | `packages/examples/supabase/env.exam...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
@@ -159,10 +161,8 @@
 | `openclaw/skills` | `skills/lycohana/siliconflow-vision/...` | `sk-proj-json-sk-generic` | `sk-ghkgkwxvt***` | 2026-04-16 |
 | `openclaw/skills` | `skills/lockdown56/openclaw-sec-plus...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-16 |
 | `openclaw/skills` | `skills/lichq1337/phishguard/INSTALA...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/leohuang8688/google-baidu-se...` | `sk-proj-json-google-env` | `GOOGLE_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/leejoe411-creator/apex/scrip...` | `sk-proj-json-sk-proj` | `sk-proj-1Jau***` | 2026-04-16 |
 
-*... and 120 more unique findings (see `data/` directory)*
+*... and 122 more unique findings (see `data/` directory)*
 
 
 ---
