@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-19 09:02:09 UTC
+**Last Updated**: 2026-04-19 09:27:06 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 219
+**Total Unique Findings**: 220
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 29 |
-| **Affected Repositories** | 40 |
+| **Key Types Detected** | 30 |
+| **Affected Repositories** | 41 |
 
 ### By Key Type
 
@@ -55,11 +55,13 @@
 | `sk-proj-json-ai-env` | 1 |
 | `sk-proj-ts-google-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
+| `sk-proj-js-anthropic-env` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `pdrago97/chat-w-ontology` | `.env.example` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-19 |
 | `elizaOS/eliza` | `packages/examples/trader/README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
 | `elizaOS/eliza` | `packages/examples/supabase/env.exam...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 | `elizaOS/eliza` | `packages/examples/moltbook/env.exam...` | `sk-proj-ts-llm-env` | `LLM_API_KEY=***` | 2026-04-18 |
@@ -159,9 +161,8 @@
 | `openclaw/skills` | `skills/lichq1337/phishguard/INSTALA...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
 | `openclaw/skills` | `skills/leohuang8688/google-baidu-se...` | `sk-proj-json-google-env` | `GOOGLE_API_K***` | 2026-04-16 |
 | `openclaw/skills` | `skills/leejoe411-creator/apex/scrip...` | `sk-proj-json-sk-proj` | `sk-proj-1Jau***` | 2026-04-16 |
-| `openclaw/skills` | `skills/leefj0606/sensitive-info-pro...` | `sk-proj-json-sk-generic` | `sk-123456789***` | 2026-04-16 |
 
-*... and 119 more unique findings (see `data/` directory)*
+*... and 120 more unique findings (see `data/` directory)*
 
 
 ---
