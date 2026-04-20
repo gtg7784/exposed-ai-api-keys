@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-20 18:54:27 UTC
+**Last Updated**: 2026-04-20 19:02:53 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 225
+**Total Unique Findings**: 278
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 31 |
-| **Affected Repositories** | 43 |
+| **Key Types Detected** | 33 |
+| **Affected Repositories** | 46 |
 
 ### By Key Type
 
@@ -28,19 +28,21 @@
 |-------------|-------|
 | `sk-proj-json-sk-generic` | 47 |
 | `sk-proj-json-env-var` | 38 |
+| `sk-proj-env-env-var` | 37 |
 | `sk-proj-json-anthropic-env` | 18 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-json-gemini-env` | 13 |
+| `sk-proj-env-google-env` | 13 |
 | `sk-proj-ts-anthropic-env` | 12 |
 | `sk-proj-ts-env-var` | 10 |
 | `sk-proj-json-google-env` | 7 |
 | `sk-proj-py-sk-generic` | 7 |
+| `sk-proj-env-gemini-env` | 7 |
 | `sk-proj-json-claude-env` | 6 |
 | `sk-proj-json-sk-proj` | 5 |
 | `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
-| `sk-proj-env-env-var` | 4 |
 | `sk-proj-py-env-var` | 3 |
 | `sk-proj-yml-sk-generic` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
@@ -62,6 +64,59 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `lancedb/vectordb-recipes` | `examples/saas_examples/ts_example/l...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `lancedb/vectordb-recipes` | `examples/saas_examples/ts_example/h...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `lancedb/vectordb-recipes` | `applications/archived_applications/...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `website/docs/rag/voltagent.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `website/docs/rag/qdrant.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `website/docs/rag/pinecone.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `website/docs/rag/lancedb.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `website/docs/rag/chroma.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `website/blog/2025-04-26-peaka-mcp-v...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `website/blog/2025-04-25-what-is-an-...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `website/blog/2025-04-24-rag-chatbot...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `website/blog/2025-04-23-multi-agent...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-thinking-tool/README....` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-tavily-search/README....` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-tavily-search/.env.ex...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-research-assistant/RE...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-recipe-generator/READ...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-qdrant/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-postgres/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-pinecone/README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-pinecone/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-nestjs/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-memory-rest-api/.env....` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-mcp-elicitation/READM...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-lancedb/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-hugging-face-mcp/READ...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-composio-mcp/README.m...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-cloudflare-workers/RE...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-cerbos/README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/with-ad-creator/README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `VoltAgent/voltagent` | `examples/next-js-chatbot-starter-te...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07b_crew_ai/03_flows_...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `backup_recent/07b_crew_ai/01_intro/...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `07_daca_agent_native_dev/04_securit...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `04_building_effective_agents/04_aug...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `04_building_effective_agents/04_aug...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `04_building_effective_agents/04_aug...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `04_building_effective_agents/04_aug...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `01_ai_agents_first/27_sessions_cont...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `01_ai_agents_first/27_sessions_cont...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `01_ai_agents_first/27_sessions_cont...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
+| `panaversity/learn-agentic-ai` | `01_ai_agents_first/26_external_trac...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
 | `openclaw/skills` | `skills/cp3d1455926-svg/openclaw-mem...` | `sk-proj-ts-sk-generic` | `sk-abcdefghi***` | 2026-04-20 |
 | `PunithVT/ai-avatar-system` | `SETUP_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `PunithVT/ai-avatar-system` | `.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
@@ -109,61 +164,8 @@
 | `openclaw/skills` | `skills/zhenstaff/banking-agent-os/S...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
 | `openclaw/skills` | `skills/zhenstaff/banking-agent-os/S...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
 | `openclaw/skills` | `skills/zhaog100/openclaw-voice-skil...` | `sk-proj-json-sk-generic` | `sk-mvntgiyda***` | 2026-04-16 |
-| `openclaw/skills` | `skills/yunneetoichoi/asdsadasd/.env` | `sk-proj-json-sk-proj` | `sk-proj-Z-KB***` | 2026-04-16 |
-| `openclaw/skills` | `skills/yidahis/douyin-upload/script...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/yidahis/douyin-upload/refere...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/yangbuyiya/yby6-video-parser...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-16 |
-| `openclaw/skills` | `skills/yangbuyiya/yby6-video-parser...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-16 |
-| `openclaw/skills` | `skills/yangbuyiya/yby6-video-parser...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-16 |
-| `openclaw/skills` | `skills/xiaohuaishu/competitor-radar...` | `sk-proj-json-sk-generic` | `sk-RPBUoe2SH***` | 2026-04-16 |
-| `openclaw/skills` | `skills/xiaohuaishu/competitor-radar...` | `sk-proj-json-sk-generic` | `sk-RPBUoe2SH***` | 2026-04-16 |
-| `openclaw/skills` | `skills/xiaohuaishu/api-key-guardian...` | `sk-proj-json-sk-generic` | `sk-RPBUoe2SH***` | 2026-04-16 |
-| `openclaw/skills` | `skills/wilsonliu95/openclaw-toolbox...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/wanwan2qq/mood-cli-release/s...` | `sk-proj-json-deepseek-env` | `DEEPSEEK_API***` | 2026-04-16 |
-| `openclaw/skills` | `skills/wanwan2qq/mood-cli-release/R...` | `sk-proj-json-deepseek-env` | `DEEPSEEK_API***` | 2026-04-16 |
-| `openclaw/skills` | `skills/vimvem/ict/sensitive_info_sc...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/unrealbnb/binance-coach/src/...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/truongvknnlthao-gif/ppt-gene...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/truongvknnlthao-gif/ppt-gene...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/truongvknnlthao-gif/ppt-gene...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/snail3d/voice-devotional/uni...` | `sk-proj-json-groq-env` | `GROQ_API_KEY***` | 2026-04-16 |
-| `openclaw/skills` | `skills/snail3d/clawforgod/universal...` | `sk-proj-json-groq-env` | `GROQ_API_KEY***` | 2026-04-16 |
-| `openclaw/skills` | `skills/snail3d/clawd/universal-voic...` | `sk-proj-json-groq-env` | `GROQ_API_KEY***` | 2026-04-16 |
-| `openclaw/skills` | `skills/sendwealth/ai-company/exampl...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/seantjs/tradingagents-cn-ass...` | `sk-proj-json-deepseek-env` | `DEEPSEEK_API***` | 2026-04-16 |
-| `openclaw/skills` | `skills/sang-su0916/gajago-sns/autor...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/sang-su0916/gajago-sns/SKILL...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/samj12/betbud-prediction-mar...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/runningz1/union-search-skill...` | `sk-proj-json-google-env` | `GOOGLE_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/robinzhang/tiktok-video-audi...` | `sk-proj-json-sk-generic` | `sk-0zy1YyzLa***` | 2026-04-16 |
-| `openclaw/skills` | `skills/robinzhang/tiktok-video-audi...` | `sk-proj-json-sk-generic` | `sk-0zy1YyzLa***` | 2026-04-16 |
-| `openclaw/skills` | `skills/rhanbourinajd/ai-video-gen/Q...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/rcholic/predicate-snapshot/R...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/pearl799/district9/SKILL.md` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/pearl799/district9/README.md` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/paolorollo/openclaw-sec/src/...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-16 |
-| `openclaw/skills` | `skills/paolorollo/openclaw-sec/__te...` | `sk-proj-json-sk-generic` | `sk-123456789***` | 2026-04-16 |
-| `openclaw/skills` | `skills/onlyloveher/ai-video-gen-cn/...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/numba1ne/nft-skill/env-examp...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/nighty35628/safe-share/scrip...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/nighty35628/safe-share/scrip...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/nighty35628/safe-share/refer...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/nicemaths123/social-monitor/...` | `sk-proj-json-claude-env` | `CLAUDE_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/nicemaths123/automation-cont...` | `sk-proj-json-claude-env` | `CLAUDE_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/nhype/generate-presentation/...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/neuralshift1/iblai-openclaw-...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/ncreighton/healthcare-chatbo...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/nasplycc/nasplycc-clawra-sel...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/nasplycc/nasplycc-clawra-sel...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/msonline1110/oc-smart-agent-...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/mmyg11/ai-video-gen-temp/QUI...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/maxzyma/ohmyopenclaw/guides/...` | `sk-proj-json-deepseek-env` | `DEEPSEEK_API***` | 2026-04-16 |
-| `openclaw/skills` | `skills/matttgx/ai-video-gen-1-0-0/Q...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/mattjackson/claw-apply/SKILL...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/mattjackson/claw-apply/READM...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/mashirops/auto-memory-distil...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
 
-*... and 125 more unique findings (see `data/` directory)*
+*... and 178 more unique findings (see `data/` directory)*
 
 
 ---
