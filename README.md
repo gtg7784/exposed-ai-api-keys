@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-20 20:07:27 UTC
+**Last Updated**: 2026-04-20 20:40:54 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 278
+**Total Unique Findings**: 284
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 33 |
-| **Affected Repositories** | 46 |
+| **Key Types Detected** | 34 |
+| **Affected Repositories** | 48 |
 
 ### By Key Type
 
@@ -39,6 +39,7 @@
 | `sk-proj-py-sk-generic` | 7 |
 | `sk-proj-env-gemini-env` | 7 |
 | `sk-proj-json-claude-env` | 6 |
+| `sk-proj-js-env-var` | 5 |
 | `sk-proj-json-sk-proj` | 5 |
 | `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
@@ -50,20 +51,26 @@
 | `sk-proj-py-sk-proj` | 2 |
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-py-anthropic-env` | 2 |
-| `sk-proj-js-env-var` | 1 |
+| `sk-proj-js-anthropic-env` | 2 |
 | `sk-proj-py-google-env` | 1 |
 | `sk-proj-yml-google-env` | 1 |
 | `sk-proj-json-llm-env` | 1 |
 | `sk-proj-json-ai-env` | 1 |
 | `sk-proj-ts-google-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
-| `sk-proj-js-anthropic-env` | 1 |
 | `sk-proj-ts-sk-generic` | 1 |
+| `sk-proj-js-sk-generic` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `snailyp/apichecker` | `js/help-system.js` | `sk-proj-js-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-20 |
+| `superagent-ai/vibekit` | `templates/v0-clone/README.md` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-20 |
+| `superagent-ai/vibekit` | `templates/codex-clone/README.md` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `superagent-ai/vibekit` | `docs/supported-sandboxes/cloudflare...` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `superagent-ai/vibekit` | `docs/sdk/secrets.mdx` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `superagent-ai/vibekit` | `docs/cli/environment-variables.mdx` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `lancedb/vectordb-recipes` | `examples/saas_examples/ts_example/l...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `lancedb/vectordb-recipes` | `examples/saas_examples/ts_example/h...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `lancedb/vectordb-recipes` | `applications/archived_applications/...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
@@ -158,14 +165,8 @@
 | `johnson7788/MultiUserClaw` | `openclaw/src/infra/dotenv.test.ts` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
 | `openclaw/skills` | `skills/zhuangclaw/qst-memory/data/q...` | `sk-proj-json-sk-generic` | `sk-0FuMzdToH***` | 2026-04-16 |
 | `openclaw/skills` | `skills/zhuangclaw/qst-memory-v1-8-5...` | `sk-proj-json-sk-generic` | `sk-0FuMzdToH***` | 2026-04-16 |
-| `openclaw/skills` | `skills/zhuangclaw/q-memory/data/qst...` | `sk-proj-json-sk-generic` | `sk-0FuMzdToH***` | 2026-04-16 |
-| `openclaw/skills` | `skills/zhenstaff/swarm-orchestrator...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/zhenstaff/swarm-orchestrator...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
-| `openclaw/skills` | `skills/zhenstaff/banking-agent-os/S...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/zhenstaff/banking-agent-os/S...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/zhaog100/openclaw-voice-skil...` | `sk-proj-json-sk-generic` | `sk-mvntgiyda***` | 2026-04-16 |
 
-*... and 178 more unique findings (see `data/` directory)*
+*... and 184 more unique findings (see `data/` directory)*
 
 
 ---
