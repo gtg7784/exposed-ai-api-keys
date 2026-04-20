@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-20 09:21:54 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 222
+**Last Updated**: 2026-04-20 10:09:48 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 224
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 30 |
-| **Affected Repositories** | 42 |
+| **Affected Repositories** | 43 |
 
 ### By Key Type
 
@@ -40,13 +40,13 @@
 | `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
+| `sk-proj-env-env-var` | 4 |
 | `sk-proj-py-env-var` | 3 |
 | `sk-proj-yml-sk-generic` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
 | `sk-proj-py-sk-proj` | 2 |
 | `sk-proj-js-sk-proj` | 2 |
-| `sk-proj-env-env-var` | 2 |
 | `sk-proj-py-anthropic-env` | 2 |
 | `sk-proj-js-env-var` | 1 |
 | `sk-proj-py-google-env` | 1 |
@@ -61,6 +61,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `PunithVT/ai-avatar-system` | `SETUP_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `PunithVT/ai-avatar-system` | `.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `NanoFlow-io/Clawdboss` | `.env.example` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-19 |
 | `openclaw/skills` | `skills/wangyan/wangyan-gemini-image...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-19 |
 | `pdrago97/chat-w-ontology` | `.env.example` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-19 |
@@ -159,10 +161,8 @@
 | `openclaw/skills` | `skills/mattjackson/claw-apply/READM...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
 | `openclaw/skills` | `skills/mashirops/auto-memory-distil...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
 | `openclaw/skills` | `skills/lycohana/siliconflow-vision/...` | `sk-proj-json-sk-generic` | `sk-ghkgkwxvt***` | 2026-04-16 |
-| `openclaw/skills` | `skills/lockdown56/openclaw-sec-plus...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-16 |
-| `openclaw/skills` | `skills/lichq1337/phishguard/INSTALA...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
 
-*... and 122 more unique findings (see `data/` directory)*
+*... and 124 more unique findings (see `data/` directory)*
 
 
 ---
