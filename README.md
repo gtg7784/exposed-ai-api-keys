@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-20 22:08:14 UTC
+**Last Updated**: 2026-04-20 22:28:11 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 284
+**Total Unique Findings**: 287
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 34 |
-| **Affected Repositories** | 48 |
+| **Affected Repositories** | 50 |
 
 ### By Key Type
 
@@ -35,11 +35,11 @@
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-ts-anthropic-env` | 12 |
 | `sk-proj-ts-env-var` | 10 |
+| `sk-proj-js-env-var` | 7 |
 | `sk-proj-json-google-env` | 7 |
 | `sk-proj-py-sk-generic` | 7 |
 | `sk-proj-env-gemini-env` | 7 |
 | `sk-proj-json-claude-env` | 6 |
-| `sk-proj-js-env-var` | 5 |
 | `sk-proj-json-sk-proj` | 5 |
 | `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
@@ -52,6 +52,7 @@
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-py-anthropic-env` | 2 |
 | `sk-proj-js-anthropic-env` | 2 |
+| `sk-proj-js-sk-generic` | 2 |
 | `sk-proj-py-google-env` | 1 |
 | `sk-proj-yml-google-env` | 1 |
 | `sk-proj-json-llm-env` | 1 |
@@ -59,12 +60,14 @@
 | `sk-proj-ts-google-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
 | `sk-proj-ts-sk-generic` | 1 |
-| `sk-proj-js-sk-generic` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `darfaz/clawmoat` | `site/index.html` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `darfaz/clawmoat` | `docs/playground.html` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `apisec-inc/mcp-audit` | `docs/RISK_SCORING.md` | `sk-proj-js-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-20 |
 | `snailyp/apichecker` | `js/help-system.js` | `sk-proj-js-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-20 |
 | `superagent-ai/vibekit` | `templates/v0-clone/README.md` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-20 |
 | `superagent-ai/vibekit` | `templates/codex-clone/README.md` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
@@ -162,11 +165,8 @@
 | `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251016_0...` | `sk-proj-py-sk-generic` | `sk-JQmEuwsfq***` | 2026-04-17 |
 | `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251010_0...` | `sk-proj-py-sk-generic` | `sk-iVZ3N2WBX***` | 2026-04-17 |
 | `ArgentAIOS/argentos-core` | `src/utils/redact.adversarial.test.t...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `johnson7788/MultiUserClaw` | `openclaw/src/infra/dotenv.test.ts` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/zhuangclaw/qst-memory/data/q...` | `sk-proj-json-sk-generic` | `sk-0FuMzdToH***` | 2026-04-16 |
-| `openclaw/skills` | `skills/zhuangclaw/qst-memory-v1-8-5...` | `sk-proj-json-sk-generic` | `sk-0FuMzdToH***` | 2026-04-16 |
 
-*... and 184 more unique findings (see `data/` directory)*
+*... and 187 more unique findings (see `data/` directory)*
 
 
 ---
