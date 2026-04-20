@@ -11,15 +11,15 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-20 18:05:40 UTC
+**Last Updated**: 2026-04-20 18:54:27 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 224
+**Total Unique Findings**: 225
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 30 |
+| **Key Types Detected** | 31 |
 | **Affected Repositories** | 43 |
 
 ### By Key Type
@@ -56,11 +56,13 @@
 | `sk-proj-ts-google-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
 | `sk-proj-js-anthropic-env` | 1 |
+| `sk-proj-ts-sk-generic` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `openclaw/skills` | `skills/cp3d1455926-svg/openclaw-mem...` | `sk-proj-ts-sk-generic` | `sk-abcdefghi***` | 2026-04-20 |
 | `PunithVT/ai-avatar-system` | `SETUP_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `PunithVT/ai-avatar-system` | `.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `NanoFlow-io/Clawdboss` | `.env.example` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-19 |
@@ -160,9 +162,8 @@
 | `openclaw/skills` | `skills/mattjackson/claw-apply/SKILL...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
 | `openclaw/skills` | `skills/mattjackson/claw-apply/READM...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-16 |
 | `openclaw/skills` | `skills/mashirops/auto-memory-distil...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-16 |
-| `openclaw/skills` | `skills/lycohana/siliconflow-vision/...` | `sk-proj-json-sk-generic` | `sk-ghkgkwxvt***` | 2026-04-16 |
 
-*... and 124 more unique findings (see `data/` directory)*
+*... and 125 more unique findings (see `data/` directory)*
 
 
 ---
