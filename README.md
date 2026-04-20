@@ -11,25 +11,25 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-20 22:28:11 UTC
+**Last Updated**: 2026-04-20 23:07:06 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 287
+**Total Unique Findings**: 291
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 34 |
-| **Affected Repositories** | 50 |
+| **Affected Repositories** | 52 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
 | `sk-proj-json-sk-generic` | 47 |
-| `sk-proj-json-env-var` | 38 |
+| `sk-proj-json-env-var` | 39 |
 | `sk-proj-env-env-var` | 37 |
-| `sk-proj-json-anthropic-env` | 18 |
+| `sk-proj-json-anthropic-env` | 21 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-json-gemini-env` | 13 |
 | `sk-proj-env-google-env` | 13 |
@@ -65,6 +65,10 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `peterkrueck/Claude-Code-Develo...` | `hooks/config/sensitive-patterns.jso...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-20 |
+| `Zie619/n8n-workflows` | `medcards-ai/.env.example` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-20 |
+| `Zie619/n8n-workflows` | `ai-stack/README.md` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-20 |
+| `Zie619/n8n-workflows` | `ai-stack/.env` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-20 |
 | `darfaz/clawmoat` | `site/index.html` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `darfaz/clawmoat` | `docs/playground.html` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `apisec-inc/mcp-audit` | `docs/RISK_SCORING.md` | `sk-proj-js-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-20 |
@@ -161,12 +165,8 @@
 | `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251017_0...` | `sk-proj-py-sk-generic` | `sk-ayYLsHAhr***` | 2026-04-17 |
 | `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251017_0...` | `sk-proj-py-sk-generic` | `sk-ayYLsHAhr***` | 2026-04-17 |
 | `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251016_0...` | `sk-proj-py-sk-generic` | `sk-KKaB5nstn***` | 2026-04-17 |
-| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251016_0...` | `sk-proj-py-sk-generic` | `sk-w5QJTwntn***` | 2026-04-17 |
-| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251016_0...` | `sk-proj-py-sk-generic` | `sk-JQmEuwsfq***` | 2026-04-17 |
-| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251010_0...` | `sk-proj-py-sk-generic` | `sk-iVZ3N2WBX***` | 2026-04-17 |
-| `ArgentAIOS/argentos-core` | `src/utils/redact.adversarial.test.t...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-16 |
 
-*... and 187 more unique findings (see `data/` directory)*
+*... and 191 more unique findings (see `data/` directory)*
 
 
 ---
