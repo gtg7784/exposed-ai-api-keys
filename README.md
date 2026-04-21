@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-21 06:37:47 UTC
+**Last Updated**: 2026-04-21 07:13:38 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 291
+**Total Unique Findings**: 293
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 34 |
-| **Affected Repositories** | 52 |
+| **Affected Repositories** | 54 |
 
 ### By Key Type
 
@@ -44,16 +44,16 @@
 | `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
+| `sk-proj-py-sk-proj` | 3 |
 | `sk-proj-py-env-var` | 3 |
 | `sk-proj-yml-sk-generic` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
-| `sk-proj-py-sk-proj` | 2 |
 | `sk-proj-js-sk-proj` | 2 |
+| `sk-proj-py-google-env` | 2 |
 | `sk-proj-py-anthropic-env` | 2 |
 | `sk-proj-js-anthropic-env` | 2 |
 | `sk-proj-js-sk-generic` | 2 |
-| `sk-proj-py-google-env` | 1 |
 | `sk-proj-yml-google-env` | 1 |
 | `sk-proj-json-llm-env` | 1 |
 | `sk-proj-json-ai-env` | 1 |
@@ -65,6 +65,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `Ashish-Pandey62/Agentic-Deskto...` | `README.md` | `sk-proj-py-google-env` | `GOOGLE_API_K***` | 2026-04-21 |
+| `mrahmdi/Thatis` | `main.py` | `sk-proj-py-sk-proj` | `sk-proj--S4Z***` | 2026-04-21 |
 | `peterkrueck/Claude-Code-Develo...` | `hooks/config/sensitive-patterns.jso...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `Zie619/n8n-workflows` | `medcards-ai/.env.example` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-20 |
 | `Zie619/n8n-workflows` | `ai-stack/README.md` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-20 |
@@ -163,10 +165,8 @@
 | `Coff0xc/Github-API-scan` | `test_ai_detector.py` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-17 |
 | `Coff0xc/Github-API-scan` | `ai_detector.py` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-17 |
 | `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251017_0...` | `sk-proj-py-sk-generic` | `sk-ayYLsHAhr***` | 2026-04-17 |
-| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251017_0...` | `sk-proj-py-sk-generic` | `sk-ayYLsHAhr***` | 2026-04-17 |
-| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251016_0...` | `sk-proj-py-sk-generic` | `sk-KKaB5nstn***` | 2026-04-17 |
 
-*... and 191 more unique findings (see `data/` directory)*
+*... and 193 more unique findings (see `data/` directory)*
 
 
 ---
