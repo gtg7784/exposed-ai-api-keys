@@ -11,15 +11,15 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-22 12:09:11 UTC
+**Last Updated**: 2026-04-22 12:58:15 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 296
+**Total Unique Findings**: 300
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 35 |
+| **Key Types Detected** | 36 |
 | **Affected Repositories** | 57 |
 
 ### By Key Type
@@ -49,23 +49,28 @@
 | `sk-proj-yml-sk-generic` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
+| `sk-proj-ts-sk-generic` | 3 |
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-py-google-env` | 2 |
 | `sk-proj-py-anthropic-env` | 2 |
 | `sk-proj-js-anthropic-env` | 2 |
 | `sk-proj-js-sk-generic` | 2 |
+| `sk-proj-ts-claude-env` | 2 |
 | `sk-proj-yml-google-env` | 1 |
 | `sk-proj-json-llm-env` | 1 |
 | `sk-proj-json-ai-env` | 1 |
 | `sk-proj-ts-google-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
-| `sk-proj-ts-sk-generic` | 1 |
 | `sk-proj-env-llm-env` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `openclaw/skills` | `skills/tayllisun/arshis-memory/scri...` | `sk-proj-ts-sk-generic` | `sk-moxcmniwc***` | 2026-04-22 |
+| `openclaw/skills` | `skills/olveww-dot/auto-distill/scri...` | `sk-proj-ts-sk-generic` | `sk-kgvvlyeud***` | 2026-04-22 |
+| `openclaw/skills` | `skills/nicemaths123/social-spy-moni...` | `sk-proj-ts-claude-env` | `CLAUDE_API_K***` | 2026-04-22 |
+| `openclaw/skills` | `skills/nicemaths123/business-opport...` | `sk-proj-ts-claude-env` | `CLAUDE_API_K***` | 2026-04-22 |
 | `ObjectWeaver/ObjectWeaver` | `.env.llm.example` | `sk-proj-env-llm-env` | `LLM_API_KEY=***` | 2026-04-22 |
 | `DrHaitham/PenTest2.0` | `README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-22 |
 | `rockerritesh/vibe_coder` | `README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-22 |
@@ -162,12 +167,8 @@
 | `promptfoo/promptfoo` | `examples/integration-pydantic-ai/RE...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 | `promptfoo/promptfoo` | `examples/integration-helicone/READM...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 | `promptfoo/promptfoo` | `examples/config-node-package/README...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
-| `promptfoo/promptfoo` | `examples/config-node-package-typesc...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
-| `jaschadub/VectorSmuggle` | `docs/guides/vector_payload_dissocia...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-17 |
-| `jaschadub/VectorSmuggle` | `docs/guides/quick_start.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-17 |
-| `jaschadub/VectorSmuggle` | `.env.example` | `sk-proj-py-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-17 |
 
-*... and 196 more unique findings (see `data/` directory)*
+*... and 200 more unique findings (see `data/` directory)*
 
 
 ---
