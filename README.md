@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-22 19:03:26 UTC
+**Last Updated**: 2026-04-22 19:39:56 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 303
+**Total Unique Findings**: 304
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 37 |
-| **Affected Repositories** | 58 |
+| **Affected Repositories** | 59 |
 
 ### By Key Type
 
@@ -34,7 +34,7 @@
 | `sk-proj-json-gemini-env` | 13 |
 | `sk-proj-ts-anthropic-env` | 13 |
 | `sk-proj-env-google-env` | 13 |
-| `sk-proj-ts-env-var` | 10 |
+| `sk-proj-ts-env-var` | 11 |
 | `sk-proj-js-env-var` | 7 |
 | `sk-proj-json-google-env` | 7 |
 | `sk-proj-py-sk-generic` | 7 |
@@ -68,6 +68,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `AnalyseDeCircuit/oxideterm` | `src/test/ai/contextSanitizer.test.t...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-22 |
 | `openclaw/skills` | `skills/yontlly/ai-test-platform/pro...` | `sk-proj-ts-deepseek-env` | `DEEPSEEK_API***` | 2026-04-22 |
 | `openclaw/skills` | `skills/yontlly/ai-test-platform/pro...` | `sk-proj-ts-deepseek-env` | `DEEPSEEK_API***` | 2026-04-22 |
 | `trf2-jus-br/apoia` | `README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-22 |
@@ -167,9 +168,8 @@
 | `promptfoo/promptfoo` | `site/blog/red-team-claude.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
 | `promptfoo/promptfoo` | `examples/redteam-mcp/README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
 | `promptfoo/promptfoo` | `examples/redteam-mcp-agent/README.m...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
-| `promptfoo/promptfoo` | `examples/redteam-foundation-model/R...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 
-*... and 203 more unique findings (see `data/` directory)*
+*... and 204 more unique findings (see `data/` directory)*
 
 
 ---
