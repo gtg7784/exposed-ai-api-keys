@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-22 14:59:59 UTC
+**Last Updated**: 2026-04-22 15:36:37 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 300
+**Total Unique Findings**: 301
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 36 |
-| **Affected Repositories** | 57 |
+| **Affected Repositories** | 58 |
 
 ### By Key Type
 
@@ -32,8 +32,8 @@
 | `sk-proj-json-anthropic-env` | 21 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-json-gemini-env` | 13 |
+| `sk-proj-ts-anthropic-env` | 13 |
 | `sk-proj-env-google-env` | 13 |
-| `sk-proj-ts-anthropic-env` | 12 |
 | `sk-proj-ts-env-var` | 10 |
 | `sk-proj-js-env-var` | 7 |
 | `sk-proj-json-google-env` | 7 |
@@ -67,6 +67,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `trf2-jus-br/apoia` | `README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-22 |
 | `openclaw/skills` | `skills/tayllisun/arshis-memory/scri...` | `sk-proj-ts-sk-generic` | `sk-moxcmniwc***` | 2026-04-22 |
 | `openclaw/skills` | `skills/olveww-dot/auto-distill/scri...` | `sk-proj-ts-sk-generic` | `sk-kgvvlyeud***` | 2026-04-22 |
 | `openclaw/skills` | `skills/nicemaths123/social-spy-moni...` | `sk-proj-ts-claude-env` | `CLAUDE_API_K***` | 2026-04-22 |
@@ -166,9 +167,8 @@
 | `promptfoo/promptfoo` | `examples/redteam-foundation-model/R...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 | `promptfoo/promptfoo` | `examples/integration-pydantic-ai/RE...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 | `promptfoo/promptfoo` | `examples/integration-helicone/READM...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
-| `promptfoo/promptfoo` | `examples/config-node-package/README...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
 
-*... and 200 more unique findings (see `data/` directory)*
+*... and 201 more unique findings (see `data/` directory)*
 
 
 ---
