@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-22 08:23:25 UTC
+**Last Updated**: 2026-04-22 09:02:50 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 293
+**Total Unique Findings**: 296
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 34 |
-| **Affected Repositories** | 54 |
+| **Key Types Detected** | 35 |
+| **Affected Repositories** | 57 |
 
 ### By Key Type
 
@@ -28,7 +28,7 @@
 |-------------|-------|
 | `sk-proj-json-sk-generic` | 47 |
 | `sk-proj-json-env-var` | 39 |
-| `sk-proj-env-env-var` | 37 |
+| `sk-proj-env-env-var` | 39 |
 | `sk-proj-json-anthropic-env` | 21 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-json-gemini-env` | 13 |
@@ -60,11 +60,15 @@
 | `sk-proj-ts-google-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
 | `sk-proj-ts-sk-generic` | 1 |
+| `sk-proj-env-llm-env` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `ObjectWeaver/ObjectWeaver` | `.env.llm.example` | `sk-proj-env-llm-env` | `LLM_API_KEY=***` | 2026-04-22 |
+| `DrHaitham/PenTest2.0` | `README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-22 |
+| `rockerritesh/vibe_coder` | `README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-22 |
 | `Ashish-Pandey62/Agentic-Deskto...` | `README.md` | `sk-proj-py-google-env` | `GOOGLE_API_K***` | 2026-04-21 |
 | `mrahmdi/Thatis` | `main.py` | `sk-proj-py-sk-proj` | `sk-proj--S4Z***` | 2026-04-21 |
 | `peterkrueck/Claude-Code-Develo...` | `hooks/config/sensitive-patterns.jso...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-20 |
@@ -162,11 +166,8 @@
 | `jaschadub/VectorSmuggle` | `docs/guides/vector_payload_dissocia...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-17 |
 | `jaschadub/VectorSmuggle` | `docs/guides/quick_start.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-04-17 |
 | `jaschadub/VectorSmuggle` | `.env.example` | `sk-proj-py-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-17 |
-| `Coff0xc/Github-API-scan` | `test_ai_detector.py` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-17 |
-| `Coff0xc/Github-API-scan` | `ai_detector.py` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-17 |
-| `gaocaipeng/InCloudGitHub` | `scan_reports/scan_report_20251017_0...` | `sk-proj-py-sk-generic` | `sk-ayYLsHAhr***` | 2026-04-17 |
 
-*... and 193 more unique findings (see `data/` directory)*
+*... and 196 more unique findings (see `data/` directory)*
 
 
 ---
