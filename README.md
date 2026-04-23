@@ -11,34 +11,34 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-23 22:48:07 UTC
+**Last Updated**: 2026-04-23 23:08:27 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 304
+**Total Unique Findings**: 313
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 37 |
-| **Affected Repositories** | 59 |
+| **Key Types Detected** | 38 |
+| **Affected Repositories** | 61 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
 | `sk-proj-json-sk-generic` | 47 |
+| `sk-proj-env-env-var` | 45 |
 | `sk-proj-json-env-var` | 39 |
-| `sk-proj-env-env-var` | 39 |
 | `sk-proj-json-anthropic-env` | 21 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-json-gemini-env` | 13 |
 | `sk-proj-ts-anthropic-env` | 13 |
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-ts-env-var` | 11 |
+| `sk-proj-env-gemini-env` | 9 |
 | `sk-proj-js-env-var` | 7 |
 | `sk-proj-json-google-env` | 7 |
 | `sk-proj-py-sk-generic` | 7 |
-| `sk-proj-env-gemini-env` | 7 |
 | `sk-proj-json-claude-env` | 6 |
 | `sk-proj-json-sk-proj` | 5 |
 | `sk-proj-yml-env-var` | 5 |
@@ -63,11 +63,21 @@
 | `sk-proj-ts-google-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
 | `sk-proj-env-llm-env` | 1 |
+| `sk-proj-env-anthropic-env` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `lekesiz/bilan-final-full` | `docs/GEMINI_API_KEY_SETUP.md` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-23 |
+| `lekesiz/bilan-final-full` | `docs/ENV_VARIABLES.md` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-23 |
+| `lekesiz/bilan-final-full` | `docs/DEPLOYMENT_CHECKLIST.md` | `sk-proj-env-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-23 |
+| `lekesiz/bilan-final-full` | `backend/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
+| `tmotti77/myplat` | `SESSION_SUMMARY.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
+| `tmotti77/myplat` | `RAILWAY_DEPLOY_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
+| `tmotti77/myplat` | `QUICK_START.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
+| `tmotti77/myplat` | `DEPLOYMENT_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
+| `tmotti77/myplat` | `.env.production.template` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
 | `AnalyseDeCircuit/oxideterm` | `src/test/ai/contextSanitizer.test.t...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-22 |
 | `openclaw/skills` | `skills/yontlly/ai-test-platform/pro...` | `sk-proj-ts-deepseek-env` | `DEEPSEEK_API***` | 2026-04-22 |
 | `openclaw/skills` | `skills/yontlly/ai-test-platform/pro...` | `sk-proj-ts-deepseek-env` | `DEEPSEEK_API***` | 2026-04-22 |
@@ -159,17 +169,8 @@
 | `elizaOS/eliza` | `packages/examples/gcp/env.example` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 | `elizaOS/eliza` | `packages/examples/discord/env.examp...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 | `elizaOS/eliza` | `packages/examples/bluesky/env.examp...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
-| `elizaOS/eliza` | `packages/docs/quickstart.mdx` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
-| `elizaOS/eliza` | `packages/docs/guides/create-a-plugi...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
-| `elizaOS/eliza` | `packages/benchmarks/OSWorld/mm_agen...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
-| `promptfoo/promptfoo` | `site/docs/usage/self-hosting.md` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-04-18 |
-| `promptfoo/promptfoo` | `site/docs/red-team/foundation-model...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
-| `promptfoo/promptfoo` | `site/docs/guides/evaluate-langgraph...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
-| `promptfoo/promptfoo` | `site/blog/red-team-claude.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
-| `promptfoo/promptfoo` | `examples/redteam-mcp/README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
-| `promptfoo/promptfoo` | `examples/redteam-mcp-agent/README.m...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 
-*... and 204 more unique findings (see `data/` directory)*
+*... and 213 more unique findings (see `data/` directory)*
 
 
 ---
