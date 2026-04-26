@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-04-26 20:12:20 UTC
+**Last Updated**: 2026-04-26 20:32:06 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 313
+**Total Unique Findings**: 315
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 38 |
-| **Affected Repositories** | 61 |
+| **Affected Repositories** | 62 |
 
 ### By Key Type
 
@@ -31,8 +31,8 @@
 | `sk-proj-json-env-var` | 39 |
 | `sk-proj-json-anthropic-env` | 21 |
 | `sk-proj-env-sk-proj` | 16 |
+| `sk-proj-ts-anthropic-env` | 15 |
 | `sk-proj-json-gemini-env` | 13 |
-| `sk-proj-ts-anthropic-env` | 13 |
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-ts-env-var` | 11 |
 | `sk-proj-env-gemini-env` | 9 |
@@ -69,6 +69,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `sammargolis/OpenScribe` | `docs/MEDASR-SETUP.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-26 |
+| `sammargolis/OpenScribe` | `README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-26 |
 | `lekesiz/bilan-final-full` | `docs/GEMINI_API_KEY_SETUP.md` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-23 |
 | `lekesiz/bilan-final-full` | `docs/ENV_VARIABLES.md` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-23 |
 | `lekesiz/bilan-final-full` | `docs/DEPLOYMENT_CHECKLIST.md` | `sk-proj-env-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-23 |
@@ -167,10 +169,8 @@
 | `elizaOS/eliza` | `packages/examples/supabase/env.exam...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 | `elizaOS/eliza` | `packages/examples/moltbook/env.exam...` | `sk-proj-ts-llm-env` | `LLM_API_KEY=***` | 2026-04-18 |
 | `elizaOS/eliza` | `packages/examples/gcp/env.example` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
-| `elizaOS/eliza` | `packages/examples/discord/env.examp...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
-| `elizaOS/eliza` | `packages/examples/bluesky/env.examp...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
 
-*... and 213 more unique findings (see `data/` directory)*
+*... and 215 more unique findings (see `data/` directory)*
 
 
 ---
