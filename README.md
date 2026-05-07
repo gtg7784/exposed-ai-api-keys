@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-07 01:07:14 UTC
+**Last Updated**: 2026-05-07 01:51:25 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 315
+**Total Unique Findings**: 317
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 38 |
-| **Affected Repositories** | 62 |
+| **Key Types Detected** | 39 |
+| **Affected Repositories** | 63 |
 
 ### By Key Type
 
@@ -57,6 +57,7 @@
 | `sk-proj-js-sk-generic` | 2 |
 | `sk-proj-ts-claude-env` | 2 |
 | `sk-proj-ts-deepseek-env` | 2 |
+| `sk-proj-yml-anthropic-env` | 2 |
 | `sk-proj-yml-google-env` | 1 |
 | `sk-proj-json-llm-env` | 1 |
 | `sk-proj-json-ai-env` | 1 |
@@ -69,6 +70,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `grcengineering/how-to-harden` | `packs/anthropic-claude/api/hth-anth...` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-07 |
+| `grcengineering/how-to-harden` | `docs/_data/packs/anthropic-claude.y...` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-07 |
 | `sammargolis/OpenScribe` | `docs/MEDASR-SETUP.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-26 |
 | `sammargolis/OpenScribe` | `README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-26 |
 | `lekesiz/bilan-final-full` | `docs/GEMINI_API_KEY_SETUP.md` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-23 |
@@ -167,10 +170,8 @@
 | `pdrago97/chat-w-ontology` | `.env.example` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-19 |
 | `elizaOS/eliza` | `packages/examples/trader/README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
 | `elizaOS/eliza` | `packages/examples/supabase/env.exam...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
-| `elizaOS/eliza` | `packages/examples/moltbook/env.exam...` | `sk-proj-ts-llm-env` | `LLM_API_KEY=***` | 2026-04-18 |
-| `elizaOS/eliza` | `packages/examples/gcp/env.example` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 
-*... and 215 more unique findings (see `data/` directory)*
+*... and 217 more unique findings (see `data/` directory)*
 
 
 ---
