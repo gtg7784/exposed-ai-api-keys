@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-07 10:30:02 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 317
+**Last Updated**: 2026-05-07 11:17:43 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 319
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 63 |
+| **Affected Repositories** | 64 |
 
 ### By Key Type
 
@@ -40,11 +40,11 @@
 | `sk-proj-json-google-env` | 7 |
 | `sk-proj-py-sk-generic` | 7 |
 | `sk-proj-json-claude-env` | 6 |
+| `sk-proj-py-sk-proj` | 5 |
 | `sk-proj-json-sk-proj` | 5 |
 | `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
-| `sk-proj-py-sk-proj` | 3 |
 | `sk-proj-py-env-var` | 3 |
 | `sk-proj-yml-sk-generic` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
@@ -70,6 +70,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `MoetazAbdalla/Med-pol-report` | `tryy.py` | `sk-proj-py-sk-proj` | `sk-proj-_PEN***` | 2026-05-07 |
+| `MoetazAbdalla/Med-pol-report` | `assets/api key` | `sk-proj-py-sk-proj` | `sk-proj-_PEN***` | 2026-05-07 |
 | `grcengineering/how-to-harden` | `packs/anthropic-claude/api/hth-anth...` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-07 |
 | `grcengineering/how-to-harden` | `docs/_data/packs/anthropic-claude.y...` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-07 |
 | `sammargolis/OpenScribe` | `docs/MEDASR-SETUP.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-26 |
@@ -168,10 +170,8 @@
 | `NanoFlow-io/Clawdboss` | `.env.example` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-19 |
 | `openclaw/skills` | `skills/wangyan/wangyan-gemini-image...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-19 |
 | `pdrago97/chat-w-ontology` | `.env.example` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-19 |
-| `elizaOS/eliza` | `packages/examples/trader/README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-18 |
-| `elizaOS/eliza` | `packages/examples/supabase/env.exam...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-18 |
 
-*... and 217 more unique findings (see `data/` directory)*
+*... and 219 more unique findings (see `data/` directory)*
 
 
 ---
