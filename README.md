@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-10 13:02:01 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 319
+**Last Updated**: 2026-05-10 13:44:57 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 321
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 64 |
+| **Affected Repositories** | 66 |
 
 ### By Key Type
 
@@ -28,8 +28,8 @@
 |-------------|-------|
 | `sk-proj-json-sk-generic` | 47 |
 | `sk-proj-env-env-var` | 45 |
-| `sk-proj-json-env-var` | 39 |
-| `sk-proj-json-anthropic-env` | 21 |
+| `sk-proj-json-env-var` | 40 |
+| `sk-proj-json-anthropic-env` | 22 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-ts-anthropic-env` | 15 |
 | `sk-proj-json-gemini-env` | 13 |
@@ -70,6 +70,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `tangle-network/dapp` | `scripts/agent-browser/run-wallet-fl...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-10 |
+| `cisco-ai-defense/defenseclaw` | `cli/tests/test_cmd_setup_rotate_tok...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-10 |
 | `MoetazAbdalla/Med-pol-report` | `tryy.py` | `sk-proj-py-sk-proj` | `sk-proj-_PEN***` | 2026-05-07 |
 | `MoetazAbdalla/Med-pol-report` | `assets/api key` | `sk-proj-py-sk-proj` | `sk-proj-_PEN***` | 2026-05-07 |
 | `grcengineering/how-to-harden` | `packs/anthropic-claude/api/hth-anth...` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-07 |
@@ -168,10 +170,8 @@
 | `PunithVT/ai-avatar-system` | `SETUP_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `PunithVT/ai-avatar-system` | `.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `NanoFlow-io/Clawdboss` | `.env.example` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-19 |
-| `openclaw/skills` | `skills/wangyan/wangyan-gemini-image...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-04-19 |
-| `pdrago97/chat-w-ontology` | `.env.example` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-19 |
 
-*... and 219 more unique findings (see `data/` directory)*
+*... and 221 more unique findings (see `data/` directory)*
 
 
 ---
