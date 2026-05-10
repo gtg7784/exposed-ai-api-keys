@@ -11,23 +11,23 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-10 14:41:58 UTC
+**Last Updated**: 2026-05-10 15:05:24 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 323
+**Total Unique Findings**: 324
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 66 |
+| **Affected Repositories** | 67 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
 | `sk-proj-json-sk-generic` | 47 |
-| `sk-proj-env-env-var` | 45 |
+| `sk-proj-env-env-var` | 46 |
 | `sk-proj-json-env-var` | 40 |
 | `sk-proj-json-anthropic-env` | 22 |
 | `sk-proj-env-sk-proj` | 16 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `autoppia/autoppia_web_agents_s...` | `autoppia_web_agents_subnet/opensour...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-05-10 |
 | `promptfoo/promptfoo` | `site/docs/guides/evaluate-google-ad...` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-05-10 |
 | `promptfoo/promptfoo` | `examples/integration-google-adk/REA...` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-05-10 |
 | `tangle-network/dapp` | `scripts/agent-browser/run-wallet-fl...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-10 |
@@ -169,9 +170,8 @@
 | `panaversity/learn-agentic-ai` | `01_ai_agents_first/27_sessions_cont...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
 | `panaversity/learn-agentic-ai` | `01_ai_agents_first/26_external_trac...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
 | `openclaw/skills` | `skills/cp3d1455926-svg/openclaw-mem...` | `sk-proj-ts-sk-generic` | `sk-abcdefghi***` | 2026-04-20 |
-| `PunithVT/ai-avatar-system` | `SETUP_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 
-*... and 223 more unique findings (see `data/` directory)*
+*... and 224 more unique findings (see `data/` directory)*
 
 
 ---
