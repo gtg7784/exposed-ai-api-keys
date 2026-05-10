@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-10 16:49:40 UTC
+**Last Updated**: 2026-05-10 17:13:36 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 324
+**Total Unique Findings**: 327
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 67 |
+| **Affected Repositories** | 69 |
 
 ### By Key Type
 
@@ -36,16 +36,16 @@
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-ts-env-var` | 11 |
 | `sk-proj-env-gemini-env` | 9 |
+| `sk-proj-py-sk-proj` | 7 |
 | `sk-proj-js-env-var` | 7 |
 | `sk-proj-json-google-env` | 7 |
 | `sk-proj-py-sk-generic` | 7 |
 | `sk-proj-json-claude-env` | 6 |
-| `sk-proj-py-sk-proj` | 5 |
 | `sk-proj-json-sk-proj` | 5 |
 | `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
-| `sk-proj-py-env-var` | 3 |
+| `sk-proj-py-env-var` | 4 |
 | `sk-proj-yml-sk-generic` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
@@ -70,6 +70,9 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `ganeshkiran987/Simple_Chatbot_...` | `check.py` | `sk-proj-py-sk-proj` | `sk-proj-_CwI***` | 2026-05-10 |
+| `ganeshkiran987/Simple_Chatbot_...` | `chatbot/chatbot.py` | `sk-proj-py-sk-proj` | `sk-proj-_CwI***` | 2026-05-10 |
+| `sarthaksinghgaur/LLM-Powered-A...` | `README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-10 |
 | `autoppia/autoppia_web_agents_s...` | `autoppia_web_agents_subnet/opensour...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-05-10 |
 | `promptfoo/promptfoo` | `site/docs/guides/evaluate-google-ad...` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-05-10 |
 | `promptfoo/promptfoo` | `examples/integration-google-adk/REA...` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-05-10 |
@@ -167,11 +170,8 @@
 | `panaversity/learn-agentic-ai` | `04_building_effective_agents/04_aug...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
 | `panaversity/learn-agentic-ai` | `01_ai_agents_first/27_sessions_cont...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
 | `panaversity/learn-agentic-ai` | `01_ai_agents_first/27_sessions_cont...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
-| `panaversity/learn-agentic-ai` | `01_ai_agents_first/27_sessions_cont...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
-| `panaversity/learn-agentic-ai` | `01_ai_agents_first/26_external_trac...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
-| `openclaw/skills` | `skills/cp3d1455926-svg/openclaw-mem...` | `sk-proj-ts-sk-generic` | `sk-abcdefghi***` | 2026-04-20 |
 
-*... and 224 more unique findings (see `data/` directory)*
+*... and 227 more unique findings (see `data/` directory)*
 
 
 ---
