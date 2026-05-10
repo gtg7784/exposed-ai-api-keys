@@ -11,9 +11,9 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-10 14:17:11 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 321
+**Last Updated**: 2026-05-10 14:41:58 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 323
 
 ### Summary Statistics
 
@@ -49,6 +49,7 @@
 | `sk-proj-yml-sk-generic` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
+| `sk-proj-ts-google-env` | 3 |
 | `sk-proj-ts-sk-generic` | 3 |
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-py-google-env` | 2 |
@@ -61,7 +62,6 @@
 | `sk-proj-yml-google-env` | 1 |
 | `sk-proj-json-llm-env` | 1 |
 | `sk-proj-json-ai-env` | 1 |
-| `sk-proj-ts-google-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
 | `sk-proj-env-llm-env` | 1 |
 | `sk-proj-env-anthropic-env` | 1 |
@@ -70,6 +70,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `promptfoo/promptfoo` | `site/docs/guides/evaluate-google-ad...` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-05-10 |
+| `promptfoo/promptfoo` | `examples/integration-google-adk/REA...` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-05-10 |
 | `tangle-network/dapp` | `scripts/agent-browser/run-wallet-fl...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-10 |
 | `cisco-ai-defense/defenseclaw` | `cli/tests/test_cmd_setup_rotate_tok...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-10 |
 | `MoetazAbdalla/Med-pol-report` | `tryy.py` | `sk-proj-py-sk-proj` | `sk-proj-_PEN***` | 2026-05-07 |
@@ -168,10 +170,8 @@
 | `panaversity/learn-agentic-ai` | `01_ai_agents_first/26_external_trac...` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-20 |
 | `openclaw/skills` | `skills/cp3d1455926-svg/openclaw-mem...` | `sk-proj-ts-sk-generic` | `sk-abcdefghi***` | 2026-04-20 |
 | `PunithVT/ai-avatar-system` | `SETUP_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `PunithVT/ai-avatar-system` | `.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `NanoFlow-io/Clawdboss` | `.env.example` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-19 |
 
-*... and 221 more unique findings (see `data/` directory)*
+*... and 223 more unique findings (see `data/` directory)*
 
 
 ---
