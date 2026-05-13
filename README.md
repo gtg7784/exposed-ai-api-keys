@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-13 22:51:25 UTC
+**Last Updated**: 2026-05-13 23:25:06 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 338
+**Total Unique Findings**: 339
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 71 |
+| **Affected Repositories** | 72 |
 
 ### By Key Type
 
@@ -36,8 +36,8 @@
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-ts-env-var` | 11 |
 | `sk-proj-env-gemini-env` | 9 |
+| `sk-proj-js-env-var` | 8 |
 | `sk-proj-py-sk-proj` | 7 |
-| `sk-proj-js-env-var` | 7 |
 | `sk-proj-json-google-env` | 7 |
 | `sk-proj-py-sk-generic` | 7 |
 | `sk-proj-json-claude-env` | 6 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `forem/forem` | `spec/services/agent_session_parsers...` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-05-13 |
 | `LeoYeAI/openclaw-master-skills` | `skills/openclaw-sec/src/patterns/se...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-05-13 |
 | `LeoYeAI/openclaw-master-skills` | `skills/openclaw-sec/__tests__/integ...` | `sk-proj-json-sk-generic` | `sk-123456789***` | 2026-05-13 |
 | `LeoYeAI/openclaw-master-skills` | `skills/openclaw-sec-plus/src/patter...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-05-13 |
@@ -169,9 +170,8 @@
 | `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
 | `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
 | `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
-| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
 
-*... and 238 more unique findings (see `data/` directory)*
+*... and 239 more unique findings (see `data/` directory)*
 
 
 ---
