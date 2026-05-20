@@ -11,9 +11,9 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-20 16:38:10 UTC
+**Last Updated**: 2026-05-20 17:46:13 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 339
+**Total Unique Findings**: 341
 
 ### Summary Statistics
 
@@ -26,13 +26,13 @@
 
 | Key Pattern | Count |
 |-------------|-------|
-| `sk-proj-json-sk-generic` | 50 |
+| `sk-proj-json-sk-generic` | 51 |
 | `sk-proj-env-env-var` | 46 |
 | `sk-proj-json-env-var` | 45 |
 | `sk-proj-json-anthropic-env` | 24 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-ts-anthropic-env` | 15 |
-| `sk-proj-json-gemini-env` | 13 |
+| `sk-proj-json-gemini-env` | 14 |
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-ts-env-var` | 11 |
 | `sk-proj-env-gemini-env` | 9 |
@@ -70,6 +70,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `cisco-ai-defense/defenseclaw` | `docs-site/data/policy-recipes.json` | `sk-proj-json-sk-generic` | `sk-aaaaaaaaa***` | 2026-05-20 |
+| `openclaw/openclaw` | `src/agents/sandbox-create-args.test...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-05-20 |
 | `forem/forem` | `spec/services/agent_session_parsers...` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-05-13 |
 | `LeoYeAI/openclaw-master-skills` | `skills/openclaw-sec/src/patterns/se...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-05-13 |
 | `LeoYeAI/openclaw-master-skills` | `skills/openclaw-sec/__tests__/integ...` | `sk-proj-json-sk-generic` | `sk-123456789***` | 2026-05-13 |
@@ -168,10 +170,8 @@
 | `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
 | `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
 | `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
-| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
-| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
 
-*... and 239 more unique findings (see `data/` directory)*
+*... and 241 more unique findings (see `data/` directory)*
 
 
 ---
