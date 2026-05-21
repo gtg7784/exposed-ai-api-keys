@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-21 23:23:59 UTC
+**Last Updated**: 2026-05-21 23:54:43 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 382
+**Total Unique Findings**: 383
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 80 |
+| **Affected Repositories** | 81 |
 
 ### By Key Type
 
@@ -41,7 +41,7 @@
 | `sk-proj-py-sk-proj` | 9 |
 | `sk-proj-js-env-var` | 9 |
 | `sk-proj-env-gemini-env` | 9 |
-| `sk-proj-json-google-env` | 7 |
+| `sk-proj-json-google-env` | 8 |
 | `sk-proj-json-claude-env` | 6 |
 | `sk-proj-json-sk-proj` | 5 |
 | `sk-proj-yml-env-var` | 5 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `DragonJAR/n8n-workflows-esp` | `workflows/01312-WhatsApp-virtual-ag...` | `sk-proj-json-google-env` | `GOOGLE_API_K***` | 2026-05-21 |
 | `rohitg00/agentmemory` | `test/fs-watcher.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `NVIDIA/NemoClaw` | `src/lib/sandbox-base-image.test.ts` | `sk-proj-ts-sk-generic` | `sk-abcdef012***` | 2026-05-21 |
 | `n8n-io/n8n` | `packages/@n8n/instance-ai/evaluatio...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
@@ -169,9 +170,8 @@
 | `darfaz/clawmoat` | `docs/playground.html` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `apisec-inc/mcp-audit` | `docs/RISK_SCORING.md` | `sk-proj-js-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-20 |
 | `snailyp/apichecker` | `js/help-system.js` | `sk-proj-js-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-20 |
-| `superagent-ai/vibekit` | `templates/v0-clone/README.md` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-20 |
 
-*... and 282 more unique findings (see `data/` directory)*
+*... and 283 more unique findings (see `data/` directory)*
 
 
 ---
