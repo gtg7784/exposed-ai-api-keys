@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-21 08:53:55 UTC
+**Last Updated**: 2026-05-21 10:20:04 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 342
+**Total Unique Findings**: 379
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 73 |
+| **Affected Repositories** | 77 |
 
 ### By Key Type
 
@@ -30,30 +30,30 @@
 | `sk-proj-env-env-var` | 46 |
 | `sk-proj-json-env-var` | 45 |
 | `sk-proj-json-anthropic-env` | 24 |
+| `sk-proj-py-env-var` | 19 |
+| `sk-proj-py-anthropic-env` | 19 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-ts-anthropic-env` | 15 |
 | `sk-proj-json-gemini-env` | 14 |
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-ts-env-var` | 11 |
+| `sk-proj-py-sk-generic` | 10 |
+| `sk-proj-py-sk-proj` | 9 |
 | `sk-proj-js-env-var` | 9 |
 | `sk-proj-env-gemini-env` | 9 |
-| `sk-proj-py-sk-proj` | 7 |
 | `sk-proj-json-google-env` | 7 |
-| `sk-proj-py-sk-generic` | 7 |
 | `sk-proj-json-claude-env` | 6 |
 | `sk-proj-json-sk-proj` | 5 |
-| `sk-proj-py-env-var` | 5 |
 | `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
+| `sk-proj-py-google-env` | 3 |
 | `sk-proj-yml-sk-generic` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
 | `sk-proj-ts-google-env` | 3 |
 | `sk-proj-ts-sk-generic` | 3 |
 | `sk-proj-js-sk-proj` | 2 |
-| `sk-proj-py-google-env` | 2 |
-| `sk-proj-py-anthropic-env` | 2 |
 | `sk-proj-js-anthropic-env` | 2 |
 | `sk-proj-js-sk-generic` | 2 |
 | `sk-proj-ts-claude-env` | 2 |
@@ -70,6 +70,43 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `davila7/claude-code-templates` | `docs/blog/e2b-claude-code-sandbox/i...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `dashboard/public/blog/e2b-claude-co...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/components/skills/scientif...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/components/skills/scientif...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/components/skills/scientif...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/components/sandbox/e2b/cla...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/components/sandbox/e2b/.en...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/components/sandbox/docker/...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/components/sandbox/cloudfl...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/components/sandbox/cloudfl...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/components/sandbox/cloudfl...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/components/sandbox/cloudfl...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/components/sandbox/README....` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `davila7/claude-code-templates` | `.env.example` | `sk-proj-py-google-env` | `GOOGLE_API_K***` | 2026-05-21 |
+| `MervinPraison/PraisonAI` | `src/praisonai/praisonai/cli/feature...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `MervinPraison/PraisonAI` | `src/praisonai/README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `MervinPraison/PraisonAI` | `src/praisonai-ts/.env.example` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `MervinPraison/PraisonAI` | `examples/recipes/creator_suite/.env...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `MervinPraison/PraisonAI` | `docker/quick-start.sh` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `MervinPraison/PraisonAI` | `docker/bots/.env.template` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `MervinPraison/PraisonAI` | `docker/README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `MervinPraison/PraisonAI` | `docker/.env.template` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `MervinPraison/PraisonAI` | `README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `yusufkaraaslan/Skill_Seekers` | `docs/zh-CN/reference/ENVIRONMENT_VA...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `yusufkaraaslan/Skill_Seekers` | `docs/reference/ENVIRONMENT_VARIABLE...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
+| `yusufkaraaslan/Skill_Seekers` | `docs/guides/MCP_SETUP.md` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `yusufkaraaslan/Skill_Seekers` | `docs/features/HOW_TO_GUIDES.md` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `yusufkaraaslan/Skill_Seekers` | `.env.example` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
+| `binary-husky/gpt_academic` | `tests/test_key_pattern_manager.py` | `sk-proj-py-sk-proj` | `sk-proj-xx-x***` | 2026-05-21 |
+| `binary-husky/gpt_academic` | `docs/use_vllm.md` | `sk-proj-py-sk-generic` | `sk-123456789***` | 2026-05-21 |
+| `binary-husky/gpt_academic` | `docs/translate_english.json` | `sk-proj-py-sk-proj` | `sk-proj-xx-x***` | 2026-05-21 |
+| `binary-husky/gpt_academic` | `docker-compose.yml` | `sk-proj-py-sk-generic` | `sk-o6JSoidyg***` | 2026-05-21 |
+| `binary-husky/gpt_academic` | `config.py` | `sk-proj-py-sk-generic` | `sk-123456789***` | 2026-05-21 |
 | `EvoMap/evolver` | `test/webuiObserver.test.js` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-05-20 |
 | `cisco-ai-defense/defenseclaw` | `docs-site/data/policy-recipes.json` | `sk-proj-json-sk-generic` | `sk-aaaaaaaaa***` | 2026-05-20 |
 | `openclaw/openclaw` | `src/agents/sandbox-create-args.test...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-05-20 |
@@ -133,45 +170,8 @@
 | `superagent-ai/vibekit` | `templates/codex-clone/README.md` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `superagent-ai/vibekit` | `docs/supported-sandboxes/cloudflare...` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
 | `superagent-ai/vibekit` | `docs/sdk/secrets.mdx` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `superagent-ai/vibekit` | `docs/cli/environment-variables.mdx` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `lancedb/vectordb-recipes` | `examples/saas_examples/ts_example/l...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `lancedb/vectordb-recipes` | `examples/saas_examples/ts_example/h...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `lancedb/vectordb-recipes` | `applications/archived_applications/...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `website/docs/rag/voltagent.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `website/docs/rag/qdrant.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `website/docs/rag/pinecone.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `website/docs/rag/lancedb.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `website/docs/rag/chroma.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `website/blog/2025-04-26-peaka-mcp-v...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `website/blog/2025-04-25-what-is-an-...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `website/blog/2025-04-24-rag-chatbot...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `website/blog/2025-04-23-multi-agent...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-thinking-tool/README....` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-tavily-search/README....` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-tavily-search/.env.ex...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-research-assistant/RE...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-recipe-generator/READ...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-qdrant/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-postgres/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-pinecone/README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-pinecone/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-nestjs/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-memory-rest-api/.env....` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-mcp-elicitation/READM...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-lancedb/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-hugging-face-mcp/READ...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-composio-mcp/README.m...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-cloudflare-workers/RE...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-cerbos/README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/with-ad-creator/README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `VoltAgent/voltagent` | `examples/next-js-chatbot-starter-te...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
-| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
-| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
-| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
-| `panaversity/learn-agentic-ai` | `backup_recent/07c_langgraph_functio...` | `sk-proj-env-google-env` | `GOOGLE_API_K***` | 2026-04-20 |
 
-*... and 242 more unique findings (see `data/` directory)*
+*... and 279 more unique findings (see `data/` directory)*
 
 
 ---
