@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-22 02:23:09 UTC
+**Last Updated**: 2026-05-22 03:38:27 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 383
+**Total Unique Findings**: 405
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 81 |
+| **Affected Repositories** | 82 |
 
 ### By Key Type
 
@@ -29,11 +29,11 @@
 | `sk-proj-json-sk-generic` | 51 |
 | `sk-proj-env-env-var` | 46 |
 | `sk-proj-json-env-var` | 45 |
+| `sk-proj-ts-anthropic-env` | 38 |
 | `sk-proj-json-anthropic-env` | 24 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
 | `sk-proj-env-sk-proj` | 16 |
-| `sk-proj-ts-anthropic-env` | 16 |
 | `sk-proj-json-gemini-env` | 14 |
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-ts-env-var` | 12 |
@@ -70,6 +70,28 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `ruvnet/agentic-flow` | `docs/implementation/API_KEY_OVERRID...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docs/guides/STANDALONE_PROXY_GUIDE....` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docs/docker/DOCKER_DEPLOYMENT_GUIDE...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docs/archived/plans/requesty/02-arc...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docs/archived/V1.1.11_COMPLETE_VALI...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docs/archived/README_V1.1.11.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docs/DOCKER_DEPLOYMENT_GUIDE.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docker/configs/claude.env.template` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docker/QUICK_REFERENCE.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docker/Dockerfile.test-mcp-simple` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docker/Dockerfile.test-mcp-all-args` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docker/Dockerfile.test-complete` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docker/Dockerfile.test-cli-params` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docker/Dockerfile.test-agent-mgmt` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `docker/.env.example` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `agentic-flow/src/cli-standalone-pro...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `agentic-flow/src/cli-proxy.ts` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `agentic-flow/docs/plans/requesty/02...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `agentic-flow/docs/guides/STANDALONE...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `agentic-flow/docs/archived/V1.1.11_...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `agentic-flow/docs/archived/README_V...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
+| `ruvnet/agentic-flow` | `agentic-flow/docker/test-instance/....` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
 | `DragonJAR/n8n-workflows-esp` | `workflows/01312-WhatsApp-virtual-ag...` | `sk-proj-json-google-env` | `GOOGLE_API_K***` | 2026-05-21 |
 | `rohitg00/agentmemory` | `test/fs-watcher.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `NVIDIA/NemoClaw` | `src/lib/sandbox-base-image.test.ts` | `sk-proj-ts-sk-generic` | `sk-abcdef012***` | 2026-05-21 |
@@ -148,30 +170,8 @@
 | `tmotti77/myplat` | `RAILWAY_DEPLOY_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
 | `tmotti77/myplat` | `QUICK_START.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
 | `tmotti77/myplat` | `DEPLOYMENT_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
-| `tmotti77/myplat` | `.env.production.template` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
-| `AnalyseDeCircuit/oxideterm` | `src/test/ai/contextSanitizer.test.t...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-04-22 |
-| `openclaw/skills` | `skills/yontlly/ai-test-platform/pro...` | `sk-proj-ts-deepseek-env` | `DEEPSEEK_API***` | 2026-04-22 |
-| `openclaw/skills` | `skills/yontlly/ai-test-platform/pro...` | `sk-proj-ts-deepseek-env` | `DEEPSEEK_API***` | 2026-04-22 |
-| `trf2-jus-br/apoia` | `README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-22 |
-| `openclaw/skills` | `skills/tayllisun/arshis-memory/scri...` | `sk-proj-ts-sk-generic` | `sk-moxcmniwc***` | 2026-04-22 |
-| `openclaw/skills` | `skills/olveww-dot/auto-distill/scri...` | `sk-proj-ts-sk-generic` | `sk-kgvvlyeud***` | 2026-04-22 |
-| `openclaw/skills` | `skills/nicemaths123/social-spy-moni...` | `sk-proj-ts-claude-env` | `CLAUDE_API_K***` | 2026-04-22 |
-| `openclaw/skills` | `skills/nicemaths123/business-opport...` | `sk-proj-ts-claude-env` | `CLAUDE_API_K***` | 2026-04-22 |
-| `ObjectWeaver/ObjectWeaver` | `.env.llm.example` | `sk-proj-env-llm-env` | `LLM_API_KEY=***` | 2026-04-22 |
-| `DrHaitham/PenTest2.0` | `README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-22 |
-| `rockerritesh/vibe_coder` | `README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-22 |
-| `Ashish-Pandey62/Agentic-Deskto...` | `README.md` | `sk-proj-py-google-env` | `GOOGLE_API_K***` | 2026-04-21 |
-| `mrahmdi/Thatis` | `main.py` | `sk-proj-py-sk-proj` | `sk-proj--S4Z***` | 2026-04-21 |
-| `peterkrueck/Claude-Code-Develo...` | `hooks/config/sensitive-patterns.jso...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `Zie619/n8n-workflows` | `medcards-ai/.env.example` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-20 |
-| `Zie619/n8n-workflows` | `ai-stack/README.md` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-20 |
-| `Zie619/n8n-workflows` | `ai-stack/.env` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-20 |
-| `darfaz/clawmoat` | `site/index.html` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `darfaz/clawmoat` | `docs/playground.html` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-04-20 |
-| `apisec-inc/mcp-audit` | `docs/RISK_SCORING.md` | `sk-proj-js-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-20 |
-| `snailyp/apichecker` | `js/help-system.js` | `sk-proj-js-sk-generic` | `sk-xxxxxxxxx***` | 2026-04-20 |
 
-*... and 283 more unique findings (see `data/` directory)*
+*... and 305 more unique findings (see `data/` directory)*
 
 
 ---
