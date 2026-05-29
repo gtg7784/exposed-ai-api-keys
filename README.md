@@ -11,26 +11,26 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-05-29 22:09:50 UTC
+**Last Updated**: 2026-05-29 22:48:18 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 405
+**Total Unique Findings**: 409
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 82 |
+| **Affected Repositories** | 83 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
-| `sk-proj-json-sk-generic` | 51 |
+| `sk-proj-json-sk-generic` | 52 |
+| `sk-proj-json-env-var` | 46 |
 | `sk-proj-env-env-var` | 46 |
-| `sk-proj-json-env-var` | 45 |
 | `sk-proj-ts-anthropic-env` | 38 |
-| `sk-proj-json-anthropic-env` | 24 |
+| `sk-proj-json-anthropic-env` | 26 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
 | `sk-proj-env-sk-proj` | 16 |
@@ -70,6 +70,10 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `ossf/malicious-packages` | `osv/withdrawn/npm/@shadanai/opencla...` | `sk-proj-json-sk-generic` | `sk-xRxGLtCkA***` | 2026-05-29 |
+| `openclaw/openclaw` | `test/scripts/package-acceptance-wor...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-29 |
+| `openclaw/openclaw` | `docs/install/fly.md` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-29 |
+| `openclaw/openclaw` | `.github/actions/docker-e2e-plan/act...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-29 |
 | `ruvnet/agentic-flow` | `docs/implementation/API_KEY_OVERRID...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
 | `ruvnet/agentic-flow` | `docs/guides/STANDALONE_PROXY_GUIDE....` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
 | `ruvnet/agentic-flow` | `docs/docker/DOCKER_DEPLOYMENT_GUIDE...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
@@ -166,12 +170,8 @@
 | `lekesiz/bilan-final-full` | `docs/ENV_VARIABLES.md` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-23 |
 | `lekesiz/bilan-final-full` | `docs/DEPLOYMENT_CHECKLIST.md` | `sk-proj-env-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-23 |
 | `lekesiz/bilan-final-full` | `backend/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
-| `tmotti77/myplat` | `SESSION_SUMMARY.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
-| `tmotti77/myplat` | `RAILWAY_DEPLOY_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
-| `tmotti77/myplat` | `QUICK_START.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
-| `tmotti77/myplat` | `DEPLOYMENT_GUIDE.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
 
-*... and 305 more unique findings (see `data/` directory)*
+*... and 309 more unique findings (see `data/` directory)*
 
 
 ---
