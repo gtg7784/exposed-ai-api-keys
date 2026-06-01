@@ -11,8 +11,8 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-06-01 15:11:52 UTC
-**API Requests Made**: 0
+**Last Updated**: 2026-06-01 17:05:46 UTC
+**API Requests Made**: 10
 **Total Unique Findings**: 409
 
 ### Summary Statistics
