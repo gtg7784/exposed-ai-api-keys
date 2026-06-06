@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-06-06 10:01:49 UTC
+**Last Updated**: 2026-06-06 10:48:28 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 409
+**Total Unique Findings**: 410
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 83 |
+| **Affected Repositories** | 84 |
 
 ### By Key Type
 
@@ -42,8 +42,8 @@
 | `sk-proj-js-env-var` | 9 |
 | `sk-proj-env-gemini-env` | 9 |
 | `sk-proj-json-google-env` | 8 |
+| `sk-proj-json-sk-proj` | 6 |
 | `sk-proj-json-claude-env` | 6 |
-| `sk-proj-json-sk-proj` | 5 |
 | `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `enescingoz/awesome-n8n-templat...` | `AI product imagines.json` | `sk-proj-json-sk-proj` | `sk-proj-Iu52***` | 2026-06-06 |
 | `ossf/malicious-packages` | `osv/withdrawn/npm/@shadanai/opencla...` | `sk-proj-json-sk-generic` | `sk-xRxGLtCkA***` | 2026-05-29 |
 | `openclaw/openclaw` | `test/scripts/package-acceptance-wor...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-29 |
 | `openclaw/openclaw` | `docs/install/fly.md` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-29 |
@@ -169,9 +170,8 @@
 | `lekesiz/bilan-final-full` | `docs/GEMINI_API_KEY_SETUP.md` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-23 |
 | `lekesiz/bilan-final-full` | `docs/ENV_VARIABLES.md` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-23 |
 | `lekesiz/bilan-final-full` | `docs/DEPLOYMENT_CHECKLIST.md` | `sk-proj-env-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-23 |
-| `lekesiz/bilan-final-full` | `backend/.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-04-23 |
 
-*... and 309 more unique findings (see `data/` directory)*
+*... and 310 more unique findings (see `data/` directory)*
 
 
 ---
