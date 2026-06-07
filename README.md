@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-06-07 21:02:34 UTC
+**Last Updated**: 2026-06-07 21:36:59 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 410
+**Total Unique Findings**: 412
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 84 |
+| **Affected Repositories** | 85 |
 
 ### By Key Type
 
@@ -29,7 +29,7 @@
 | `sk-proj-json-sk-generic` | 52 |
 | `sk-proj-json-env-var` | 46 |
 | `sk-proj-env-env-var` | 46 |
-| `sk-proj-ts-anthropic-env` | 38 |
+| `sk-proj-ts-anthropic-env` | 40 |
 | `sk-proj-json-anthropic-env` | 26 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
@@ -70,6 +70,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `askalf/dario` | `src/live-fingerprint.ts` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-07 |
+| `askalf/dario` | `CHANGELOG.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-07 |
 | `enescingoz/awesome-n8n-templat...` | `AI product imagines.json` | `sk-proj-json-sk-proj` | `sk-proj-Iu52***` | 2026-06-06 |
 | `ossf/malicious-packages` | `osv/withdrawn/npm/@shadanai/opencla...` | `sk-proj-json-sk-generic` | `sk-xRxGLtCkA***` | 2026-05-29 |
 | `openclaw/openclaw` | `test/scripts/package-acceptance-wor...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-29 |
@@ -168,10 +170,8 @@
 | `sammargolis/OpenScribe` | `docs/MEDASR-SETUP.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-26 |
 | `sammargolis/OpenScribe` | `README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-26 |
 | `lekesiz/bilan-final-full` | `docs/GEMINI_API_KEY_SETUP.md` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-23 |
-| `lekesiz/bilan-final-full` | `docs/ENV_VARIABLES.md` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-23 |
-| `lekesiz/bilan-final-full` | `docs/DEPLOYMENT_CHECKLIST.md` | `sk-proj-env-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-23 |
 
-*... and 310 more unique findings (see `data/` directory)*
+*... and 312 more unique findings (see `data/` directory)*
 
 
 ---
