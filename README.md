@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-06-08 14:59:11 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 412
+**Last Updated**: 2026-06-08 16:28:38 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 413
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 85 |
+| **Affected Repositories** | 86 |
 
 ### By Key Type
 
@@ -53,8 +53,8 @@
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
 | `sk-proj-ts-google-env` | 3 |
+| `sk-proj-js-anthropic-env` | 3 |
 | `sk-proj-js-sk-proj` | 2 |
-| `sk-proj-js-anthropic-env` | 2 |
 | `sk-proj-js-sk-generic` | 2 |
 | `sk-proj-ts-claude-env` | 2 |
 | `sk-proj-ts-deepseek-env` | 2 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `zylos-ai/zylos-core` | `cli/lib/__tests__/runtime-launch.te...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-08 |
 | `askalf/dario` | `src/live-fingerprint.ts` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-07 |
 | `askalf/dario` | `CHANGELOG.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-07 |
 | `enescingoz/awesome-n8n-templat...` | `AI product imagines.json` | `sk-proj-json-sk-proj` | `sk-proj-Iu52***` | 2026-06-06 |
@@ -169,9 +170,8 @@
 | `grcengineering/how-to-harden` | `docs/_data/packs/anthropic-claude.y...` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-07 |
 | `sammargolis/OpenScribe` | `docs/MEDASR-SETUP.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-26 |
 | `sammargolis/OpenScribe` | `README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-26 |
-| `lekesiz/bilan-final-full` | `docs/GEMINI_API_KEY_SETUP.md` | `sk-proj-env-gemini-env` | `GEMINI_API_K***` | 2026-04-23 |
 
-*... and 312 more unique findings (see `data/` directory)*
+*... and 313 more unique findings (see `data/` directory)*
 
 
 ---
