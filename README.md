@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-06-08 21:08:22 UTC
+**Last Updated**: 2026-06-08 21:51:50 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 413
+**Total Unique Findings**: 417
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 86 |
+| **Affected Repositories** | 87 |
 
 ### By Key Type
 
@@ -41,10 +41,10 @@
 | `sk-proj-py-sk-proj` | 9 |
 | `sk-proj-js-env-var` | 9 |
 | `sk-proj-env-gemini-env` | 9 |
+| `sk-proj-yml-env-var` | 8 |
 | `sk-proj-json-google-env` | 8 |
 | `sk-proj-json-sk-proj` | 6 |
 | `sk-proj-json-claude-env` | 6 |
-| `sk-proj-yml-env-var` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
 | `sk-proj-ts-sk-generic` | 4 |
@@ -54,11 +54,11 @@
 | `sk-proj-json-embedding-env` | 3 |
 | `sk-proj-ts-google-env` | 3 |
 | `sk-proj-js-anthropic-env` | 3 |
+| `sk-proj-yml-anthropic-env` | 3 |
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-js-sk-generic` | 2 |
 | `sk-proj-ts-claude-env` | 2 |
 | `sk-proj-ts-deepseek-env` | 2 |
-| `sk-proj-yml-anthropic-env` | 2 |
 | `sk-proj-yml-google-env` | 1 |
 | `sk-proj-json-llm-env` | 1 |
 | `sk-proj-json-ai-env` | 1 |
@@ -70,6 +70,10 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `langwatch/langwatch` | `typescript-sdk/examples/evaluation/...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-06-08 |
+| `langwatch/langwatch` | `typescript-sdk/__tests__/e2e/cli/go...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-06-08 |
+| `langwatch/langwatch` | `docs/integration/typescript/guide.m...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-06-08 |
+| `langwatch/langwatch` | `docs/integration/python/integration...` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-08 |
 | `zylos-ai/zylos-core` | `cli/lib/__tests__/runtime-launch.te...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-08 |
 | `askalf/dario` | `src/live-fingerprint.ts` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-07 |
 | `askalf/dario` | `CHANGELOG.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-07 |
@@ -166,12 +170,8 @@
 | `cisco-ai-defense/defenseclaw` | `cli/tests/test_cmd_setup_rotate_tok...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-10 |
 | `MoetazAbdalla/Med-pol-report` | `tryy.py` | `sk-proj-py-sk-proj` | `sk-proj-_PEN***` | 2026-05-07 |
 | `MoetazAbdalla/Med-pol-report` | `assets/api key` | `sk-proj-py-sk-proj` | `sk-proj-_PEN***` | 2026-05-07 |
-| `grcengineering/how-to-harden` | `packs/anthropic-claude/api/hth-anth...` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-07 |
-| `grcengineering/how-to-harden` | `docs/_data/packs/anthropic-claude.y...` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-07 |
-| `sammargolis/OpenScribe` | `docs/MEDASR-SETUP.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-26 |
-| `sammargolis/OpenScribe` | `README.md` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-04-26 |
 
-*... and 313 more unique findings (see `data/` directory)*
+*... and 317 more unique findings (see `data/` directory)*
 
 
 ---
