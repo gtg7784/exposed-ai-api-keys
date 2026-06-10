@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-06-10 21:48:49 UTC
+**Last Updated**: 2026-06-10 22:30:18 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 417
+**Total Unique Findings**: 418
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 87 |
+| **Affected Repositories** | 88 |
 
 ### By Key Type
 
@@ -35,8 +35,8 @@
 | `sk-proj-py-anthropic-env` | 19 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-json-gemini-env` | 14 |
+| `sk-proj-ts-env-var` | 13 |
 | `sk-proj-env-google-env` | 13 |
-| `sk-proj-ts-env-var` | 12 |
 | `sk-proj-py-sk-generic` | 10 |
 | `sk-proj-py-sk-proj` | 9 |
 | `sk-proj-js-env-var` | 9 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `github/gh-aw-firewall` | `docs/awf-config-spec.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-06-10 |
 | `langwatch/langwatch` | `typescript-sdk/examples/evaluation/...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-06-08 |
 | `langwatch/langwatch` | `typescript-sdk/__tests__/e2e/cli/go...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-06-08 |
 | `langwatch/langwatch` | `docs/integration/typescript/guide.m...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-06-08 |
@@ -169,9 +170,8 @@
 | `tangle-network/dapp` | `scripts/agent-browser/run-wallet-fl...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-10 |
 | `cisco-ai-defense/defenseclaw` | `cli/tests/test_cmd_setup_rotate_tok...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-10 |
 | `MoetazAbdalla/Med-pol-report` | `tryy.py` | `sk-proj-py-sk-proj` | `sk-proj-_PEN***` | 2026-05-07 |
-| `MoetazAbdalla/Med-pol-report` | `assets/api key` | `sk-proj-py-sk-proj` | `sk-proj-_PEN***` | 2026-05-07 |
 
-*... and 317 more unique findings (see `data/` directory)*
+*... and 318 more unique findings (see `data/` directory)*
 
 
 ---
