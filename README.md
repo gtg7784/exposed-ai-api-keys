@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-06-12 22:20:20 UTC
+**Last Updated**: 2026-06-12 22:56:10 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 419
+**Total Unique Findings**: 422
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 88 |
+| **Affected Repositories** | 89 |
 
 ### By Key Type
 
@@ -40,13 +40,14 @@
 | `sk-proj-py-sk-generic` | 10 |
 | `sk-proj-py-sk-proj` | 9 |
 | `sk-proj-js-env-var` | 9 |
+| `sk-proj-yml-env-var` | 9 |
 | `sk-proj-env-gemini-env` | 9 |
-| `sk-proj-yml-env-var` | 8 |
 | `sk-proj-json-google-env` | 8 |
 | `sk-proj-json-sk-proj` | 6 |
 | `sk-proj-json-claude-env` | 6 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
+| `sk-proj-yml-anthropic-env` | 5 |
 | `sk-proj-ts-sk-generic` | 4 |
 | `sk-proj-py-google-env` | 3 |
 | `sk-proj-yml-sk-generic` | 3 |
@@ -54,7 +55,6 @@
 | `sk-proj-json-embedding-env` | 3 |
 | `sk-proj-ts-google-env` | 3 |
 | `sk-proj-js-anthropic-env` | 3 |
-| `sk-proj-yml-anthropic-env` | 3 |
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-js-sk-generic` | 2 |
 | `sk-proj-ts-claude-env` | 2 |
@@ -70,6 +70,9 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `Molecule-AI/molecule-core` | `workspace-server/internal/handlers/...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-06-12 |
+| `Molecule-AI/molecule-core` | `workspace-server/internal/handlers/...` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-12 |
+| `Molecule-AI/molecule-core` | `tests/e2e/test_staging_full_saas.sh` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-12 |
 | `cisco-ai-defense/defenseclaw` | `internal/cli/scan_test.go` | `sk-proj-json-sk-generic` | `sk-test12345***` | 2026-06-12 |
 | `github/gh-aw-firewall` | `docs/awf-config-spec.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-06-10 |
 | `langwatch/langwatch` | `typescript-sdk/examples/evaluation/...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-06-08 |
@@ -167,11 +170,8 @@
 | `sarthaksinghgaur/LLM-Powered-A...` | `README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-10 |
 | `autoppia/autoppia_web_agents_s...` | `autoppia_web_agents_subnet/opensour...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-05-10 |
 | `promptfoo/promptfoo` | `site/docs/guides/evaluate-google-ad...` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-05-10 |
-| `promptfoo/promptfoo` | `examples/integration-google-adk/REA...` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-05-10 |
-| `tangle-network/dapp` | `scripts/agent-browser/run-wallet-fl...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-10 |
-| `cisco-ai-defense/defenseclaw` | `cli/tests/test_cmd_setup_rotate_tok...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-10 |
 
-*... and 319 more unique findings (see `data/` directory)*
+*... and 322 more unique findings (see `data/` directory)*
 
 
 ---
