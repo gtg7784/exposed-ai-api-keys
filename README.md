@@ -11,9 +11,9 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-06-12 02:20:27 UTC
+**Last Updated**: 2026-06-12 03:46:27 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 418
+**Total Unique Findings**: 419
 
 ### Summary Statistics
 
@@ -26,7 +26,7 @@
 
 | Key Pattern | Count |
 |-------------|-------|
-| `sk-proj-json-sk-generic` | 52 |
+| `sk-proj-json-sk-generic` | 53 |
 | `sk-proj-json-env-var` | 46 |
 | `sk-proj-env-env-var` | 46 |
 | `sk-proj-ts-anthropic-env` | 40 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `cisco-ai-defense/defenseclaw` | `internal/cli/scan_test.go` | `sk-proj-json-sk-generic` | `sk-test12345***` | 2026-06-12 |
 | `github/gh-aw-firewall` | `docs/awf-config-spec.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-06-10 |
 | `langwatch/langwatch` | `typescript-sdk/examples/evaluation/...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-06-08 |
 | `langwatch/langwatch` | `typescript-sdk/__tests__/e2e/cli/go...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-06-08 |
@@ -169,9 +170,8 @@
 | `promptfoo/promptfoo` | `examples/integration-google-adk/REA...` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-05-10 |
 | `tangle-network/dapp` | `scripts/agent-browser/run-wallet-fl...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-10 |
 | `cisco-ai-defense/defenseclaw` | `cli/tests/test_cmd_setup_rotate_tok...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-10 |
-| `MoetazAbdalla/Med-pol-report` | `tryy.py` | `sk-proj-py-sk-proj` | `sk-proj-_PEN***` | 2026-05-07 |
 
-*... and 318 more unique findings (see `data/` directory)*
+*... and 319 more unique findings (see `data/` directory)*
 
 
 ---
