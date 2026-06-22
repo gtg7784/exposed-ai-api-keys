@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-06-22 16:13:55 UTC
+**Last Updated**: 2026-06-22 17:54:05 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 422
+**Total Unique Findings**: 425
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 89 |
+| **Affected Repositories** | 90 |
 
 ### By Key Type
 
@@ -45,21 +45,21 @@
 | `sk-proj-json-google-env` | 8 |
 | `sk-proj-json-sk-proj` | 6 |
 | `sk-proj-json-claude-env` | 6 |
+| `sk-proj-yml-sk-generic` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
 | `sk-proj-yml-anthropic-env` | 5 |
 | `sk-proj-ts-sk-generic` | 4 |
 | `sk-proj-py-google-env` | 3 |
-| `sk-proj-yml-sk-generic` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
 | `sk-proj-ts-google-env` | 3 |
 | `sk-proj-js-anthropic-env` | 3 |
 | `sk-proj-js-sk-proj` | 2 |
+| `sk-proj-yml-google-env` | 2 |
 | `sk-proj-js-sk-generic` | 2 |
 | `sk-proj-ts-claude-env` | 2 |
 | `sk-proj-ts-deepseek-env` | 2 |
-| `sk-proj-yml-google-env` | 1 |
 | `sk-proj-json-llm-env` | 1 |
 | `sk-proj-json-ai-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
@@ -70,6 +70,9 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `dinosn/leaklens` | `pkg/rule/rules/stabilityai.yml` | `sk-proj-yml-sk-generic` | `sk-AnmgropvA***` | 2026-06-22 |
+| `dinosn/leaklens` | `pkg/rule/rules/openai.yml` | `sk-proj-yml-sk-generic` | `sk-mxIt5s1ty***` | 2026-06-22 |
+| `dinosn/leaklens` | `pkg/rule/rules/google.yml` | `sk-proj-yml-google-env` | `GOOGLE_API_K***` | 2026-06-22 |
 | `Molecule-AI/molecule-core` | `workspace-server/internal/handlers/...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-06-12 |
 | `Molecule-AI/molecule-core` | `workspace-server/internal/handlers/...` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-12 |
 | `Molecule-AI/molecule-core` | `tests/e2e/test_staging_full_saas.sh` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-06-12 |
@@ -167,11 +170,8 @@
 | `mrbrownnn/Lab-4_2A202600272` | `agent.py` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-12 |
 | `ganeshkiran987/Simple_Chatbot_...` | `check.py` | `sk-proj-py-sk-proj` | `sk-proj-_CwI***` | 2026-05-10 |
 | `ganeshkiran987/Simple_Chatbot_...` | `chatbot/chatbot.py` | `sk-proj-py-sk-proj` | `sk-proj-_CwI***` | 2026-05-10 |
-| `sarthaksinghgaur/LLM-Powered-A...` | `README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-10 |
-| `autoppia/autoppia_web_agents_s...` | `autoppia_web_agents_subnet/opensour...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-05-10 |
-| `promptfoo/promptfoo` | `site/docs/guides/evaluate-google-ad...` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-05-10 |
 
-*... and 322 more unique findings (see `data/` directory)*
+*... and 325 more unique findings (see `data/` directory)*
 
 
 ---
