@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-06-28 02:18:58 UTC
+**Last Updated**: 2026-06-28 03:36:55 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 425
+**Total Unique Findings**: 426
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 90 |
+| **Affected Repositories** | 91 |
 
 ### By Key Type
 
@@ -48,8 +48,8 @@
 | `sk-proj-yml-sk-generic` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
+| `sk-proj-ts-sk-generic` | 5 |
 | `sk-proj-yml-anthropic-env` | 5 |
-| `sk-proj-ts-sk-generic` | 4 |
 | `sk-proj-py-google-env` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `luisfer/ubon` | `src/__tests__/security-rules.test.t...` | `sk-proj-ts-sk-generic` | `sk-xxxxxxxxx***` | 2026-06-28 |
 | `dinosn/leaklens` | `pkg/rule/rules/stabilityai.yml` | `sk-proj-yml-sk-generic` | `sk-AnmgropvA***` | 2026-06-22 |
 | `dinosn/leaklens` | `pkg/rule/rules/openai.yml` | `sk-proj-yml-sk-generic` | `sk-mxIt5s1ty***` | 2026-06-22 |
 | `dinosn/leaklens` | `pkg/rule/rules/google.yml` | `sk-proj-yml-google-env` | `GOOGLE_API_K***` | 2026-06-22 |
@@ -169,9 +170,8 @@
 | `openclaw/openclaw` | `.github/workflows/openclaw-live-and...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-13 |
 | `mrbrownnn/Lab-4_2A202600272` | `agent.py` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-12 |
 | `ganeshkiran987/Simple_Chatbot_...` | `check.py` | `sk-proj-py-sk-proj` | `sk-proj-_CwI***` | 2026-05-10 |
-| `ganeshkiran987/Simple_Chatbot_...` | `chatbot/chatbot.py` | `sk-proj-py-sk-proj` | `sk-proj-_CwI***` | 2026-05-10 |
 
-*... and 325 more unique findings (see `data/` directory)*
+*... and 326 more unique findings (see `data/` directory)*
 
 
 ---
