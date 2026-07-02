@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-02 20:10:17 UTC
+**Last Updated**: 2026-07-02 21:31:11 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 426
+**Total Unique Findings**: 427
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 91 |
+| **Affected Repositories** | 92 |
 
 ### By Key Type
 
@@ -35,7 +35,7 @@
 | `sk-proj-py-anthropic-env` | 19 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-json-gemini-env` | 14 |
-| `sk-proj-ts-env-var` | 13 |
+| `sk-proj-ts-env-var` | 14 |
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-py-sk-generic` | 10 |
 | `sk-proj-py-sk-proj` | 9 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `taracodlabs/aiden` | `tests/v4/mcp/credentialFilter.test....` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-02 |
 | `luisfer/ubon` | `src/__tests__/security-rules.test.t...` | `sk-proj-ts-sk-generic` | `sk-xxxxxxxxx***` | 2026-06-28 |
 | `dinosn/leaklens` | `pkg/rule/rules/stabilityai.yml` | `sk-proj-yml-sk-generic` | `sk-AnmgropvA***` | 2026-06-22 |
 | `dinosn/leaklens` | `pkg/rule/rules/openai.yml` | `sk-proj-yml-sk-generic` | `sk-mxIt5s1ty***` | 2026-06-22 |
@@ -169,9 +170,8 @@
 | `openclaw/openclaw` | `extensions/codex/src/app-server/eve...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
 | `openclaw/openclaw` | `.github/workflows/openclaw-live-and...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-13 |
 | `mrbrownnn/Lab-4_2A202600272` | `agent.py` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-12 |
-| `ganeshkiran987/Simple_Chatbot_...` | `check.py` | `sk-proj-py-sk-proj` | `sk-proj-_CwI***` | 2026-05-10 |
 
-*... and 326 more unique findings (see `data/` directory)*
+*... and 327 more unique findings (see `data/` directory)*
 
 
 ---
