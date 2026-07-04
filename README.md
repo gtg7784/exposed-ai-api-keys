@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-04 17:39:37 UTC
+**Last Updated**: 2026-07-04 18:39:22 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 428
+**Total Unique Findings**: 429
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 92 |
+| **Affected Repositories** | 93 |
 
 ### By Key Type
 
@@ -29,7 +29,7 @@
 | `sk-proj-json-sk-generic` | 53 |
 | `sk-proj-json-env-var` | 46 |
 | `sk-proj-env-env-var` | 46 |
-| `sk-proj-ts-anthropic-env` | 40 |
+| `sk-proj-ts-anthropic-env` | 41 |
 | `sk-proj-json-anthropic-env` | 26 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `daintreehq/daintree` | `src/components/Settings/__tests__/E...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-07-04 |
 | `github/gh-aw-firewall` | `containers/api-proxy/README.md` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-07-04 |
 | `taracodlabs/aiden` | `tests/v4/mcp/credentialFilter.test....` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-02 |
 | `luisfer/ubon` | `src/__tests__/security-rules.test.t...` | `sk-proj-ts-sk-generic` | `sk-xxxxxxxxx***` | 2026-06-28 |
@@ -169,9 +170,8 @@
 | `openclaw/openclaw` | `scripts/e2e/openai-web-search-minim...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
 | `openclaw/openclaw` | `scripts/e2e/openai-image-auth-docke...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
 | `openclaw/openclaw` | `extensions/codex/src/app-server/eve...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
-| `openclaw/openclaw` | `.github/workflows/openclaw-live-and...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-13 |
 
-*... and 328 more unique findings (see `data/` directory)*
+*... and 329 more unique findings (see `data/` directory)*
 
 
 ---
