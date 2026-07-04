@@ -11,9 +11,9 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-04 14:17:16 UTC
+**Last Updated**: 2026-07-04 15:33:46 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 427
+**Total Unique Findings**: 428
 
 ### Summary Statistics
 
@@ -50,10 +50,10 @@
 | `sk-proj-json-deepseek-env` | 5 |
 | `sk-proj-ts-sk-generic` | 5 |
 | `sk-proj-yml-anthropic-env` | 5 |
+| `sk-proj-ts-google-env` | 4 |
 | `sk-proj-py-google-env` | 3 |
 | `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
-| `sk-proj-ts-google-env` | 3 |
 | `sk-proj-js-anthropic-env` | 3 |
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-yml-google-env` | 2 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `github/gh-aw-firewall` | `containers/api-proxy/README.md` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-07-04 |
 | `taracodlabs/aiden` | `tests/v4/mcp/credentialFilter.test....` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-02 |
 | `luisfer/ubon` | `src/__tests__/security-rules.test.t...` | `sk-proj-ts-sk-generic` | `sk-xxxxxxxxx***` | 2026-06-28 |
 | `dinosn/leaklens` | `pkg/rule/rules/stabilityai.yml` | `sk-proj-yml-sk-generic` | `sk-AnmgropvA***` | 2026-06-22 |
@@ -169,9 +170,8 @@
 | `openclaw/openclaw` | `scripts/e2e/openai-image-auth-docke...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
 | `openclaw/openclaw` | `extensions/codex/src/app-server/eve...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
 | `openclaw/openclaw` | `.github/workflows/openclaw-live-and...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-13 |
-| `mrbrownnn/Lab-4_2A202600272` | `agent.py` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-12 |
 
-*... and 327 more unique findings (see `data/` directory)*
+*... and 328 more unique findings (see `data/` directory)*
 
 
 ---
