@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-06 23:00:47 UTC
+**Last Updated**: 2026-07-07 00:18:39 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 429
+**Total Unique Findings**: 432
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 93 |
+| **Affected Repositories** | 94 |
 
 ### By Key Type
 
@@ -37,8 +37,8 @@
 | `sk-proj-json-gemini-env` | 14 |
 | `sk-proj-ts-env-var` | 14 |
 | `sk-proj-env-google-env` | 13 |
+| `sk-proj-py-sk-proj` | 12 |
 | `sk-proj-py-sk-generic` | 10 |
-| `sk-proj-py-sk-proj` | 9 |
 | `sk-proj-js-env-var` | 9 |
 | `sk-proj-yml-env-var` | 9 |
 | `sk-proj-env-gemini-env` | 9 |
@@ -70,6 +70,9 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `tonszazo-lang/raqqa` | `lmages.py.txt` | `sk-proj-py-sk-proj` | `sk-proj-cPyy***` | 2026-07-07 |
+| `tonszazo-lang/raqqa` | `env` | `sk-proj-py-sk-proj` | `sk-proj-_nBz***` | 2026-07-07 |
+| `tonszazo-lang/raqqa` | `config.py` | `sk-proj-py-sk-proj` | `sk-proj-_nBz***` | 2026-07-07 |
 | `daintreehq/daintree` | `src/components/Settings/__tests__/E...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-07-04 |
 | `github/gh-aw-firewall` | `containers/api-proxy/README.md` | `sk-proj-ts-google-env` | `GOOGLE_API_K***` | 2026-07-04 |
 | `taracodlabs/aiden` | `tests/v4/mcp/credentialFilter.test....` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-02 |
@@ -167,11 +170,8 @@
 | `openclaw/openclaw` | `src/daemon/systemd.test.ts` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-13 |
 | `openclaw/openclaw` | `src/config/sessions/transcript-appe...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
 | `openclaw/openclaw` | `src/agents/transcript-redact.test.t...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
-| `openclaw/openclaw` | `scripts/e2e/openai-web-search-minim...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
-| `openclaw/openclaw` | `scripts/e2e/openai-image-auth-docke...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
-| `openclaw/openclaw` | `extensions/codex/src/app-server/eve...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
 
-*... and 329 more unique findings (see `data/` directory)*
+*... and 332 more unique findings (see `data/` directory)*
 
 
 ---
