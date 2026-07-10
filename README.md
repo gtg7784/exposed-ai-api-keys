@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-10 13:00:47 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 432
+**Last Updated**: 2026-07-10 15:45:57 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 437
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 94 |
+| **Affected Repositories** | 95 |
 
 ### By Key Type
 
@@ -29,13 +29,13 @@
 | `sk-proj-json-sk-generic` | 53 |
 | `sk-proj-json-env-var` | 46 |
 | `sk-proj-env-env-var` | 46 |
-| `sk-proj-ts-anthropic-env` | 41 |
+| `sk-proj-ts-anthropic-env` | 42 |
 | `sk-proj-json-anthropic-env` | 26 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
+| `sk-proj-ts-env-var` | 18 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-json-gemini-env` | 14 |
-| `sk-proj-ts-env-var` | 14 |
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-py-sk-proj` | 12 |
 | `sk-proj-py-sk-generic` | 10 |
@@ -70,6 +70,11 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `Trusera/ai-bom` | `tests/test_scanners/test_network_sc...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-10 |
+| `Trusera/ai-bom` | `tests/fixtures/sample_env` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-07-10 |
+| `Trusera/ai-bom` | `tests/conftest.py` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-10 |
+| `Trusera/ai-bom` | `src/ai_bom/demo_data/.env.example` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-10 |
+| `Trusera/ai-bom` | `examples/demo-project/.env.example` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-10 |
 | `tonszazo-lang/raqqa` | `lmages.py.txt` | `sk-proj-py-sk-proj` | `sk-proj-cPyy***` | 2026-07-07 |
 | `tonszazo-lang/raqqa` | `env` | `sk-proj-py-sk-proj` | `sk-proj-_nBz***` | 2026-07-07 |
 | `tonszazo-lang/raqqa` | `config.py` | `sk-proj-py-sk-proj` | `sk-proj-_nBz***` | 2026-07-07 |
@@ -165,13 +170,8 @@
 | `openclaw/openclaw` | `src/agents/sandbox-create-args.test...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-05-20 |
 | `forem/forem` | `spec/services/agent_session_parsers...` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-05-13 |
 | `LeoYeAI/openclaw-master-skills` | `skills/openclaw-sec/src/patterns/se...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-05-13 |
-| `LeoYeAI/openclaw-master-skills` | `skills/openclaw-sec/__tests__/integ...` | `sk-proj-json-sk-generic` | `sk-123456789***` | 2026-05-13 |
-| `LeoYeAI/openclaw-master-skills` | `skills/openclaw-sec-plus/src/patter...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-05-13 |
-| `openclaw/openclaw` | `src/daemon/systemd.test.ts` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-13 |
-| `openclaw/openclaw` | `src/config/sessions/transcript-appe...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
-| `openclaw/openclaw` | `src/agents/transcript-redact.test.t...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-05-13 |
 
-*... and 332 more unique findings (see `data/` directory)*
+*... and 337 more unique findings (see `data/` directory)*
 
 
 ---
