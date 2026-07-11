@@ -11,9 +11,9 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-11 18:32:01 UTC
+**Last Updated**: 2026-07-11 19:48:17 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 444
+**Total Unique Findings**: 445
 
 ### Summary Statistics
 
@@ -27,7 +27,7 @@
 | Key Pattern | Count |
 |-------------|-------|
 | `sk-proj-json-sk-generic` | 53 |
-| `sk-proj-json-env-var` | 46 |
+| `sk-proj-json-env-var` | 47 |
 | `sk-proj-env-env-var` | 46 |
 | `sk-proj-ts-anthropic-env` | 43 |
 | `sk-proj-json-anthropic-env` | 26 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `cisco-ai-defense/defenseclaw` | `cli/tests/test_remediation_tui.py` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-07-11 |
 | `mukiwu/tempo-term` | `src/modules/ai/lib/redact.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-11 |
 | `aygoun/ia-symbolic-app` | `docker-compose.yml` | `sk-proj-yml-sk-proj` | `sk-proj-_i0J***` | 2026-07-11 |
 | `kiyoshi-work/app-server` | `docker-compose.yml` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-07-11 |
@@ -169,9 +170,8 @@
 | `yusufkaraaslan/Skill_Seekers` | `.env.example` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 | `binary-husky/gpt_academic` | `tests/test_key_pattern_manager.py` | `sk-proj-py-sk-proj` | `sk-proj-xx-x***` | 2026-05-21 |
 | `binary-husky/gpt_academic` | `docs/use_vllm.md` | `sk-proj-py-sk-generic` | `sk-123456789***` | 2026-05-21 |
-| `binary-husky/gpt_academic` | `docs/translate_english.json` | `sk-proj-py-sk-proj` | `sk-proj-xx-x***` | 2026-05-21 |
 
-*... and 344 more unique findings (see `data/` directory)*
+*... and 345 more unique findings (see `data/` directory)*
 
 
 ---
