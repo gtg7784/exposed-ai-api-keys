@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-11 11:00:46 UTC
+**Last Updated**: 2026-07-11 11:57:09 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 439
+**Total Unique Findings**: 443
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 96 |
+| **Affected Repositories** | 99 |
 
 ### By Key Type
 
@@ -38,21 +38,21 @@
 | `sk-proj-json-gemini-env` | 14 |
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-py-sk-proj` | 12 |
+| `sk-proj-yml-env-var` | 11 |
 | `sk-proj-py-sk-generic` | 10 |
 | `sk-proj-js-env-var` | 9 |
-| `sk-proj-yml-env-var` | 9 |
 | `sk-proj-env-gemini-env` | 9 |
 | `sk-proj-json-google-env` | 8 |
 | `sk-proj-json-sk-proj` | 6 |
 | `sk-proj-json-claude-env` | 6 |
 | `sk-proj-ts-sk-generic` | 6 |
+| `sk-proj-yml-anthropic-env` | 6 |
 | `sk-proj-yml-sk-generic` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
-| `sk-proj-yml-anthropic-env` | 5 |
+| `sk-proj-yml-sk-proj` | 4 |
 | `sk-proj-ts-google-env` | 4 |
 | `sk-proj-py-google-env` | 3 |
-| `sk-proj-yml-sk-proj` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
 | `sk-proj-js-anthropic-env` | 3 |
 | `sk-proj-js-sk-proj` | 2 |
@@ -70,6 +70,10 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `aygoun/ia-symbolic-app` | `docker-compose.yml` | `sk-proj-yml-sk-proj` | `sk-proj-_i0J***` | 2026-07-11 |
+| `kiyoshi-work/app-server` | `docker-compose.yml` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-07-11 |
+| `kiyoshi-work/app-server` | `docker-compose.dev.yml` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-07-11 |
+| `aghaPathan/ai-dev-team` | `docs/DEPLOYMENT.md` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-07-11 |
 | `promptfoo/promptfoo` | `src/app/src/stores/evalConfig.test....` | `sk-proj-ts-sk-generic` | `sk-structure***` | 2026-07-11 |
 | `garrytan/gstack` | `.env.example` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-07-11 |
 | `Trusera/ai-bom` | `tests/test_scanners/test_network_sc...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-10 |
@@ -166,12 +170,8 @@
 | `binary-husky/gpt_academic` | `docs/use_vllm.md` | `sk-proj-py-sk-generic` | `sk-123456789***` | 2026-05-21 |
 | `binary-husky/gpt_academic` | `docs/translate_english.json` | `sk-proj-py-sk-proj` | `sk-proj-xx-x***` | 2026-05-21 |
 | `binary-husky/gpt_academic` | `docker-compose.yml` | `sk-proj-py-sk-generic` | `sk-o6JSoidyg***` | 2026-05-21 |
-| `binary-husky/gpt_academic` | `config.py` | `sk-proj-py-sk-generic` | `sk-123456789***` | 2026-05-21 |
-| `EvoMap/evolver` | `test/webuiObserver.test.js` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-05-20 |
-| `cisco-ai-defense/defenseclaw` | `docs-site/data/policy-recipes.json` | `sk-proj-json-sk-generic` | `sk-aaaaaaaaa***` | 2026-05-20 |
-| `openclaw/openclaw` | `src/agents/sandbox-create-args.test...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-05-20 |
 
-*... and 339 more unique findings (see `data/` directory)*
+*... and 343 more unique findings (see `data/` directory)*
 
 
 ---
