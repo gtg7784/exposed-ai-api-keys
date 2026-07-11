@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-11 17:31:59 UTC
+**Last Updated**: 2026-07-11 18:32:01 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 443
+**Total Unique Findings**: 444
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 99 |
+| **Affected Repositories** | 100 |
 
 ### By Key Type
 
@@ -33,7 +33,7 @@
 | `sk-proj-json-anthropic-env` | 26 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
-| `sk-proj-ts-env-var` | 18 |
+| `sk-proj-ts-env-var` | 19 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-json-gemini-env` | 14 |
 | `sk-proj-env-google-env` | 13 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `mukiwu/tempo-term` | `src/modules/ai/lib/redact.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-11 |
 | `aygoun/ia-symbolic-app` | `docker-compose.yml` | `sk-proj-yml-sk-proj` | `sk-proj-_i0J***` | 2026-07-11 |
 | `kiyoshi-work/app-server` | `docker-compose.yml` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-07-11 |
 | `kiyoshi-work/app-server` | `docker-compose.dev.yml` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-07-11 |
@@ -169,9 +170,8 @@
 | `binary-husky/gpt_academic` | `tests/test_key_pattern_manager.py` | `sk-proj-py-sk-proj` | `sk-proj-xx-x***` | 2026-05-21 |
 | `binary-husky/gpt_academic` | `docs/use_vllm.md` | `sk-proj-py-sk-generic` | `sk-123456789***` | 2026-05-21 |
 | `binary-husky/gpt_academic` | `docs/translate_english.json` | `sk-proj-py-sk-proj` | `sk-proj-xx-x***` | 2026-05-21 |
-| `binary-husky/gpt_academic` | `docker-compose.yml` | `sk-proj-py-sk-generic` | `sk-o6JSoidyg***` | 2026-05-21 |
 
-*... and 343 more unique findings (see `data/` directory)*
+*... and 344 more unique findings (see `data/` directory)*
 
 
 ---
