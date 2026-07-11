@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-11 04:22:35 UTC
+**Last Updated**: 2026-07-11 06:33:40 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 437
+**Total Unique Findings**: 439
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 95 |
+| **Affected Repositories** | 96 |
 
 ### By Key Type
 
@@ -29,7 +29,7 @@
 | `sk-proj-json-sk-generic` | 53 |
 | `sk-proj-json-env-var` | 46 |
 | `sk-proj-env-env-var` | 46 |
-| `sk-proj-ts-anthropic-env` | 42 |
+| `sk-proj-ts-anthropic-env` | 43 |
 | `sk-proj-json-anthropic-env` | 26 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
@@ -45,10 +45,10 @@
 | `sk-proj-json-google-env` | 8 |
 | `sk-proj-json-sk-proj` | 6 |
 | `sk-proj-json-claude-env` | 6 |
+| `sk-proj-ts-sk-generic` | 6 |
 | `sk-proj-yml-sk-generic` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
-| `sk-proj-ts-sk-generic` | 5 |
 | `sk-proj-yml-anthropic-env` | 5 |
 | `sk-proj-ts-google-env` | 4 |
 | `sk-proj-py-google-env` | 3 |
@@ -70,6 +70,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `promptfoo/promptfoo` | `src/app/src/stores/evalConfig.test....` | `sk-proj-ts-sk-generic` | `sk-structure***` | 2026-07-11 |
+| `garrytan/gstack` | `.env.example` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-07-11 |
 | `Trusera/ai-bom` | `tests/test_scanners/test_network_sc...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-10 |
 | `Trusera/ai-bom` | `tests/fixtures/sample_env` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-07-10 |
 | `Trusera/ai-bom` | `tests/conftest.py` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-10 |
@@ -168,10 +170,8 @@
 | `EvoMap/evolver` | `test/webuiObserver.test.js` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-05-20 |
 | `cisco-ai-defense/defenseclaw` | `docs-site/data/policy-recipes.json` | `sk-proj-json-sk-generic` | `sk-aaaaaaaaa***` | 2026-05-20 |
 | `openclaw/openclaw` | `src/agents/sandbox-create-args.test...` | `sk-proj-json-gemini-env` | `GEMINI_API_K***` | 2026-05-20 |
-| `forem/forem` | `spec/services/agent_session_parsers...` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-05-13 |
-| `LeoYeAI/openclaw-master-skills` | `skills/openclaw-sec/src/patterns/se...` | `sk-proj-json-sk-generic` | `sk-xxxxxxxxx***` | 2026-05-13 |
 
-*... and 337 more unique findings (see `data/` directory)*
+*... and 339 more unique findings (see `data/` directory)*
 
 
 ---
