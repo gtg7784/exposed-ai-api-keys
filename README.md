@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-15 19:05:57 UTC
+**Last Updated**: 2026-07-15 20:17:10 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 445
+**Total Unique Findings**: 447
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 100 |
+| **Affected Repositories** | 101 |
 
 ### By Key Type
 
@@ -35,9 +35,9 @@
 | `sk-proj-py-anthropic-env` | 19 |
 | `sk-proj-ts-env-var` | 19 |
 | `sk-proj-env-sk-proj` | 16 |
+| `sk-proj-py-sk-proj` | 14 |
 | `sk-proj-json-gemini-env` | 14 |
 | `sk-proj-env-google-env` | 13 |
-| `sk-proj-py-sk-proj` | 12 |
 | `sk-proj-yml-env-var` | 11 |
 | `sk-proj-py-sk-generic` | 10 |
 | `sk-proj-js-env-var` | 9 |
@@ -70,6 +70,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `Ibrahim-code21/flask-use-for-c...` | `tempCodeRunnerFile.py` | `sk-proj-py-sk-proj` | `sk-proj-_5Ne***` | 2026-07-15 |
+| `Ibrahim-code21/flask-use-for-c...` | `main.py` | `sk-proj-py-sk-proj` | `sk-proj-_5Ne***` | 2026-07-15 |
 | `cisco-ai-defense/defenseclaw` | `cli/tests/test_remediation_tui.py` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-07-11 |
 | `mukiwu/tempo-term` | `src/modules/ai/lib/redact.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-11 |
 | `aygoun/ia-symbolic-app` | `docker-compose.yml` | `sk-proj-yml-sk-proj` | `sk-proj-_i0J***` | 2026-07-11 |
@@ -168,10 +170,8 @@
 | `yusufkaraaslan/Skill_Seekers` | `docs/guides/MCP_SETUP.md` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 | `yusufkaraaslan/Skill_Seekers` | `docs/features/HOW_TO_GUIDES.md` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 | `yusufkaraaslan/Skill_Seekers` | `.env.example` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `binary-husky/gpt_academic` | `tests/test_key_pattern_manager.py` | `sk-proj-py-sk-proj` | `sk-proj-xx-x***` | 2026-05-21 |
-| `binary-husky/gpt_academic` | `docs/use_vllm.md` | `sk-proj-py-sk-generic` | `sk-123456789***` | 2026-05-21 |
 
-*... and 345 more unique findings (see `data/` directory)*
+*... and 347 more unique findings (see `data/` directory)*
 
 
 ---
