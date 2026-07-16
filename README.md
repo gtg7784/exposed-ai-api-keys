@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-16 18:01:44 UTC
+**Last Updated**: 2026-07-16 19:32:04 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 447
+**Total Unique Findings**: 448
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 101 |
+| **Affected Repositories** | 102 |
 
 ### By Key Type
 
@@ -31,9 +31,9 @@
 | `sk-proj-env-env-var` | 46 |
 | `sk-proj-ts-anthropic-env` | 43 |
 | `sk-proj-json-anthropic-env` | 26 |
+| `sk-proj-ts-env-var` | 20 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
-| `sk-proj-ts-env-var` | 19 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-py-sk-proj` | 14 |
 | `sk-proj-json-gemini-env` | 14 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `vellum-ai/vellum-assistant` | `clients/macos/src/main/redact.test....` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-16 |
 | `Ibrahim-code21/flask-use-for-c...` | `tempCodeRunnerFile.py` | `sk-proj-py-sk-proj` | `sk-proj-_5Ne***` | 2026-07-15 |
 | `Ibrahim-code21/flask-use-for-c...` | `main.py` | `sk-proj-py-sk-proj` | `sk-proj-_5Ne***` | 2026-07-15 |
 | `cisco-ai-defense/defenseclaw` | `cli/tests/test_remediation_tui.py` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-07-11 |
@@ -169,9 +170,8 @@
 | `yusufkaraaslan/Skill_Seekers` | `docs/reference/ENVIRONMENT_VARIABLE...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `yusufkaraaslan/Skill_Seekers` | `docs/guides/MCP_SETUP.md` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 | `yusufkaraaslan/Skill_Seekers` | `docs/features/HOW_TO_GUIDES.md` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `yusufkaraaslan/Skill_Seekers` | `.env.example` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 
-*... and 347 more unique findings (see `data/` directory)*
+*... and 348 more unique findings (see `data/` directory)*
 
 
 ---
