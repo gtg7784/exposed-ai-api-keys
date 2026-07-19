@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-19 03:46:25 UTC
+**Last Updated**: 2026-07-19 06:16:53 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 448
+**Total Unique Findings**: 451
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 102 |
+| **Affected Repositories** | 103 |
 
 ### By Key Type
 
@@ -34,8 +34,8 @@
 | `sk-proj-ts-env-var` | 20 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
+| `sk-proj-py-sk-proj` | 17 |
 | `sk-proj-env-sk-proj` | 16 |
-| `sk-proj-py-sk-proj` | 14 |
 | `sk-proj-json-gemini-env` | 14 |
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-yml-env-var` | 11 |
@@ -70,6 +70,9 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `KashifrazaBhat/AIT-LAB-REC0RD` | `task9c.py` | `sk-proj-py-sk-proj` | `sk-proj--xrD***` | 2026-07-19 |
+| `KashifrazaBhat/AIT-LAB-REC0RD` | `task9b.py` | `sk-proj-py-sk-proj` | `sk-proj--xrD***` | 2026-07-19 |
+| `KashifrazaBhat/AIT-LAB-REC0RD` | `task9.py` | `sk-proj-py-sk-proj` | `sk-proj--xrD***` | 2026-07-19 |
 | `vellum-ai/vellum-assistant` | `clients/macos/src/main/redact.test....` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-16 |
 | `Ibrahim-code21/flask-use-for-c...` | `tempCodeRunnerFile.py` | `sk-proj-py-sk-proj` | `sk-proj-_5Ne***` | 2026-07-15 |
 | `Ibrahim-code21/flask-use-for-c...` | `main.py` | `sk-proj-py-sk-proj` | `sk-proj-_5Ne***` | 2026-07-15 |
@@ -167,11 +170,8 @@
 | `MervinPraison/PraisonAI` | `docker/.env.template` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `MervinPraison/PraisonAI` | `README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `yusufkaraaslan/Skill_Seekers` | `docs/zh-CN/reference/ENVIRONMENT_VA...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `yusufkaraaslan/Skill_Seekers` | `docs/reference/ENVIRONMENT_VARIABLE...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `yusufkaraaslan/Skill_Seekers` | `docs/guides/MCP_SETUP.md` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `yusufkaraaslan/Skill_Seekers` | `docs/features/HOW_TO_GUIDES.md` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 
-*... and 348 more unique findings (see `data/` directory)*
+*... and 351 more unique findings (see `data/` directory)*
 
 
 ---
