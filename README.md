@@ -11,23 +11,23 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-21 00:12:58 UTC
+**Last Updated**: 2026-07-21 03:49:20 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 451
+**Total Unique Findings**: 452
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 39 |
-| **Affected Repositories** | 103 |
+| **Affected Repositories** | 104 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
 | `sk-proj-json-sk-generic` | 53 |
-| `sk-proj-json-env-var` | 47 |
+| `sk-proj-json-env-var` | 48 |
 | `sk-proj-env-env-var` | 46 |
 | `sk-proj-ts-anthropic-env` | 43 |
 | `sk-proj-json-anthropic-env` | 26 |
@@ -70,6 +70,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `MihaiCiprianChezan/GREXIS` | `cli/scenarios/adversarial.py` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-07-21 |
 | `KashifrazaBhat/AIT-LAB-REC0RD` | `task9c.py` | `sk-proj-py-sk-proj` | `sk-proj--xrD***` | 2026-07-19 |
 | `KashifrazaBhat/AIT-LAB-REC0RD` | `task9b.py` | `sk-proj-py-sk-proj` | `sk-proj--xrD***` | 2026-07-19 |
 | `KashifrazaBhat/AIT-LAB-REC0RD` | `task9.py` | `sk-proj-py-sk-proj` | `sk-proj--xrD***` | 2026-07-19 |
@@ -169,9 +170,8 @@
 | `MervinPraison/PraisonAI` | `docker/README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `MervinPraison/PraisonAI` | `docker/.env.template` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `MervinPraison/PraisonAI` | `README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `yusufkaraaslan/Skill_Seekers` | `docs/zh-CN/reference/ENVIRONMENT_VA...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 
-*... and 351 more unique findings (see `data/` directory)*
+*... and 352 more unique findings (see `data/` directory)*
 
 
 ---
