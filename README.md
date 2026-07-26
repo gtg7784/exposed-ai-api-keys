@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-26 09:30:26 UTC
+**Last Updated**: 2026-07-26 11:04:44 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 453
+**Total Unique Findings**: 454
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 39 |
-| **Affected Repositories** | 104 |
+| **Key Types Detected** | 40 |
+| **Affected Repositories** | 105 |
 
 ### By Key Type
 
@@ -65,11 +65,13 @@
 | `sk-proj-ts-llm-env` | 1 |
 | `sk-proj-env-llm-env` | 1 |
 | `sk-proj-env-anthropic-env` | 1 |
+| `sk-proj-env-deepseek-env` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `spyrae/kronos-agent-os` | `tests/test_cassettes_tools.py` | `sk-proj-env-deepseek-env` | `DEEPSEEK_API***` | 2026-07-26 |
 | `langwatch/langwatch` | `typescript-sdk/src/cli/commands/__t...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-07-24 |
 | `MihaiCiprianChezan/GREXIS` | `cli/scenarios/adversarial.py` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-07-21 |
 | `KashifrazaBhat/AIT-LAB-REC0RD` | `task9c.py` | `sk-proj-py-sk-proj` | `sk-proj--xrD***` | 2026-07-19 |
@@ -169,9 +171,8 @@
 | `MervinPraison/PraisonAI` | `docker/quick-start.sh` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `MervinPraison/PraisonAI` | `docker/bots/.env.template` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `MervinPraison/PraisonAI` | `docker/README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `MervinPraison/PraisonAI` | `docker/.env.template` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 
-*... and 353 more unique findings (see `data/` directory)*
+*... and 354 more unique findings (see `data/` directory)*
 
 
 ---
