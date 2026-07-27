@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-07-27 01:13:53 UTC
+**Last Updated**: 2026-07-27 04:55:02 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 454
+**Total Unique Findings**: 456
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 40 |
-| **Affected Repositories** | 105 |
+| **Affected Repositories** | 106 |
 
 ### By Key Type
 
@@ -43,11 +43,11 @@
 | `sk-proj-js-env-var` | 9 |
 | `sk-proj-env-gemini-env` | 9 |
 | `sk-proj-json-google-env` | 8 |
+| `sk-proj-yml-anthropic-env` | 7 |
 | `sk-proj-json-sk-proj` | 6 |
+| `sk-proj-yml-sk-generic` | 6 |
 | `sk-proj-json-claude-env` | 6 |
 | `sk-proj-ts-sk-generic` | 6 |
-| `sk-proj-yml-anthropic-env` | 6 |
-| `sk-proj-yml-sk-generic` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
 | `sk-proj-yml-sk-proj` | 4 |
@@ -71,6 +71,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `soapbucket/sbproxy` | `examples/oidc/README.md` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-07-27 |
+| `soapbucket/sbproxy` | `crates/sbproxy-core/src/server/ai_s...` | `sk-proj-yml-sk-generic` | `sk-aaaaaaaaa***` | 2026-07-27 |
 | `spyrae/kronos-agent-os` | `tests/test_cassettes_tools.py` | `sk-proj-env-deepseek-env` | `DEEPSEEK_API***` | 2026-07-26 |
 | `langwatch/langwatch` | `typescript-sdk/src/cli/commands/__t...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-07-24 |
 | `MihaiCiprianChezan/GREXIS` | `cli/scenarios/adversarial.py` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-07-21 |
@@ -169,10 +171,8 @@
 | `MervinPraison/PraisonAI` | `src/praisonai-ts/.env.example` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `MervinPraison/PraisonAI` | `examples/recipes/creator_suite/.env...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `MervinPraison/PraisonAI` | `docker/quick-start.sh` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `MervinPraison/PraisonAI` | `docker/bots/.env.template` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `MervinPraison/PraisonAI` | `docker/README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 
-*... and 354 more unique findings (see `data/` directory)*
+*... and 356 more unique findings (see `data/` directory)*
 
 
 ---
