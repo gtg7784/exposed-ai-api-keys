@@ -11,9 +11,9 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-08-04 09:11:29 UTC
+**Last Updated**: 2026-08-04 11:32:37 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 456
+**Total Unique Findings**: 457
 
 ### Summary Statistics
 
@@ -31,7 +31,7 @@
 | `sk-proj-env-env-var` | 46 |
 | `sk-proj-ts-anthropic-env` | 43 |
 | `sk-proj-json-anthropic-env` | 26 |
-| `sk-proj-ts-env-var` | 20 |
+| `sk-proj-ts-env-var` | 21 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
 | `sk-proj-py-sk-proj` | 17 |
@@ -71,6 +71,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `github/gh-aw-firewall` | `docs/authentication-architecture.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-04 |
 | `soapbucket/sbproxy` | `examples/oidc/README.md` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-07-27 |
 | `soapbucket/sbproxy` | `crates/sbproxy-core/src/server/ai_s...` | `sk-proj-yml-sk-generic` | `sk-aaaaaaaaa***` | 2026-07-27 |
 | `spyrae/kronos-agent-os` | `tests/test_cassettes_tools.py` | `sk-proj-env-deepseek-env` | `DEEPSEEK_API***` | 2026-07-26 |
@@ -170,9 +171,8 @@
 | `MervinPraison/PraisonAI` | `src/praisonai/README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `MervinPraison/PraisonAI` | `src/praisonai-ts/.env.example` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `MervinPraison/PraisonAI` | `examples/recipes/creator_suite/.env...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `MervinPraison/PraisonAI` | `docker/quick-start.sh` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 
-*... and 356 more unique findings (see `data/` directory)*
+*... and 357 more unique findings (see `data/` directory)*
 
 
 ---
