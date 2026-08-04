@@ -11,9 +11,9 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-08-04 17:18:42 UTC
+**Last Updated**: 2026-08-04 18:57:59 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 457
+**Total Unique Findings**: 460
 
 ### Summary Statistics
 
@@ -36,9 +36,9 @@
 | `sk-proj-py-anthropic-env` | 19 |
 | `sk-proj-py-sk-proj` | 17 |
 | `sk-proj-env-sk-proj` | 16 |
+| `sk-proj-yml-env-var` | 15 |
 | `sk-proj-json-gemini-env` | 14 |
 | `sk-proj-env-google-env` | 13 |
-| `sk-proj-yml-env-var` | 12 |
 | `sk-proj-py-sk-generic` | 10 |
 | `sk-proj-js-env-var` | 9 |
 | `sk-proj-env-gemini-env` | 9 |
@@ -71,6 +71,9 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `langwatch/langwatch` | `sdks/typescript/src/cli/commands/__...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-08-04 |
+| `langwatch/langwatch` | `sdks/typescript/examples/evaluation...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-08-04 |
+| `langwatch/langwatch` | `sdks/typescript/__tests__/e2e/cli/g...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-08-04 |
 | `github/gh-aw-firewall` | `docs/authentication-architecture.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-04 |
 | `soapbucket/sbproxy` | `examples/oidc/README.md` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-07-27 |
 | `soapbucket/sbproxy` | `crates/sbproxy-core/src/server/ai_s...` | `sk-proj-yml-sk-generic` | `sk-aaaaaaaaa***` | 2026-07-27 |
@@ -168,11 +171,8 @@
 | `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 | `davila7/claude-code-templates` | `.env.example` | `sk-proj-py-google-env` | `GOOGLE_API_K***` | 2026-05-21 |
 | `MervinPraison/PraisonAI` | `src/praisonai/praisonai/cli/feature...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `MervinPraison/PraisonAI` | `src/praisonai/README.md` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `MervinPraison/PraisonAI` | `src/praisonai-ts/.env.example` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `MervinPraison/PraisonAI` | `examples/recipes/creator_suite/.env...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 
-*... and 357 more unique findings (see `data/` directory)*
+*... and 360 more unique findings (see `data/` directory)*
 
 
 ---
