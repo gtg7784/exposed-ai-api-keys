@@ -11,9 +11,9 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-08-11 18:25:14 UTC
+**Last Updated**: 2026-08-11 19:32:23 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 461
+**Total Unique Findings**: 462
 
 ### Summary Statistics
 
@@ -31,7 +31,7 @@
 | `sk-proj-env-env-var` | 46 |
 | `sk-proj-ts-anthropic-env` | 43 |
 | `sk-proj-json-anthropic-env` | 26 |
-| `sk-proj-ts-env-var` | 22 |
+| `sk-proj-ts-env-var` | 23 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
 | `sk-proj-py-sk-proj` | 17 |
@@ -71,6 +71,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `github/gh-aw-firewall` | `docs/cloud-hypervisor-foundation.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-11 |
 | `github/gh-aw-firewall` | `docs/firecracker-integration.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-10 |
 | `langwatch/langwatch` | `sdks/typescript/src/cli/commands/__...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-08-04 |
 | `langwatch/langwatch` | `sdks/typescript/examples/evaluation...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-08-04 |
@@ -170,9 +171,8 @@
 | `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 | `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 | `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `.env.example` | `sk-proj-py-google-env` | `GOOGLE_API_K***` | 2026-05-21 |
 
-*... and 361 more unique findings (see `data/` directory)*
+*... and 362 more unique findings (see `data/` directory)*
 
 
 ---
