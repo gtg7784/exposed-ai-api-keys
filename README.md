@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-08-25 02:50:43 UTC
+**Last Updated**: 2026-08-25 03:33:22 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 463
+**Total Unique Findings**: 464
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 40 |
-| **Affected Repositories** | 107 |
+| **Affected Repositories** | 108 |
 
 ### By Key Type
 
@@ -31,7 +31,7 @@
 | `sk-proj-env-env-var` | 46 |
 | `sk-proj-ts-anthropic-env` | 43 |
 | `sk-proj-json-anthropic-env` | 26 |
-| `sk-proj-ts-env-var` | 23 |
+| `sk-proj-ts-env-var` | 24 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
 | `sk-proj-py-sk-proj` | 17 |
@@ -71,6 +71,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `xenitV1/lemma` | `tests/memory/privacy.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-25 |
 | `odysseus-dev/odysseus` | `.env.example` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-13 |
 | `github/gh-aw-firewall` | `docs/cloud-hypervisor-foundation.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-11 |
 | `github/gh-aw-firewall` | `docs/firecracker-integration.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-10 |
@@ -170,9 +171,8 @@
 | `davila7/claude-code-templates` | `cli-tool/components/sandbox/README....` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 | `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 | `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 
-*... and 363 more unique findings (see `data/` directory)*
+*... and 364 more unique findings (see `data/` directory)*
 
 
 ---
