@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-08-29 20:08:35 UTC
+**Last Updated**: 2026-08-29 22:00:30 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 557
+**Total Unique Findings**: 563
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 47 |
-| **Affected Repositories** | 122 |
+| **Key Types Detected** | 48 |
+| **Affected Repositories** | 126 |
 
 ### By Key Type
 
@@ -42,18 +42,18 @@
 | `sk-proj-js-env-var` | 12 |
 | `sk-proj-py-sk-generic` | 10 |
 | `sk-proj-env-gemini-env` | 9 |
+| `sk-proj-yml-sk-proj` | 8 |
 | `sk-proj-json-google-env` | 8 |
 | `sk-proj-ts-sk-generic` | 8 |
+| `sk-proj-yml-sk-generic` | 7 |
 | `sk-proj-yml-anthropic-env` | 7 |
 | `sk-proj-json-sk-proj` | 6 |
-| `sk-proj-yml-sk-generic` | 6 |
 | `sk-proj-json-claude-env` | 6 |
 | `sk-proj-js-anthropic-env` | 6 |
 | `sk-proj-py-google-env` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
 | `sk-proj-py-groq-env` | 5 |
-| `sk-proj-yml-sk-proj` | 4 |
 | `sk-proj-ts-google-env` | 4 |
 | `sk-proj-js-sk-generic` | 4 |
 | `sk-proj-json-embedding-env` | 3 |
@@ -73,11 +73,18 @@
 | `sk-proj-ts-mistral-env` | 1 |
 | `sk-proj-py-hf-env` | 1 |
 | `sk-proj-py-llm-env` | 1 |
+| `sk-proj-yml-huggingface-env` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `siabang35/zega.ai` | `apps/api/.env.example` | `sk-proj-yml-huggingface-env` | `HUGGINGFACE_***` | 2026-08-29 |
+| `PeterGachuru/Myfuture-Question...` | `src/main/resources/application.yml` | `sk-proj-yml-sk-proj` | `sk-proj-StKm***` | 2026-08-29 |
+| `PeterGachuru/Myfuture-Question...` | `src/main/java/ke/co/myfuture/Myfutu...` | `sk-proj-yml-sk-proj` | `sk-proj-StKm***` | 2026-08-29 |
+| `Dery-byte/schoolbackend` | `target/classes/application-dev.yml` | `sk-proj-yml-sk-proj` | `sk-proj-6Ya7***` | 2026-08-29 |
+| `Dery-byte/schoolbackend` | `src/main/resources/application-dev....` | `sk-proj-yml-sk-proj` | `sk-proj-6Ya7***` | 2026-08-29 |
+| `cipher982/longhouse` | `server/tests_lite/test_embeddings.p...` | `sk-proj-yml-sk-generic` | `sk-abc123456***` | 2026-08-29 |
 | `raycast/extensions` | `extensions/ai-voice-studio/scripts/...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 | `maximhq/bifrost` | `tests/e2e/clis/reasoningreplay_test...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
 | `maximhq/bifrost` | `docs/cli-agents/qwen-code.mdx` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
@@ -172,14 +179,8 @@
 | `diegosouzapw/OmniRoute` | `docker/devin-bridge/run-claude-live...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
 | `diegosouzapw/OmniRoute` | `docker/devin-bridge/run-claude-e2e....` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
 | `xenitV1/lemma` | `tests/memory/privacy.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-25 |
-| `odysseus-dev/odysseus` | `.env.example` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-13 |
-| `github/gh-aw-firewall` | `docs/cloud-hypervisor-foundation.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-11 |
-| `github/gh-aw-firewall` | `docs/firecracker-integration.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-10 |
-| `langwatch/langwatch` | `sdks/typescript/src/cli/commands/__...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-08-04 |
-| `langwatch/langwatch` | `sdks/typescript/examples/evaluation...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-08-04 |
-| `langwatch/langwatch` | `sdks/typescript/__tests__/e2e/cli/g...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-08-04 |
 
-*... and 457 more unique findings (see `data/` directory)*
+*... and 463 more unique findings (see `data/` directory)*
 
 
 ---
