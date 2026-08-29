@@ -11,28 +11,28 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-08-29 17:10:39 UTC
+**Last Updated**: 2026-08-29 20:08:35 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 543
+**Total Unique Findings**: 557
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 47 |
-| **Affected Repositories** | 119 |
+| **Affected Repositories** | 122 |
 
 ### By Key Type
 
 | Key Pattern | Count |
 |-------------|-------|
 | `sk-proj-py-env-var` | 62 |
+| `sk-proj-json-env-var` | 60 |
 | `sk-proj-json-sk-generic` | 53 |
-| `sk-proj-json-env-var` | 48 |
 | `sk-proj-ts-anthropic-env` | 46 |
 | `sk-proj-env-env-var` | 46 |
+| `sk-proj-json-anthropic-env` | 28 |
 | `sk-proj-ts-env-var` | 27 |
-| `sk-proj-json-anthropic-env` | 26 |
 | `sk-proj-py-anthropic-env` | 23 |
 | `sk-proj-py-sk-proj` | 17 |
 | `sk-proj-env-sk-proj` | 16 |
@@ -78,6 +78,20 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `raycast/extensions` | `extensions/ai-voice-studio/scripts/...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `maximhq/bifrost` | `tests/e2e/clis/reasoningreplay_test...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
+| `maximhq/bifrost` | `docs/cli-agents/qwen-code.mdx` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `777genius/agent-teams-ai` | `test/main/services/team/TeamLaunchF...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `777genius/agent-teams-ai` | `test/main/features/runtime-provider...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `777genius/agent-teams-ai` | `test/main/features/runtime-provider...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `777genius/agent-teams-ai` | `src/features/member-log-stream/main...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `vellum-ai/vellum-assistant` | `packages/electron-desktop/src/redac...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `openclaw/openclaw` | `test/scripts/ci-hydrate-testbox-env...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `openclaw/openclaw` | `src/agents/embedded-agent-runner/te...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `openclaw/openclaw` | `scripts/test-live-acp-bind-docker.s...` | `sk-proj-json-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
+| `openclaw/openclaw` | `extensions/qa-lab/src/suite-launch....` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `openclaw/openclaw` | `extensions/codex/src/app-server/eve...` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `openclaw/openclaw` | `examples/ai-chat/README.md` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 | `vectorize-io/hindsight` | `hindsight-docs/src/pages/cookbook/a...` | `sk-proj-py-llm-env` | `LLM_API_KEY=***` | 2026-08-29 |
 | `vectorize-io/hindsight` | `hindsight-docs/src/pages/cookbook/a...` | `sk-proj-py-groq-env` | `GROQ_API_KEY***` | 2026-08-29 |
 | `NVIDIA/NemoClaw` | `test/generation/post-merge-docs.tes...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-08-29 |
@@ -164,22 +178,8 @@
 | `langwatch/langwatch` | `sdks/typescript/src/cli/commands/__...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-08-04 |
 | `langwatch/langwatch` | `sdks/typescript/examples/evaluation...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-08-04 |
 | `langwatch/langwatch` | `sdks/typescript/__tests__/e2e/cli/g...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-08-04 |
-| `github/gh-aw-firewall` | `docs/authentication-architecture.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-04 |
-| `soapbucket/sbproxy` | `examples/oidc/README.md` | `sk-proj-yml-anthropic-env` | `ANTHROPIC_AP***` | 2026-07-27 |
-| `soapbucket/sbproxy` | `crates/sbproxy-core/src/server/ai_s...` | `sk-proj-yml-sk-generic` | `sk-aaaaaaaaa***` | 2026-07-27 |
-| `spyrae/kronos-agent-os` | `tests/test_cassettes_tools.py` | `sk-proj-env-deepseek-env` | `DEEPSEEK_API***` | 2026-07-26 |
-| `langwatch/langwatch` | `typescript-sdk/src/cli/commands/__t...` | `sk-proj-yml-env-var` | `OPENAI_API_K***` | 2026-07-24 |
-| `MihaiCiprianChezan/GREXIS` | `cli/scenarios/adversarial.py` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-07-21 |
-| `KashifrazaBhat/AIT-LAB-REC0RD` | `task9c.py` | `sk-proj-py-sk-proj` | `sk-proj--xrD***` | 2026-07-19 |
-| `KashifrazaBhat/AIT-LAB-REC0RD` | `task9b.py` | `sk-proj-py-sk-proj` | `sk-proj--xrD***` | 2026-07-19 |
-| `KashifrazaBhat/AIT-LAB-REC0RD` | `task9.py` | `sk-proj-py-sk-proj` | `sk-proj--xrD***` | 2026-07-19 |
-| `vellum-ai/vellum-assistant` | `clients/macos/src/main/redact.test....` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-16 |
-| `Ibrahim-code21/flask-use-for-c...` | `tempCodeRunnerFile.py` | `sk-proj-py-sk-proj` | `sk-proj-_5Ne***` | 2026-07-15 |
-| `Ibrahim-code21/flask-use-for-c...` | `main.py` | `sk-proj-py-sk-proj` | `sk-proj-_5Ne***` | 2026-07-15 |
-| `cisco-ai-defense/defenseclaw` | `cli/tests/test_remediation_tui.py` | `sk-proj-json-env-var` | `OPENAI_API_K***` | 2026-07-11 |
-| `mukiwu/tempo-term` | `src/modules/ai/lib/redact.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-07-11 |
 
-*... and 443 more unique findings (see `data/` directory)*
+*... and 457 more unique findings (see `data/` directory)*
 
 
 ---
