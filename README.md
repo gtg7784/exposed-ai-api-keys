@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-08-29 00:45:54 UTC
+**Last Updated**: 2026-08-29 07:30:55 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 473
+**Total Unique Findings**: 482
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 41 |
-| **Affected Repositories** | 113 |
+| **Key Types Detected** | 42 |
+| **Affected Repositories** | 116 |
 
 ### By Key Type
 
@@ -39,7 +39,7 @@
 | `sk-proj-yml-env-var` | 15 |
 | `sk-proj-json-gemini-env` | 14 |
 | `sk-proj-env-google-env` | 13 |
-| `sk-proj-js-env-var` | 10 |
+| `sk-proj-js-env-var` | 12 |
 | `sk-proj-py-sk-generic` | 10 |
 | `sk-proj-env-gemini-env` | 9 |
 | `sk-proj-json-google-env` | 8 |
@@ -48,18 +48,19 @@
 | `sk-proj-json-sk-proj` | 6 |
 | `sk-proj-yml-sk-generic` | 6 |
 | `sk-proj-json-claude-env` | 6 |
+| `sk-proj-js-anthropic-env` | 6 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
 | `sk-proj-yml-sk-proj` | 4 |
 | `sk-proj-ts-google-env` | 4 |
+| `sk-proj-js-sk-generic` | 4 |
 | `sk-proj-py-google-env` | 3 |
 | `sk-proj-json-embedding-env` | 3 |
-| `sk-proj-js-anthropic-env` | 3 |
 | `sk-proj-js-sk-proj` | 2 |
 | `sk-proj-yml-google-env` | 2 |
-| `sk-proj-js-sk-generic` | 2 |
 | `sk-proj-ts-claude-env` | 2 |
 | `sk-proj-ts-deepseek-env` | 2 |
+| `sk-proj-js-google-env` | 2 |
 | `sk-proj-json-llm-env` | 1 |
 | `sk-proj-json-ai-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
@@ -72,6 +73,15 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `arcahyadi/odysseus` | `.env.example` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `odysseus-dev/odysseus-current` | `.env.example` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `Abilityai/trinity` | `tests/unit/test_credential_sanitize...` | `sk-proj-js-sk-generic` | `sk-keyabcdef***` | 2026-08-29 |
+| `Abilityai/trinity` | `tests/unit/test_credential_sanitize...` | `sk-proj-js-sk-generic` | `sk-keyabcdef***` | 2026-08-29 |
+| `Abilityai/trinity` | `tests/unit/test_1870_completed_turn...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
+| `Abilityai/trinity` | `tests/unit/test_1673_execution_erro...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
+| `Abilityai/trinity` | `tests/unit/test_1661_sanitizer_line...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
+| `Abilityai/trinity` | `docs/testing/GEMINI_TESTING_PLAN.md` | `sk-proj-js-google-env` | `GOOGLE_API_K***` | 2026-08-29 |
+| `Abilityai/trinity` | `docs/GEMINI_SUPPORT.md` | `sk-proj-js-google-env` | `GOOGLE_API_K***` | 2026-08-29 |
 | `garrytan/gbrain` | `test/helpers/agent-harness.unit.tes...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 | `nexu-io/open-design` | `apps/daemon/tests/run-diagnostics.t...` | `sk-proj-ts-sk-generic` | `sk-aaaaaaaaa***` | 2026-08-29 |
 | `QwenLM/qwen-code` | `docs/users/configuration/model-prov...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-29 |
@@ -163,17 +173,8 @@
 | `ruvnet/agentic-flow` | `agentic-flow/docs/archived/README_V...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
 | `ruvnet/agentic-flow` | `agentic-flow/docker/test-instance/....` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-22 |
 | `DragonJAR/n8n-workflows-esp` | `workflows/01312-WhatsApp-virtual-ag...` | `sk-proj-json-google-env` | `GOOGLE_API_K***` | 2026-05-21 |
-| `rohitg00/agentmemory` | `test/fs-watcher.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `NVIDIA/NemoClaw` | `src/lib/sandbox-base-image.test.ts` | `sk-proj-ts-sk-generic` | `sk-abcdef012***` | 2026-05-21 |
-| `n8n-io/n8n` | `packages/@n8n/instance-ai/evaluatio...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `docs/blog/e2b-claude-code-sandbox/i...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `dashboard/public/blog/e2b-claude-co...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/components/skills/scientif...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/components/skills/scientif...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/components/skills/scientif...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/components/sandbox/e2b/cla...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 
-*... and 373 more unique findings (see `data/` directory)*
+*... and 382 more unique findings (see `data/` directory)*
 
 
 ---
