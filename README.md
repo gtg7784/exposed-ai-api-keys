@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-08-28 16:33:54 UTC
+**Last Updated**: 2026-08-29 00:45:54 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 464
+**Total Unique Findings**: 473
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 40 |
-| **Affected Repositories** | 108 |
+| **Key Types Detected** | 41 |
+| **Affected Repositories** | 113 |
 
 ### By Key Type
 
@@ -28,10 +28,10 @@
 |-------------|-------|
 | `sk-proj-json-sk-generic` | 53 |
 | `sk-proj-json-env-var` | 48 |
+| `sk-proj-ts-anthropic-env` | 46 |
 | `sk-proj-env-env-var` | 46 |
-| `sk-proj-ts-anthropic-env` | 43 |
+| `sk-proj-ts-env-var` | 27 |
 | `sk-proj-json-anthropic-env` | 26 |
-| `sk-proj-ts-env-var` | 24 |
 | `sk-proj-py-env-var` | 19 |
 | `sk-proj-py-anthropic-env` | 19 |
 | `sk-proj-py-sk-proj` | 17 |
@@ -43,11 +43,11 @@
 | `sk-proj-py-sk-generic` | 10 |
 | `sk-proj-env-gemini-env` | 9 |
 | `sk-proj-json-google-env` | 8 |
+| `sk-proj-ts-sk-generic` | 8 |
 | `sk-proj-yml-anthropic-env` | 7 |
 | `sk-proj-json-sk-proj` | 6 |
 | `sk-proj-yml-sk-generic` | 6 |
 | `sk-proj-json-claude-env` | 6 |
-| `sk-proj-ts-sk-generic` | 6 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
 | `sk-proj-yml-sk-proj` | 4 |
@@ -66,11 +66,21 @@
 | `sk-proj-env-llm-env` | 1 |
 | `sk-proj-env-anthropic-env` | 1 |
 | `sk-proj-env-deepseek-env` | 1 |
+| `sk-proj-ts-mistral-env` | 1 |
 
 ### Recent Findings (Last 30 Days)
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `garrytan/gbrain` | `test/helpers/agent-harness.unit.tes...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `nexu-io/open-design` | `apps/daemon/tests/run-diagnostics.t...` | `sk-proj-ts-sk-generic` | `sk-aaaaaaaaa***` | 2026-08-29 |
+| `QwenLM/qwen-code` | `docs/users/configuration/model-prov...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `Gitlawb/openclaude` | `src/utils/diagnostics/redaction.tes...` | `sk-proj-ts-mistral-env` | `MISTRAL_API_***` | 2026-08-29 |
+| `Gitlawb/openclaude` | `ANDROID_INSTALL.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-29 |
+| `Gitlawb/openclaude` | `.env.example` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
+| `diegosouzapw/OmniRoute` | `tests/unit/piiReproduction.test.ts` | `sk-proj-ts-sk-generic` | `sk-123456789***` | 2026-08-29 |
+| `diegosouzapw/OmniRoute` | `docker/devin-bridge/run-claude-live...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
+| `diegosouzapw/OmniRoute` | `docker/devin-bridge/run-claude-e2e....` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
 | `xenitV1/lemma` | `tests/memory/privacy.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-25 |
 | `odysseus-dev/odysseus` | `.env.example` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-13 |
 | `github/gh-aw-firewall` | `docs/cloud-hypervisor-foundation.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-11 |
@@ -162,17 +172,8 @@
 | `davila7/claude-code-templates` | `cli-tool/components/skills/scientif...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `davila7/claude-code-templates` | `cli-tool/components/skills/scientif...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-05-21 |
 | `davila7/claude-code-templates` | `cli-tool/components/sandbox/e2b/cla...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/components/sandbox/e2b/.en...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/components/sandbox/docker/...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/components/sandbox/cloudfl...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/components/sandbox/cloudfl...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/components/sandbox/cloudfl...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/components/sandbox/cloudfl...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/components/sandbox/README....` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
-| `davila7/claude-code-templates` | `cli-tool/.claude/sandbox/cloudflare...` | `sk-proj-py-anthropic-env` | `ANTHROPIC_AP***` | 2026-05-21 |
 
-*... and 364 more unique findings (see `data/` directory)*
+*... and 373 more unique findings (see `data/` directory)*
 
 
 ---
