@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-08-30 18:18:37 UTC
+**Last Updated**: 2026-08-30 21:16:26 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 563
+**Total Unique Findings**: 572
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 48 |
-| **Affected Repositories** | 126 |
+| **Key Types Detected** | 49 |
+| **Affected Repositories** | 130 |
 
 ### By Key Type
 
@@ -29,8 +29,8 @@
 | `sk-proj-py-env-var` | 62 |
 | `sk-proj-json-env-var` | 60 |
 | `sk-proj-json-sk-generic` | 53 |
+| `sk-proj-env-env-var` | 50 |
 | `sk-proj-ts-anthropic-env` | 46 |
-| `sk-proj-env-env-var` | 46 |
 | `sk-proj-json-anthropic-env` | 28 |
 | `sk-proj-ts-env-var` | 27 |
 | `sk-proj-py-anthropic-env` | 23 |
@@ -56,6 +56,7 @@
 | `sk-proj-py-groq-env` | 5 |
 | `sk-proj-ts-google-env` | 4 |
 | `sk-proj-js-sk-generic` | 4 |
+| `sk-proj-env-anthropic-env` | 4 |
 | `sk-proj-json-embedding-env` | 3 |
 | `sk-proj-py-gemini-env` | 3 |
 | `sk-proj-js-sk-proj` | 2 |
@@ -64,11 +65,11 @@
 | `sk-proj-ts-deepseek-env` | 2 |
 | `sk-proj-js-google-env` | 2 |
 | `sk-proj-py-deepseek-env` | 2 |
+| `sk-proj-env-sk-generic` | 2 |
 | `sk-proj-json-llm-env` | 1 |
 | `sk-proj-json-ai-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
 | `sk-proj-env-llm-env` | 1 |
-| `sk-proj-env-anthropic-env` | 1 |
 | `sk-proj-env-deepseek-env` | 1 |
 | `sk-proj-ts-mistral-env` | 1 |
 | `sk-proj-py-hf-env` | 1 |
@@ -79,6 +80,15 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `jmanhype/MCPhoenix` | `.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-08-30 |
+| `openai/openai-cookbook` | `examples/vector_databases/qdrant/QA...` | `sk-proj-env-sk-generic` | `sk-xxxxxxxxx***` | 2026-08-30 |
+| `openai/openai-cookbook` | `examples/vector_databases/chroma/hy...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-08-30 |
+| `openai/openai-cookbook` | `examples/vector_databases/analyticd...` | `sk-proj-env-sk-generic` | `sk-xxxxxxxxx***` | 2026-08-30 |
+| `IBM/mcp-context-forge` | `mcp-servers/python/mcp_eval_server/...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-08-30 |
+| `anthropics/claude-cookbooks` | `third_party/ElevenLabs/.env.example` | `sk-proj-env-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-30 |
+| `anthropics/claude-cookbooks` | `skills/.env.example` | `sk-proj-env-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-30 |
+| `anthropics/claude-cookbooks` | `claude_agent_sdk/hosting/.env.examp...` | `sk-proj-env-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-30 |
+| `VoltAgent/voltagent` | `examples/with-xquik-tools/README.md` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-08-30 |
 | `siabang35/zega.ai` | `apps/api/.env.example` | `sk-proj-yml-huggingface-env` | `HUGGINGFACE_***` | 2026-08-29 |
 | `PeterGachuru/Myfuture-Question...` | `src/main/resources/application.yml` | `sk-proj-yml-sk-proj` | `sk-proj-StKm***` | 2026-08-29 |
 | `PeterGachuru/Myfuture-Question...` | `src/main/java/ke/co/myfuture/Myfutu...` | `sk-proj-yml-sk-proj` | `sk-proj-StKm***` | 2026-08-29 |
@@ -170,17 +180,8 @@
 | `Abilityai/trinity` | `docs/testing/GEMINI_TESTING_PLAN.md` | `sk-proj-js-google-env` | `GOOGLE_API_K***` | 2026-08-29 |
 | `Abilityai/trinity` | `docs/GEMINI_SUPPORT.md` | `sk-proj-js-google-env` | `GOOGLE_API_K***` | 2026-08-29 |
 | `garrytan/gbrain` | `test/helpers/agent-harness.unit.tes...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-29 |
-| `nexu-io/open-design` | `apps/daemon/tests/run-diagnostics.t...` | `sk-proj-ts-sk-generic` | `sk-aaaaaaaaa***` | 2026-08-29 |
-| `QwenLM/qwen-code` | `docs/users/configuration/model-prov...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-29 |
-| `Gitlawb/openclaude` | `src/utils/diagnostics/redaction.tes...` | `sk-proj-ts-mistral-env` | `MISTRAL_API_***` | 2026-08-29 |
-| `Gitlawb/openclaude` | `ANDROID_INSTALL.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-29 |
-| `Gitlawb/openclaude` | `.env.example` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
-| `diegosouzapw/OmniRoute` | `tests/unit/piiReproduction.test.ts` | `sk-proj-ts-sk-generic` | `sk-123456789***` | 2026-08-29 |
-| `diegosouzapw/OmniRoute` | `docker/devin-bridge/run-claude-live...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
-| `diegosouzapw/OmniRoute` | `docker/devin-bridge/run-claude-e2e....` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
-| `xenitV1/lemma` | `tests/memory/privacy.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-25 |
 
-*... and 463 more unique findings (see `data/` directory)*
+*... and 472 more unique findings (see `data/` directory)*
 
 
 ---
