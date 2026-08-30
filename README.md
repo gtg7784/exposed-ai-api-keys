@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-08-30 21:16:26 UTC
+**Last Updated**: 2026-08-30 23:34:34 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 572
+**Total Unique Findings**: 573
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 49 |
-| **Affected Repositories** | 130 |
+| **Affected Repositories** | 131 |
 
 ### By Key Type
 
@@ -38,8 +38,8 @@
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-yml-env-var` | 15 |
 | `sk-proj-json-gemini-env` | 14 |
+| `sk-proj-js-env-var` | 13 |
 | `sk-proj-env-google-env` | 13 |
-| `sk-proj-js-env-var` | 12 |
 | `sk-proj-py-sk-generic` | 10 |
 | `sk-proj-env-gemini-env` | 9 |
 | `sk-proj-yml-sk-proj` | 8 |
@@ -80,6 +80,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `Secure-Vector/securevector-ai-...` | `tests/unit/plugins/cursor/decide.te...` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-30 |
 | `jmanhype/MCPhoenix` | `.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-08-30 |
 | `openai/openai-cookbook` | `examples/vector_databases/qdrant/QA...` | `sk-proj-env-sk-generic` | `sk-xxxxxxxxx***` | 2026-08-30 |
 | `openai/openai-cookbook` | `examples/vector_databases/chroma/hy...` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-08-30 |
@@ -179,9 +180,8 @@
 | `Abilityai/trinity` | `tests/unit/test_1661_sanitizer_line...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
 | `Abilityai/trinity` | `docs/testing/GEMINI_TESTING_PLAN.md` | `sk-proj-js-google-env` | `GOOGLE_API_K***` | 2026-08-29 |
 | `Abilityai/trinity` | `docs/GEMINI_SUPPORT.md` | `sk-proj-js-google-env` | `GOOGLE_API_K***` | 2026-08-29 |
-| `garrytan/gbrain` | `test/helpers/agent-harness.unit.tes...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 
-*... and 472 more unique findings (see `data/` directory)*
+*... and 473 more unique findings (see `data/` directory)*
 
 
 ---
