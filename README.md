@@ -11,9 +11,9 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-09-02 14:00:00 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 573
+**Last Updated**: 2026-09-02 17:53:06 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 575
 
 ### Summary Statistics
 
@@ -28,7 +28,7 @@
 |-------------|-------|
 | `sk-proj-py-env-var` | 62 |
 | `sk-proj-json-env-var` | 60 |
-| `sk-proj-json-sk-generic` | 53 |
+| `sk-proj-json-sk-generic` | 55 |
 | `sk-proj-env-env-var` | 50 |
 | `sk-proj-ts-anthropic-env` | 46 |
 | `sk-proj-json-anthropic-env` | 28 |
@@ -80,6 +80,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `cisco-ai-defense/defenseclaw` | `internal/scanoutput/redaction_test....` | `sk-proj-json-sk-generic` | `sk-test12345***` | 2026-09-02 |
+| `cisco-ai-defense/defenseclaw` | `internal/gateway/api_codescan_test....` | `sk-proj-json-sk-generic` | `sk-test12345***` | 2026-09-02 |
 | `Secure-Vector/securevector-ai-...` | `tests/unit/plugins/cursor/decide.te...` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-30 |
 | `jmanhype/MCPhoenix` | `.env.example` | `sk-proj-env-env-var` | `OPENAI_API_K***` | 2026-08-30 |
 | `openai/openai-cookbook` | `examples/vector_databases/qdrant/QA...` | `sk-proj-env-sk-generic` | `sk-xxxxxxxxx***` | 2026-08-30 |
@@ -178,10 +180,8 @@
 | `Abilityai/trinity` | `tests/unit/test_1870_completed_turn...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
 | `Abilityai/trinity` | `tests/unit/test_1673_execution_erro...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
 | `Abilityai/trinity` | `tests/unit/test_1661_sanitizer_line...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
-| `Abilityai/trinity` | `docs/testing/GEMINI_TESTING_PLAN.md` | `sk-proj-js-google-env` | `GOOGLE_API_K***` | 2026-08-29 |
-| `Abilityai/trinity` | `docs/GEMINI_SUPPORT.md` | `sk-proj-js-google-env` | `GOOGLE_API_K***` | 2026-08-29 |
 
-*... and 473 more unique findings (see `data/` directory)*
+*... and 475 more unique findings (see `data/` directory)*
 
 
 ---
