@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-09-12 13:18:59 UTC
+**Last Updated**: 2026-09-12 16:21:58 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 575
+**Total Unique Findings**: 576
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 49 |
-| **Affected Repositories** | 131 |
+| **Affected Repositories** | 132 |
 
 ### By Key Type
 
@@ -46,10 +46,10 @@
 | `sk-proj-json-google-env` | 8 |
 | `sk-proj-ts-sk-generic` | 8 |
 | `sk-proj-yml-sk-generic` | 7 |
+| `sk-proj-js-anthropic-env` | 7 |
 | `sk-proj-yml-anthropic-env` | 7 |
 | `sk-proj-json-sk-proj` | 6 |
 | `sk-proj-json-claude-env` | 6 |
-| `sk-proj-js-anthropic-env` | 6 |
 | `sk-proj-py-google-env` | 5 |
 | `sk-proj-json-groq-env` | 5 |
 | `sk-proj-json-deepseek-env` | 5 |
@@ -80,6 +80,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `bbk1ng/agent-orch` | `docs/cli-v2-design.md` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-09-12 |
 | `cisco-ai-defense/defenseclaw` | `internal/scanoutput/redaction_test....` | `sk-proj-json-sk-generic` | `sk-test12345***` | 2026-09-02 |
 | `cisco-ai-defense/defenseclaw` | `internal/gateway/api_codescan_test....` | `sk-proj-json-sk-generic` | `sk-test12345***` | 2026-09-02 |
 | `Secure-Vector/securevector-ai-...` | `tests/unit/plugins/cursor/decide.te...` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-30 |
@@ -179,9 +180,8 @@
 | `Abilityai/trinity` | `tests/unit/test_credential_sanitize...` | `sk-proj-js-sk-generic` | `sk-keyabcdef***` | 2026-08-29 |
 | `Abilityai/trinity` | `tests/unit/test_1870_completed_turn...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
 | `Abilityai/trinity` | `tests/unit/test_1673_execution_erro...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
-| `Abilityai/trinity` | `tests/unit/test_1661_sanitizer_line...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
 
-*... and 475 more unique findings (see `data/` directory)*
+*... and 476 more unique findings (see `data/` directory)*
 
 
 ---
