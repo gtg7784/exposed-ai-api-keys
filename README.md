@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-10-29 00:01:12 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 576
+**Last Updated**: 2026-10-29 05:37:46 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 579
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 49 |
-| **Affected Repositories** | 132 |
+| **Affected Repositories** | 133 |
 
 ### By Key Type
 
@@ -30,9 +30,9 @@
 | `sk-proj-json-env-var` | 60 |
 | `sk-proj-json-sk-generic` | 55 |
 | `sk-proj-env-env-var` | 50 |
-| `sk-proj-ts-anthropic-env` | 46 |
+| `sk-proj-ts-anthropic-env` | 47 |
+| `sk-proj-ts-env-var` | 29 |
 | `sk-proj-json-anthropic-env` | 28 |
-| `sk-proj-ts-env-var` | 27 |
 | `sk-proj-py-anthropic-env` | 23 |
 | `sk-proj-py-sk-proj` | 17 |
 | `sk-proj-env-sk-proj` | 16 |
@@ -80,6 +80,9 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `Enderfga/claw-orchestrator` | `src/__tests__/codex-session.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-10-29 |
+| `Enderfga/claw-orchestrator` | `src/__tests__/codex-app-session.tes...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-10-29 |
+| `Enderfga/claw-orchestrator` | `src/__tests__/acp-session.test.ts` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-10-29 |
 | `bbk1ng/agent-orch` | `docs/cli-v2-design.md` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-09-12 |
 | `cisco-ai-defense/defenseclaw` | `internal/scanoutput/redaction_test....` | `sk-proj-json-sk-generic` | `sk-test12345***` | 2026-09-02 |
 | `cisco-ai-defense/defenseclaw` | `internal/gateway/api_codescan_test....` | `sk-proj-json-sk-generic` | `sk-test12345***` | 2026-09-02 |
@@ -177,11 +180,8 @@
 | `arcahyadi/odysseus` | `.env.example` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 | `odysseus-dev/odysseus-current` | `.env.example` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 | `Abilityai/trinity` | `tests/unit/test_credential_sanitize...` | `sk-proj-js-sk-generic` | `sk-keyabcdef***` | 2026-08-29 |
-| `Abilityai/trinity` | `tests/unit/test_credential_sanitize...` | `sk-proj-js-sk-generic` | `sk-keyabcdef***` | 2026-08-29 |
-| `Abilityai/trinity` | `tests/unit/test_1870_completed_turn...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
-| `Abilityai/trinity` | `tests/unit/test_1673_execution_erro...` | `sk-proj-js-anthropic-env` | `ANTHROPIC_AP***` | 2026-08-29 |
 
-*... and 476 more unique findings (see `data/` directory)*
+*... and 479 more unique findings (see `data/` directory)*
 
 
 ---

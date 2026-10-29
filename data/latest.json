@@ -1,7 +1,7 @@
 {
-  "scan_timestamp": "2026-10-29T00:01:12.851407+00:00",
-  "total_findings": 576,
-  "requests_made": 0,
+  "scan_timestamp": "2026-10-29T05:37:46.954198+00:00",
+  "total_findings": 579,
+  "requests_made": 10,
   "findings": [
     {
       "repository": "NemroNeno/LinkedIn_messaging_agent",
@@ -5186,6 +5186,33 @@
       "discovered_at": "2026-09-12T16:21:57.748938+00:00",
       "key_type": "sk-proj-js-anthropic-env",
       "key_preview": "ANTHROPIC_AP***"
+    },
+    {
+      "repository": "Enderfga/claw-orchestrator",
+      "file_path": "src/__tests__/acp-session.test.ts",
+      "file_url": "https://github.com/Enderfga/claw-orchestrator/blob/main/src/__tests__/acp-session.test.ts",
+      "commit_sha": null,
+      "discovered_at": "2026-10-29T05:37:39.037933+00:00",
+      "key_type": "sk-proj-ts-anthropic-env",
+      "key_preview": "ANTHROPIC_AP***"
+    },
+    {
+      "repository": "Enderfga/claw-orchestrator",
+      "file_path": "src/__tests__/codex-app-session.test.ts",
+      "file_url": "https://github.com/Enderfga/claw-orchestrator/blob/main/src/__tests__/codex-app-session.test.ts",
+      "commit_sha": null,
+      "discovered_at": "2026-10-29T05:37:39.184755+00:00",
+      "key_type": "sk-proj-ts-env-var",
+      "key_preview": "OPENAI_API_K***"
+    },
+    {
+      "repository": "Enderfga/claw-orchestrator",
+      "file_path": "src/__tests__/codex-session.test.ts",
+      "file_url": "https://github.com/Enderfga/claw-orchestrator/blob/main/src/__tests__/codex-session.test.ts",
+      "commit_sha": null,
+      "discovered_at": "2026-10-29T05:37:39.194938+00:00",
+      "key_type": "sk-proj-ts-env-var",
+      "key_preview": "OPENAI_API_K***"
     }
   ]
 }
