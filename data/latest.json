@@ -1,7 +1,7 @@
 {
-  "scan_timestamp": "2026-10-31T18:48:44.005066+00:00",
+  "scan_timestamp": "2026-10-31T21:58:05.385649+00:00",
   "total_findings": 579,
-  "requests_made": 10,
+  "requests_made": 0,
   "findings": [
     {
       "repository": "NemroNeno/LinkedIn_messaging_agent",
