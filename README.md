@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-11-17 20:49:43 UTC
+**Last Updated**: 2026-11-18 02:37:35 UTC
 **API Requests Made**: 10
-**Total Unique Findings**: 579
+**Total Unique Findings**: 586
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Key Types Detected** | 49 |
-| **Affected Repositories** | 133 |
+| **Key Types Detected** | 50 |
+| **Affected Repositories** | 134 |
 
 ### By Key Type
 
@@ -30,8 +30,8 @@
 | `sk-proj-json-env-var` | 60 |
 | `sk-proj-json-sk-generic` | 55 |
 | `sk-proj-env-env-var` | 50 |
-| `sk-proj-ts-anthropic-env` | 47 |
-| `sk-proj-ts-env-var` | 29 |
+| `sk-proj-ts-anthropic-env` | 49 |
+| `sk-proj-ts-env-var` | 31 |
 | `sk-proj-json-anthropic-env` | 28 |
 | `sk-proj-py-anthropic-env` | 23 |
 | `sk-proj-py-sk-proj` | 17 |
@@ -63,15 +63,16 @@
 | `sk-proj-yml-google-env` | 2 |
 | `sk-proj-ts-claude-env` | 2 |
 | `sk-proj-ts-deepseek-env` | 2 |
+| `sk-proj-ts-mistral-env` | 2 |
 | `sk-proj-js-google-env` | 2 |
 | `sk-proj-py-deepseek-env` | 2 |
 | `sk-proj-env-sk-generic` | 2 |
+| `sk-proj-ts-codex-env` | 2 |
 | `sk-proj-json-llm-env` | 1 |
 | `sk-proj-json-ai-env` | 1 |
 | `sk-proj-ts-llm-env` | 1 |
 | `sk-proj-env-llm-env` | 1 |
 | `sk-proj-env-deepseek-env` | 1 |
-| `sk-proj-ts-mistral-env` | 1 |
 | `sk-proj-py-hf-env` | 1 |
 | `sk-proj-py-llm-env` | 1 |
 | `sk-proj-yml-huggingface-env` | 1 |
@@ -80,6 +81,13 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `github/gh-aw-firewall` | `src/enclave/agent-entrypoint-diagno...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-11-18 |
+| `github/gh-aw-firewall` | `scripts/ci/run-agent-regression-gue...` | `sk-proj-ts-codex-env` | `CODEX_API_KE***` | 2026-11-18 |
+| `github/gh-aw-firewall` | `scripts/ci/reflect-smoke/guest.sh` | `sk-proj-ts-codex-env` | `CODEX_API_KE***` | 2026-11-18 |
+| `rohitg00/agentmemory` | `test/cli-compose-env-precedence.tes...` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-11-18 |
+| `Twigpine/openclaude` | `src/utils/diagnostics/redaction.tes...` | `sk-proj-ts-mistral-env` | `MISTRAL_API_***` | 2026-11-18 |
+| `Twigpine/openclaude` | `ANDROID_INSTALL.md` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-11-18 |
+| `Twigpine/openclaude` | `.env.example` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-11-18 |
 | `Enderfga/claw-orchestrator` | `src/__tests__/codex-session.test.ts` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-10-29 |
 | `Enderfga/claw-orchestrator` | `src/__tests__/codex-app-session.tes...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-10-29 |
 | `Enderfga/claw-orchestrator` | `src/__tests__/acp-session.test.ts` | `sk-proj-ts-anthropic-env` | `ANTHROPIC_AP***` | 2026-10-29 |
@@ -173,15 +181,8 @@
 | `ed-donner/llm_engineering` | `community-contributions/fbrynmghni/...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 | `ed-donner/llm_engineering` | `community-contributions/faraz-llm-e...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 | `ed-donner/llm_engineering` | `community-contributions/TV_show_rec...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-08-29 |
-| `ed-donner/llm_engineering` | `community-contributions/Arjav014/Pe...` | `sk-proj-py-groq-env` | `GROQ_API_KEY***` | 2026-08-29 |
-| `ed-donner/llm_engineering` | `community-contributions/Arjav014/AI...` | `sk-proj-py-google-env` | `GOOGLE_API_K***` | 2026-08-29 |
-| `ed-donner/llm_engineering` | `community-contributions/Arjav014/AI...` | `sk-proj-py-google-env` | `GOOGLE_API_K***` | 2026-08-29 |
-| `ed-donner/llm_engineering` | `community-contributions/Arjav014/AI...` | `sk-proj-py-groq-env` | `GROQ_API_KEY***` | 2026-08-29 |
-| `arcahyadi/odysseus` | `.env.example` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-29 |
-| `odysseus-dev/odysseus-current` | `.env.example` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-08-29 |
-| `Abilityai/trinity` | `tests/unit/test_credential_sanitize...` | `sk-proj-js-sk-generic` | `sk-keyabcdef***` | 2026-08-29 |
 
-*... and 479 more unique findings (see `data/` directory)*
+*... and 486 more unique findings (see `data/` directory)*
 
 
 ---

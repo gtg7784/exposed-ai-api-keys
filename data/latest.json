@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-11-17T20:49:43.447721+00:00",
-  "total_findings": 579,
+  "scan_timestamp": "2026-11-18T02:37:35.676937+00:00",
+  "total_findings": 586,
   "requests_made": 10,
   "findings": [
     {
@@ -5211,6 +5211,69 @@
       "file_url": "https://github.com/Enderfga/claw-orchestrator/blob/main/src/__tests__/codex-session.test.ts",
       "commit_sha": null,
       "discovered_at": "2026-10-29T05:37:39.194938+00:00",
+      "key_type": "sk-proj-ts-env-var",
+      "key_preview": "OPENAI_API_K***"
+    },
+    {
+      "repository": "Twigpine/openclaude",
+      "file_path": ".env.example",
+      "file_url": "https://github.com/Twigpine/openclaude/blob/main/.env.example",
+      "commit_sha": null,
+      "discovered_at": "2026-11-18T02:36:57.511928+00:00",
+      "key_type": "sk-proj-ts-anthropic-env",
+      "key_preview": "ANTHROPIC_AP***"
+    },
+    {
+      "repository": "Twigpine/openclaude",
+      "file_path": "ANDROID_INSTALL.md",
+      "file_url": "https://github.com/Twigpine/openclaude/blob/main/ANDROID_INSTALL.md",
+      "commit_sha": null,
+      "discovered_at": "2026-11-18T02:36:57.530074+00:00",
+      "key_type": "sk-proj-ts-env-var",
+      "key_preview": "OPENAI_API_K***"
+    },
+    {
+      "repository": "Twigpine/openclaude",
+      "file_path": "src/utils/diagnostics/redaction.test.ts",
+      "file_url": "https://github.com/Twigpine/openclaude/blob/main/src/utils/diagnostics/redaction.test.ts",
+      "commit_sha": null,
+      "discovered_at": "2026-11-18T02:37:03.927659+00:00",
+      "key_type": "sk-proj-ts-mistral-env",
+      "key_preview": "MISTRAL_API_***"
+    },
+    {
+      "repository": "rohitg00/agentmemory",
+      "file_path": "test/cli-compose-env-precedence.test.ts",
+      "file_url": "https://github.com/rohitg00/agentmemory/blob/main/test/cli-compose-env-precedence.test.ts",
+      "commit_sha": null,
+      "discovered_at": "2026-11-18T02:37:11.360413+00:00",
+      "key_type": "sk-proj-ts-anthropic-env",
+      "key_preview": "ANTHROPIC_AP***"
+    },
+    {
+      "repository": "github/gh-aw-firewall",
+      "file_path": "scripts/ci/reflect-smoke/guest.sh",
+      "file_url": "https://github.com/github/gh-aw-firewall/blob/main/scripts/ci/reflect-smoke/guest.sh",
+      "commit_sha": null,
+      "discovered_at": "2026-11-18T02:37:31.185666+00:00",
+      "key_type": "sk-proj-ts-codex-env",
+      "key_preview": "CODEX_API_KE***"
+    },
+    {
+      "repository": "github/gh-aw-firewall",
+      "file_path": "scripts/ci/run-agent-regression-guest.sh",
+      "file_url": "https://github.com/github/gh-aw-firewall/blob/main/scripts/ci/run-agent-regression-guest.sh",
+      "commit_sha": null,
+      "discovered_at": "2026-11-18T02:37:31.208099+00:00",
+      "key_type": "sk-proj-ts-codex-env",
+      "key_preview": "CODEX_API_KE***"
+    },
+    {
+      "repository": "github/gh-aw-firewall",
+      "file_path": "src/enclave/agent-entrypoint-diagnostics.test.ts",
+      "file_url": "https://github.com/github/gh-aw-firewall/blob/main/src/enclave/agent-entrypoint-diagnostics.test.ts",
+      "commit_sha": null,
+      "discovered_at": "2026-11-18T02:37:32.968999+00:00",
       "key_type": "sk-proj-ts-env-var",
       "key_preview": "OPENAI_API_K***"
     }
