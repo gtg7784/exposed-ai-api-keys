@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-11-21 22:38:50 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 586
+**Last Updated**: 2026-11-22 02:29:02 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 587
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 50 |
-| **Affected Repositories** | 134 |
+| **Affected Repositories** | 135 |
 
 ### By Key Type
 
@@ -37,8 +37,8 @@
 | `sk-proj-py-sk-proj` | 17 |
 | `sk-proj-env-sk-proj` | 16 |
 | `sk-proj-yml-env-var` | 15 |
+| `sk-proj-js-env-var` | 14 |
 | `sk-proj-json-gemini-env` | 14 |
-| `sk-proj-js-env-var` | 13 |
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-py-sk-generic` | 10 |
 | `sk-proj-env-gemini-env` | 9 |
@@ -81,6 +81,7 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `Amal-David/keyleak-detector` | `tests/test_core_reporting.py` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-11-22 |
 | `github/gh-aw-firewall` | `src/enclave/agent-entrypoint-diagno...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-11-18 |
 | `github/gh-aw-firewall` | `scripts/ci/run-agent-regression-gue...` | `sk-proj-ts-codex-env` | `CODEX_API_KE***` | 2026-11-18 |
 | `github/gh-aw-firewall` | `scripts/ci/reflect-smoke/guest.sh` | `sk-proj-ts-codex-env` | `CODEX_API_KE***` | 2026-11-18 |
@@ -180,9 +181,8 @@
 | `ed-donner/llm_engineering` | `community-contributions/json_respon...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 | `ed-donner/llm_engineering` | `community-contributions/fbrynmghni/...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 | `ed-donner/llm_engineering` | `community-contributions/faraz-llm-e...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-08-29 |
-| `ed-donner/llm_engineering` | `community-contributions/TV_show_rec...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 
-*... and 486 more unique findings (see `data/` directory)*
+*... and 487 more unique findings (see `data/` directory)*
 
 
 ---

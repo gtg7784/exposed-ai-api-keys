@@ -1,7 +1,7 @@
 {
-  "scan_timestamp": "2026-11-21T22:38:50.372096+00:00",
-  "total_findings": 586,
-  "requests_made": 0,
+  "scan_timestamp": "2026-11-22T02:29:02.687948+00:00",
+  "total_findings": 587,
+  "requests_made": 10,
   "findings": [
     {
       "repository": "NemroNeno/LinkedIn_messaging_agent",
@@ -5275,6 +5275,15 @@
       "commit_sha": null,
       "discovered_at": "2026-11-18T02:37:32.968999+00:00",
       "key_type": "sk-proj-ts-env-var",
+      "key_preview": "OPENAI_API_K***"
+    },
+    {
+      "repository": "Amal-David/keyleak-detector",
+      "file_path": "tests/test_core_reporting.py",
+      "file_url": "https://github.com/Amal-David/keyleak-detector/blob/main/tests/test_core_reporting.py",
+      "commit_sha": null,
+      "discovered_at": "2026-11-22T02:28:57.511921+00:00",
+      "key_type": "sk-proj-js-env-var",
       "key_preview": "OPENAI_API_K***"
     }
   ]
