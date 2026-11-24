@@ -11,16 +11,16 @@
 
 ## 📊 Latest Scan Results
 
-**Last Updated**: 2026-11-23 12:55:28 UTC
-**API Requests Made**: 0
-**Total Unique Findings**: 587
+**Last Updated**: 2026-11-24 00:32:27 UTC
+**API Requests Made**: 10
+**Total Unique Findings**: 589
 
 ### Summary Statistics
 
 | Metric | Count |
 |--------|-------|
 | **Key Types Detected** | 50 |
-| **Affected Repositories** | 135 |
+| **Affected Repositories** | 136 |
 
 ### By Key Type
 
@@ -41,10 +41,10 @@
 | `sk-proj-json-gemini-env` | 14 |
 | `sk-proj-env-google-env` | 13 |
 | `sk-proj-py-sk-generic` | 10 |
+| `sk-proj-ts-sk-generic` | 10 |
 | `sk-proj-env-gemini-env` | 9 |
 | `sk-proj-yml-sk-proj` | 8 |
 | `sk-proj-json-google-env` | 8 |
-| `sk-proj-ts-sk-generic` | 8 |
 | `sk-proj-yml-sk-generic` | 7 |
 | `sk-proj-js-anthropic-env` | 7 |
 | `sk-proj-yml-anthropic-env` | 7 |
@@ -81,6 +81,8 @@
 
 | Repository | File Path | Key Type | Preview | Discovered |
 |------------|-----------|----------|---------|------------|
+| `IncarnaMind/IncarnaMind` | `tests/core/keyForms.test.ts` | `sk-proj-ts-sk-generic` | `sk-abcdefghi***` | 2026-11-24 |
+| `IncarnaMind/IncarnaMind` | `.gstack-redact-allowlist` | `sk-proj-ts-sk-generic` | `sk-abcdefghi***` | 2026-11-24 |
 | `Amal-David/keyleak-detector` | `tests/test_core_reporting.py` | `sk-proj-js-env-var` | `OPENAI_API_K***` | 2026-11-22 |
 | `github/gh-aw-firewall` | `src/enclave/agent-entrypoint-diagno...` | `sk-proj-ts-env-var` | `OPENAI_API_K***` | 2026-11-18 |
 | `github/gh-aw-firewall` | `scripts/ci/run-agent-regression-gue...` | `sk-proj-ts-codex-env` | `CODEX_API_KE***` | 2026-11-18 |
@@ -179,10 +181,8 @@
 | `ed-donner/llm_engineering` | `community-contributions/shabsi4u/sy...` | `sk-proj-py-hf-env` | `HF_API_KEY=y***` | 2026-08-29 |
 | `ed-donner/llm_engineering` | `community-contributions/keshav_awas...` | `sk-proj-py-groq-env` | `GROQ_API_KEY***` | 2026-08-29 |
 | `ed-donner/llm_engineering` | `community-contributions/json_respon...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-08-29 |
-| `ed-donner/llm_engineering` | `community-contributions/fbrynmghni/...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-08-29 |
-| `ed-donner/llm_engineering` | `community-contributions/faraz-llm-e...` | `sk-proj-py-env-var` | `OPENAI_API_K***` | 2026-08-29 |
 
-*... and 487 more unique findings (see `data/` directory)*
+*... and 489 more unique findings (see `data/` directory)*
 
 
 ---
